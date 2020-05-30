@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="generator" content="Hexo 4.2.1"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>技术/备忘/Hexo icarus 博客维护 - William@blog</title><meta description="基本指令 基本指令123456789&amp;#x2F;*npm指令*&amp;#x2F;npm install&amp;#x2F;uninstall xxx&amp;#x2F;&amp;#x2F;执行package.json中定义的脚本npm run server&amp;#x2F;*hexo指令*&amp;#x2F;hexo cl &amp;amp;&amp;amp; hexo g &amp;amp;&amp;amp; hexo s	&amp;#x2F;&amp;#x2F;清理，生成，本地服务器"><meta property="og:type" content="blog"><meta property="og:title" content="技术/备忘/Hexo icarus 博客维护"><meta property="og:url" content="https://baidi-coder.github.io/posts/6e7bdc/"><meta property="og:site_name" content="William@blog"><meta property="og:description" content="基本指令 基本指令123456789&amp;#x2F;*npm指令*&amp;#x2F;npm install&amp;#x2F;uninstall xxx&amp;#x2F;&amp;#x2F;执行package.json中定义的脚本npm run server&amp;#x2F;*hexo指令*&amp;#x2F;hexo cl &amp;amp;&amp;amp; hexo g &amp;amp;&amp;amp; hexo s	&amp;#x2F;&amp;#x2F;清理，生成，本地服务器"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://baidi-coder.github.io/img/og_image.png"><meta property="article:published_time" content="2020-05-30T07:46:57.107Z"><meta property="article:modified_time" content="2020-05-30T11:31:53.180Z"><meta property="article:author" content="Weiliang Bai"><meta property="article:tag" content="Hexo"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://baidi-coder.github.io/posts/6e7bdc/"},"headline":"William@blog","image":["https://baidi-coder.github.io/img/og_image.png"],"datePublished":"2020-05-30T07:46:57.107Z","dateModified":"2020-05-30T11:31:53.180Z","author":{"@type":"Person","name":"Weiliang Bai"},"description":"基本指令 基本指令123456789&#x2F;*npm指令*&#x2F;npm install&#x2F;uninstall xxx&#x2F;&#x2F;执行package.json中定义的脚本npm run server&#x2F;*hexo指令*&#x2F;hexo cl &amp;&amp; hexo g &amp;&amp; hexo s\t&#x2F;&#x2F;清理，生成，本地服务器"}</script><link rel="canonical" href="https://baidi-coder.github.io/posts/6e7bdc/"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><script>var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?e83fc42ee83404ab3e70b1750dc52ddb";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();</script><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><link rel="alternate" href="/atom.xml" title="William@blog" type="application/atom+xml">
+</head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">William@blog</a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="William@GitHub" href="https://github.com/BAIDI-coder"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-05-30T07:46:57.107Z" title="2020-05-30T07:46:57.107Z">2020-05-30</time><span class="level-item"><a class="link-muted" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a><span> / </span><a class="link-muted" href="/categories/%E6%8A%80%E6%9C%AF/%E5%A4%87%E5%BF%98/">备忘</a></span><span class="level-item">2 分钟 读完 (大约 358 个字)</span><span class="level-item" id="busuanzi_container_page_pv"><i class="far fa-eye"></i>&nbsp;&nbsp;<span id="busuanzi_value_page_pv">0</span>次访问</span></div></div><h1 class="title is-3 is-size-4-mobile">技术/备忘/Hexo icarus 博客维护</h1><div class="content"><h2 id="基本指令">基本指令</h2>
+<figure class="highlight plain"><figcaption><span>基本指令</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs plain">&#x2F;*npm指令*&#x2F;<br>npm install&#x2F;uninstall xxx<br>&#x2F;&#x2F;执行package.json中定义的脚本<br>npm run server<br><br>&#x2F;*hexo指令*&#x2F;<br>hexo cl &amp;&amp; hexo g &amp;&amp; hexo s	&#x2F;&#x2F;清理，生成，本地服务器<br>hexo d &#x2F;&#x2F;部署<br>hexagon -l &#x2F;&#x2F;查看插件<br></code></pre></td></tr></table></figure>
+<h2 id="更多-Hexo-指令">更多 Hexo 指令</h2>
+<a href="https://hexo.io/zh-cn/docs/commands" title="" target="">传送门</a>
+<h2 id="Front-matter">Front-matter</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">描述</th>
+<th style="text-align:left">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>layout</code></td>
+<td style="text-align:left">布局</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>title</code></td>
+<td style="text-align:left">标题</td>
+<td style="text-align:left">文章的文件名</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>date</code></td>
+<td style="text-align:left">建立日期</td>
+<td style="text-align:left">文件建立日期</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>updated</code></td>
+<td style="text-align:left">更新日期</td>
+<td style="text-align:left">文件更新日期</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>comments</code></td>
+<td style="text-align:left">开启文章的评论功能</td>
+<td style="text-align:left">true</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>tags</code></td>
+<td style="text-align:left">标签（不适用于分页）</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>categories</code></td>
+<td style="text-align:left">分类（不适用于分页）</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>permalink</code></td>
+<td style="text-align:left">覆盖文章网址</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>keywords</code></td>
+<td style="text-align:left">仅用于 meta 标签和 Open Graph 的关键词（不推荐使用）</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>excerpt</code></td>
+<td style="text-align:left">摘要</td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="标签插件-Embed">标签插件 Embed</h2>
+<blockquote>
+<p>增强了 markdown 的功能的一系列插件<br>
+<em><strong>info: embed 语法不要包裹在反引号中，且冒号后面不要空格！！</strong></em></p>
+</blockquote>
+<h3 id="官方文档">官方文档</h3>
+<a href="https://hexo.io/zh-cn/docs/tag-plugins" title="" target="">官方插件文档</a>
+<h3 id="民间文档">民间文档</h3>
+<iframe src="http://wilenwu.github.io/posts/hexo/Hexo-tag-plugins.html#%E5%9B%BE%E7%89%87%E9%9B%86" width="100%" height="500" frameborder="0" loading="lazy" allowfullscreen></iframe>
+<h3 id="其他插件">其他插件</h3>
+<ul>
+<li>探宝方法：<a href="http://hexo.io">hexo.io</a> 搜索 embed</li>
+<li>自己做：<code>&lt;embed&gt;</code></li>
+</ul>
+<iframe src="https://www.runoob.com/tags/tag-embed.html" width="100%" height="500" frameborder="0" loading="lazy" allowfullscreen></iframe>
+<ul>
+<li>hexo-github-card</li>
+</ul>
+<div style="text-align: center">
+  <div class="github-card"
+    data-user="Gisonrg"
+    data-repo="hexo-github-card"
+    data-height="200"
+    data-width="400"
+    data-theme="default"
+    data-target=""
+    data-client-id=""
+    data-client-secret=""
+  ></div>
+</div>
+<script src="/github-card-lib/githubcard.js"></script>
+
+<ul>
+<li>hexo-pdf</li>
+</ul>
+<div style="text-align: center">
+  <div class="github-card"
+    data-user="superalsrk"
+    data-repo="hexo-pdf"
+    data-height="200"
+    data-width="400"
+    data-theme="default"
+    data-target=""
+    data-client-id=""
+    data-client-secret=""
+  ></div>
+</div>
+<script src="/github-card-lib/githubcard.js"></script>
+
+
+
+	<div class="row">
+    <embed src="http://cremeronline.com/LaTeX/minimaltikz.pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+<ul>
+<li>hexo-tag-bilibili</li>
+</ul>
+<div style="text-align: center">
+  <div class="github-card"
+    data-user="Z4Tech"
+    data-repo="hexo-tag-bilibili"
+    data-height="200"
+    data-width="400"
+    data-theme="default"
+    data-target=""
+    data-client-id=""
+    data-client-secret=""
+  ></div>
+</div>
+<script src="/github-card-lib/githubcard.js"></script>
+
+<div class="bili_video"><iframe src="https://player.bilibili.com/player.html?aid=12521979&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" width="544" height="452" allowfullscreen="true"> </iframe></div>
+<hr>
+<h2 id="￼1"><blockquote><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</p>
+<footer><strong>David Levithan</strong><cite>Wide Awake</cite></footer></blockquote></h2>
+</div><div class="article-tags size-small mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/Hexo/">Hexo</a></div><div class="addthis_inline_share_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ed1b54839d71d24" defer></script></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3><div class="buttons is-centered"><a class="button donate" href="https://www.buymeacoffee.com/Weiliang" style="background-color:rgba(255,128,62,.87);border-color:transparent;color:white;" target="_blank" rel="noopener"><span class="icon is-small"><i class="fas fa-coffee"></i></span><span>送我杯咖啡</span></a><a class="button is-success donate"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>微信</span><span class="qrcode"><img src="/img/wechat/qrcode.png" alt="微信"></span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/posts/fae5c3cd/"><span class="level-item">技术/AndroidLearning</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><script src="https://utteranc.es/client.js" repo="BAIDI-coder/utterancesComments" issue-term="pathname" theme="github-light" crossorigin="anonymous" async></script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2020/05/"><span class="level-start"><span class="level-item">五月 2020</span></span><span class="level-end"><span class="level-item tag">14</span></span></a></li></ul></div></div></div><div class="column-right-shadow is-hidden-widescreen"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3"><div class="card widget" id="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="is-flex" href="#基本指令"><span class="mr-2">1</span><span>基本指令</span></a></li><li><a class="is-flex" href="#更多-Hexo-指令"><span class="mr-2">2</span><span>更多 Hexo 指令</span></a></li><li><a class="is-flex" href="#Front-matter"><span class="mr-2">3</span><span>Front-matter</span></a></li><li><a class="is-flex" href="#标签插件-Embed"><span class="mr-2">4</span><span>标签插件 Embed</span></a><ul class="menu-list"><li><a class="is-flex" href="#官方文档"><span class="mr-2">4.1</span><span>官方文档</span></a></li><li><a class="is-flex" href="#民间文档"><span class="mr-2">4.2</span><span>民间文档</span></a></li><li><a class="is-flex" href="#其他插件"><span class="mr-2">4.3</span><span>其他插件</span></a></li></ul></li><li><a class="is-flex" href="#￼1"><span class="mr-2">5</span><span>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.
+David LevithanWide Awake</span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/Hexo/"><span class="tag">Hexo</span><span class="tag is-grey-lightest">1</span></a></div></div></div></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content size-small"><p><time dateTime="2020-05-30T07:46:57.107Z">2020-05-30</time></p><p class="title is-6"><a class="link-muted" href="/posts/6e7bdc/">技术/备忘/Hexo icarus 博客维护</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a> / <a class="link-muted" href="/categories/%E6%8A%80%E6%9C%AF/%E5%A4%87%E5%BF%98/">备忘</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-05-30T00:47:01.881Z">2020-05-30</time></p><p class="title is-6"><a class="link-muted" href="/posts/fae5c3cd/">技术/AndroidLearning</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-05-30T00:46:43.782Z">2020-05-30</time></p><p class="title is-6"><a class="link-muted" href="/posts/853a41fd/">杂项/Ideas</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/%E6%9D%82%E9%A1%B9/">杂项</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-05-30T00:46:29.240Z">2020-05-30</time></p><p class="title is-6"><a class="link-muted" href="/posts/7a368ad4/">技术/语言/Java&amp;Kotlin语法对照</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a> / <a class="link-muted" href="/categories/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/">语言</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-05-30T00:46:16.396Z">2020-05-30</time></p><p class="title is-6"><a class="link-muted" href="/posts/37a431d8/">技术/笔记/第一行代码 Android（第三版）读书笔记</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a> / <a class="link-muted" href="/categories/%E6%8A%80%E6%9C%AF/%E7%AC%94%E8%AE%B0/">笔记</a></p></div></article></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/categories/%E6%8A%80%E6%9C%AF/"><span class="level-start"><span class="level-item">技术</span></span><span class="level-end"><span class="level-item tag">11</span></span></a><ul class="mr-0"><li><a class="level is-mobile is-marginless" href="/categories/%E6%8A%80%E6%9C%AF/%E5%A4%87%E5%BF%98/"><span class="level-start"><span class="level-item">备忘</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%E6%8A%80%E6%9C%AF/%E5%B7%A5%E5%85%B7/"><span class="level-start"><span class="level-item">工具</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%E6%8A%80%E6%9C%AF/%E7%AC%94%E8%AE%B0/"><span class="level-start"><span class="level-item">笔记</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/"><span class="level-start"><span class="level-item">语言</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li></ul></li><li><a class="level is-mobile is-marginless" href="/categories/%E6%9D%82%E9%A1%B9/"><span class="level-start"><span class="level-item">杂项</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar.png" alt="Weiliang Bai"></figure><p class="title is-size-4 is-block line-height-inherit">Weiliang Bai</p><p class="is-size-6 is-block">Coder &amp; Student</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Hunan, China</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">14</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">6</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">1</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/BAIDI-coder" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/BAIDI-coder"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com/WeiliangBai"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/">William@blog</a><p class="size-small"><span>&copy; 2020 Weiliang Bai</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a><br><span id="busuanzi_container_site_uv">共<span id="busuanzi_value_site_uv">0</span>个访客</span></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            site: {
+                url: 'https://baidi-coder.github.io',
+                external_link: {"enable":true,"exclude":[]}
+            },
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mhchem.js" defer></script><script>window.addEventListener("load", function() {
+            document.querySelectorAll('[role="article"] > .content').forEach(function(element) {
+                renderMathInElement(element);
+            });
+        });</script><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

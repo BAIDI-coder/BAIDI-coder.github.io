@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://baidi-coder.github.io/"/>
-  <updated>2020-05-30T00:48:39.768Z</updated>
+  <updated>2020-05-30T11:31:53.180Z</updated>
   <id>https://baidi-coder.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>技术/备忘/Hexo icarus 博客维护</title>
+    <link href="https://baidi-coder.github.io/posts/6e7bdc/"/>
+    <id>https://baidi-coder.github.io/posts/6e7bdc/</id>
+    <published>2020-05-30T07:46:57.107Z</published>
+    <updated>2020-05-30T11:31:53.180Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;基本指令&quot;&gt;基本指令&lt;/h2&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;figcaption&gt;&lt;span&gt;基本指令&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="备忘" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E5%A4%87%E5%BF%98/"/>
+    
+    
+      <category term="Hexo" scheme="https://baidi-coder.github.io/tags/Hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>技术/AndroidLearning</title>
@@ -79,7 +109,7 @@
     <link href="https://baidi-coder.github.io/posts/7a368ad4/"/>
     <id>https://baidi-coder.github.io/posts/7a368ad4/</id>
     <published>2020-05-30T00:46:29.240Z</published>
-    <updated>2020-05-30T03:35:04.920Z</updated>
+    <updated>2020-05-30T03:39:07.484Z</updated>
     
     <summary type="html">
     
@@ -92,7 +122,7 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Java&lt;/p&gt;
-&lt;pre&gt;&lt;code
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
         
       
     
@@ -111,21 +141,11 @@
     <link href="https://baidi-coder.github.io/posts/37a431d8/"/>
     <id>https://baidi-coder.github.io/posts/37a431d8/</id>
     <published>2020-05-30T00:46:16.396Z</published>
-    <updated>2020-05-30T01:50:03.062Z</updated>
+    <updated>2020-05-30T07:58:18.240Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1&gt;第一行代码 Android（第三版）读书笔记&lt;/h1&gt;
-&lt;h2 id=&quot;第一章-开启征程（概要）&quot;&gt;第一章 开启征程（概要）&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;项目结构与目录：page 17 - page 19&lt;/li&gt;
-&lt;li&gt;Log 方法与 Logcat
-        
-      
+      《第一行代码 Android 3rd》个人笔记，归纳了该书中的主要知识点。
     
     </summary>
     
@@ -134,8 +154,6 @@
     
       <category term="笔记" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E7%AC%94%E8%AE%B0/"/>
     
-    
-      <category term="Android" scheme="https://baidi-coder.github.io/tags/Android/"/>
     
   </entry>
   
@@ -174,7 +192,7 @@
     <link href="https://baidi-coder.github.io/posts/ec3dabc7/"/>
     <id>https://baidi-coder.github.io/posts/ec3dabc7/</id>
     <published>2020-05-30T00:45:39.212Z</published>
-    <updated>2020-05-30T00:48:39.752Z</updated>
+    <updated>2020-05-30T12:03:27.433Z</updated>
     
     <summary type="html">
     
