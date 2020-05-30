@@ -4,12 +4,264 @@
   
     
     <entry>
-      <title>Hello World</title>
-      <link href="/2020/05/29/hello-world/"/>
-      <url>/2020/05/29/hello-world/</url>
+      <title>技术/AndroidLearning</title>
+      <link href="/posts/fae5c3cd/"/>
+      <url>/posts/fae5c3cd/</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+        <content type="html"><![CDATA[<h1>Android Studio 入坑笔记</h1><ul><li>Android Studio 自动创建 resource id 失败<ul><li>重启 AS。</li><li>Sync with file system 同步一下？</li><li>查看 R.java 中的 id 。Project 下依次打开app–&gt;build–&gt;generated–&gt;source–&gt;r–&gt;debug，在debug中的两个选项的子文件中分别有有一个R文件，既我们要找的R.java文件。（或者直接shift+shift查找R.java</li></ul></li></ul>]]></content>
       
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>杂项/Ideas</title>
+      <link href="/posts/853a41fd/"/>
+      <url>/posts/853a41fd/</url>
+      
+        <content type="html"><![CDATA[<h1>Williams’s Fantastic Ideas</h1><blockquote><p>Github 有一个叫做 <strong>app ideas</strong> 的仓库有很多好的项目</p></blockquote><ul><li>根据图片定位到视频中的某一帧</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂项 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>技术/语言/Java&amp;Kotlin语法对照</title>
+      <link href="/posts/7a368ad4/"/>
+      <url>/posts/7a368ad4/</url>
+      
+        <content type="html"><![CDATA[<h1>Java &amp; Kotlin 的语法片段对照</h1><h2 id="函数式-API">函数式 API</h2><ul><li><p>Java</p><pre><code class="language-java">//传入接口类型的实例（或继承了接口的匿名类）/*public interface Runnable {void Run();} */new Thread(new Runnable() {    @Override    public void run() {        //执行逻辑    }}).start()</code></pre></li><li><p>Kotlin</p><pre><code class="language-kotlin">//传入Lambda表达式（单抽象的接口类型也可简化为Lambda表达式后传入）Thread {    //执行逻辑}.start()</code></pre></li></ul><h2 id="访问控制">访问控制</h2><table><thead><tr><th>修饰符</th><th>Java</th><th>Kotlin</th></tr></thead><tbody><tr><td>pubilc</td><td>所有类可见</td><td>所有类可见（默认修饰符）</td></tr><tr><td>private</td><td>当前类可见</td><td>当前类可见</td></tr><tr><td>protected</td><td>当前类，子类，同意包路径下的类可见</td><td>当前类，子类可见</td></tr><tr><td>default</td><td>同一包目录下的类可见（默认修饰符）</td><td>无</td></tr><tr><td>internal</td><td>无</td><td>同一模块下的类可见</td></tr></tbody></table><h2 id="Class-对象引用">Class 对象引用</h2><table><thead><tr><th>语言</th><th>实例的Class对象</th><th>类的Class对象</th></tr></thead><tbody><tr><td>Kotlin</td><td>javaclass</td><td>类名::class.java</td></tr><tr><td>Java</td><td>(this).getclass()</td><td>类名.class</td></tr></tbody></table>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+          <category> 语言 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>技术/笔记/第一行代码 Android（第三版）读书笔记</title>
+      <link href="/posts/37a431d8/"/>
+      <url>/posts/37a431d8/</url>
+      
+        <content type="html"><![CDATA[<h1>第一行代码 Android（第三版）读书笔记</h1><h2 id="第一章-开启征程（概要）">第一章 开启征程（概要）</h2><ul><li>项目结构与目录：page 17 - page 19</li><li>Log 方法与 Logcat 的完美结合</li></ul><h2 id="第二章-Kotlin-语法糖">第二章 Kotlin 语法糖</h2><blockquote><p>同《Kotlin 学习笔记》一同食用效果最佳</p></blockquote><ul><li>《第一行》中出现的 Kotlin 特性预览表</li></ul><table><thead><tr><th style="text-align:center">主次构造函数</th><th style="text-align:center">参数默认值</th><th style="text-align:center">键值对传参</th><th style="text-align:center">字符串内嵌表达式</th></tr></thead><tbody><tr><td style="text-align:center">init {}, constructor () {}</td><td style="text-align:center">fun xxx(str: String = “”) {…}</td><td style="text-align:center">xxx(str = “…”)</td><td style="text-align:center">“${value}”</td></tr></tbody></table><table><thead><tr><th style="text-align:center">let 函数式 API</th><th style="text-align:center">Lambda 表达式</th><th style="text-align:center">空指针检查</th><th style="text-align:center">函数式 API</th></tr></thead><tbody><tr><td style="text-align:center">obj.let {obj2 -&gt; …}</td><td style="text-align:center">{para -&gt; …}, {it.toString()}</td><td style="text-align:center">?   ?.   !!.   ?:</td><td style="text-align:center">map.maxby {} //Lambda表达式</td></tr></tbody></table><table><thead><tr><th style="text-align:center">容器初始化</th><th style="text-align:center">数据类</th><th style="text-align:center">单例类</th><th style="text-align:center">循环遍历</th></tr></thead><tbody><tr><td style="text-align:center">listOf(), mapOf(), setOf()</td><td style="text-align:center">data</td><td style="text-align:center">object</td><td style="text-align:center">for-in, until, downTo, step, l…r, 容器遍历</td></tr></tbody></table><table><thead><tr><th style="text-align:center">分支控制</th><th style="text-align:center">条件控制</th><th style="text-align:center">“不变为先”</th><th style="text-align:center">访问控制</th></tr></thead><tbody><tr><td style="text-align:center">when () {… -&gt; …}, if-else 语句/表达式</td><td style="text-align:center">is (instanceof), else</td><td style="text-align:center">val, var, open class</td><td style="text-align:center">“public by default”</td></tr></tbody></table><h2 id="第三章-Activity！所见即所得">第三章 Activity！所见即所得</h2><ul><li><p>创建 Activity</p><ul><li>创建和加载布局文件 layout</li><li>在 AndroidManifest.xml 中注册Activity</li><li>编写 Activity.kt 代码 （事件绑定，方法重写等）</li></ul></li><li><p>Activity 通信与切换</p><ul><li>Intent 类<ul><li>显式切换：<code>Intent(上下文, 指定Activity 的 Class 类)</code></li><li>隐式切换：指定 <code>action</code> <code>category</code>，目标将会按照注册信息中的过滤条件响应 intent。<ul><li>过滤条件：<code>&lt;category&gt; &lt;action&gt; &lt;data&gt;</code></li></ul></li><li>传参：<code>.putExtra(), .getStringExtra()</code></li><li>启动方式：<code>startActivity() //普通启动</code> <code>startActivityForResult() //请求结果</code></li></ul></li><li>Activity 类 Result 结果<ul><li>设置结果：<code>setResult()</code></li><li>取回结果：<code>override onActivityResult()</code></li></ul></li><li>Bundle 类</li><li>团队合作时用<strong>伴生类</strong>“静态方法”来启动</li></ul></li><li><p>Activity 生命周期</p><ul><li><p>返回栈</p></li><li><p>思维导图</p></li></ul></li></ul><p><img src="C:%5CUsers%5C86173%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200529100001541.png" alt="image-20200529100001541"></p><ul><li>保存信息<ul><li>Bundle 类型</li><li><code>onSaveInstanceState()</code>，<code>var savedInstanceState</code></li></ul></li><li>Activity 启动模式<ul><li>standard 无检查，直接压栈</li><li>singleTop 检查栈顶</li><li>singleTask 解栈恢复</li><li>singleInstance 创建新栈</li></ul></li></ul><h2 id="第四章-UI！！-门面功夫">第四章 UI！！ 门面功夫 :-)</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Android </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>技术/语言/LatexTikz</title>
+      <link href="/posts/9b17222d/"/>
+      <url>/posts/9b17222d/</url>
+      
+        <content type="html"><![CDATA[<h1>Tikz 绘图学习笔记</h1><blockquote><p>注意事项: \begin{tikzpicture} 环境下每一行命令结尾都要加分号;</p><p>\node, \coordinate, \draw 语法参考：<a href="https://zhuanlan.zhihu.com/p/84943429">https://zhuanlan.zhihu.com/p/84943429</a></p></blockquote><h2 id="node-描点-coordinate-拟点-draw-画线-fill-填充">\node 描点, \coordinate 拟点, \draw 画线, \fill 填充</h2><ul><li>参考网站:<ul><li>路径与坐标：<a href="https://www.latexstudio.net/archives/51602.html">https://www.latexstudio.net/archives/51602.html</a></li><li>node 控制：<a href="https://www.latexstudio.net/archives/51617.html">https://www.latexstudio.net/archives/51617.html</a></li><li>线条控制: <a href="https://www.latexstudio.net/archives/51622.html">https://www.latexstudio.net/archives/51622.html</a></li></ul></li><li>示例代码:</li></ul><pre><code class="language-latex">\node at (A)[circle,fill,inner sep=1pt]{};%        点名          属性              </code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+          <category> 语言 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>技术/语言/Kotlin</title>
+      <link href="/posts/ec3dabc7/"/>
+      <url>/posts/ec3dabc7/</url>
+      
+        <content type="html"><![CDATA[<h1>Kotlin 学习笔记</h1><ul><li>Kotlin 可以编译成Java字节码，也可以编译成 JavaScript，方便在没有 JVM 的设备上运行。</li><li>kotlin源文件不需要相匹配的目录和包，源文件可以放在任何文件目录。</li><li>$a 和 ${a.func()}我是真没话说。</li><li>完善的NULL检查机制 “!!, ?, ?:”（当一个引用可能为 null 值时, 对应的类型声明必须明确地标记为可为 null。方法是： “Type后 + ？”）</li><li>玩转for循环：可以方便的指定遍历的步长，范围。（ …, step, downTo, in, until)</li><li>Kotlin 的基本数值类型包括 Byte、Short、Int、Long、Float、Double 等。<strong>不同于 Java 的是，字符==不属于==数值类型</strong>，是一个独立的数据类型。</li><li>支持二进制字面量，数值类型混入下划线增加语义性。</li><li>有些时候较小类型不会隐式转换成较大类型，需要手动调用 .toXXX() 来进行显示的类型转换。</li><li>和 <em>golang</em> 一样少了分号（这就是语法糖吗i了i了</li><li>if-else 语句与when语句等可以视为 ==表达式==（可赋值</li><li>when 与 -&gt; 符号构成强大的分支控制。</li><li>完全抛弃<em>基本数据类型</em>改用<em>对象数据类型</em>“。</li><li>“fun xxx() = xxx” 这个语法糖结合 if else, when 等特性可以打出漂亮的组合拳。</li><li>class 继承的时候对继承的父类后面<em>一般</em>要加括号（因为 java 继承中必调用父类构造函数）且此构造函数必调用著构造函数。</li><li>Java 与 Kotlin 访问修饰符对照表</li></ul><table><thead><tr><th>修饰符</th><th>Java</th><th>Kotlin</th></tr></thead><tbody><tr><td>pubilc</td><td>所有类可见</td><td>所有类可见（默认修饰符）</td></tr><tr><td>private</td><td>当前类可见</td><td>当前类可见</td></tr><tr><td>protected</td><td>当前类，子类，同意包路径下的类可见</td><td>当前类，子类可见</td></tr><tr><td>default</td><td>同一包目录下的类可见（默认修饰符）</td><td>无</td></tr><tr><td>internal</td><td>无</td><td>同一模块下的类可见</td></tr></tbody></table><ul><li><p>语法糖: 原生支持数据类、单例类 （自动完成 toString(), hashCode(), equals() 等方法）</p><ul><li><p>Java 数据类代码示例</p></li><li><pre><code class="language-java">public class Cellphone {    String brand;    double price;    public Cellphone(String brand, double price) {        this.brand = brand;        this.price = price;    }    @Override    public boolean equals(Object obj) {        if (obj instanceof Cellphone) {            Cellphone other = (Cellphone) obj;            return other.brand.equals(brand) &amp;&amp; other.price == price;        }        return false;    }    @Override    public int hashCode() {        return brand.hashCode() + (int) price;    }    @Override    public String toString() {        return &quot;Cellphone(brand=&quot; + brand + &quot;, price=&quot; + price + &quot;)&quot;;    }}</code></pre></li><li><p>Kotlin 数据类代码示例</p></li><li><pre><code class="language-kotlin">data class Cellphone(val brand: String, val price: Double)//加一个data即可</code></pre></li><li><p>Java 单例类代码示例</p></li><li><pre><code class="language-java">public class Singleton {    private static Singleton instance;    private Singleton() {}    public synchronized static Singleton getInstance() {        if (instance == null) {            instance = new Singleton();        }        return instance;    }    public void singletonTest() {        System.out.println(&quot;singletonTest is called.&quot;);    }}</code></pre></li><li><p>Kotlin 单例类代码示例</p></li><li><pre><code class="language-kotlin">object Singleton {//只需要用object代替class即可    fun singletonTest() {        println(&quot;singletonTest is called.&quot;)    }//这里相当于一个静态方法}</code></pre></li></ul></li><li><p>Kotlin class 类</p></li></ul><table><thead><tr><th>语言</th><th>实例的Class对象</th><th>类的Class对象</th></tr></thead><tbody><tr><td>Kotlin</td><td>javaclass</td><td>类名::class.java</td></tr><tr><td>Java</td><td>(this).getclass()</td><td>类名.class</td></tr></tbody></table><ul><li><p>Kotlin 标准函数</p><ul><li><p>一系列定义于 Standard.kt 里的函数</p></li><li><p>参照表</p></li></ul></li></ul><table><thead><tr><th>函数</th><th>特点</th><th>代码段</th></tr></thead><tbody><tr><td><code>let()</code></td><td>调用let的对象作为Lamda的<strong>参数</strong>，返回最后一行</td><td><code>obj.let {(obj2 -&gt;) //obj2是obj}</code></td></tr><tr><td><code>with()</code></td><td>传入对象作为Lambda的上下文，返回最后一行</td><td><code>with(obj) {//obj上下文}</code></td></tr><tr><td><code>run()</code></td><td>调用run的对象作为Lamda的上下文，返回最后一行</td><td><code>obj.run {//obj上下文}</code></td></tr><tr><td><code>apply()</code></td><td>调用apply的对象作为Lamda的上下文，<strong>返回原对象</strong></td><td><code>obj.apply {//obj上下文}</code></td></tr></tbody></table><ul><li>Kotlin “静态方法调用”<ul><li>单例类 <code>objetc {}</code></li><li>伴生类 <code>companion object {}</code></li><li>顶层方法 <code>fun xxx()</code>，可以被任意Kotlin代码直接调用，<em>文件名作为类还可以用于java静态方法调用</em></li><li><code>@JvmStatic</code> 注释，<em>只能加注在单例类方法或伴生类方法上，使其编译成java静态方法</em></li></ul></li><li></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+          <category> 语言 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>技术/语言/JavaLearning</title>
+      <link href="/posts/6374ed46/"/>
+      <url>/posts/6374ed46/</url>
+      
+        <content type="html"><![CDATA[<h1>2020-4-28</h1><ul><li><p>content: 对象与类，基本数据类型</p></li><li><p>int a, b; 则“a=b”表达式为int类型，不会自动转化为boolean类型</p></li><li><p>Java 的匿名内部类</p><ul><li><pre><code class="language-java">//定义语法new 父类构造器（实参列表) | 实现接口()//必须继承一个父类或接口{      //匿名内部类的类体部分}/** * 规范： *匿名类的声明是由java编译器自动派生自一个类实例创建表达式。 *匿名类永远不能是抽象的。 *匿名类总是隐式的final。 *匿名类总是一个内部类；并且不能是static的。 */</code></pre></li><li><p><strong>注意</strong>：</p><ol><li>使用匿名内部类时，我们必须是继承一个类或者实现一个接口，但是两者不可兼得，同时也只能继承一个类或者实现一个接口。</li><li>匿名内部类中是不能定义构造函数的。</li><li>匿名内部类中不能存在任何的静态成员变量和静态方法。</li><li>匿名内部类为局部内部类，所以局部内部类的所有限制同样对匿名内部类生效。</li><li>匿名内部类不能是抽象的，它必须要实现继承的类或者实现的接口的所有抽象方法。</li></ol></li><li><p>内部类的class文件命名是：主类＋$＋内部类名</p></li><li><p>匿名类的class文件命名是：主类＋$＋(1,2,3…)</p></li></ul></li><li><p>class 对象</p><ul><li>获取方式：有三种获得Class对象的方式：<ol><li>Class.forName(“类的全限定名”)</li><li>实例对象.getClass()</li><li>类名.class （类字面常量）</li></ol></li><li>每个类的运行时的<strong>类型信息</strong>就是用Class对象表示的</li></ul></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+          <category> 语言 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>技术/工具/IDEA 学习笔记</title>
+      <link href="/posts/5a1e79ff/"/>
+      <url>/posts/5a1e79ff/</url>
+      
+        <content type="html"><![CDATA[<h1>IDEA基础功能概览：</h1><ul><li><p>shortcut(edit, 代码片段, 功能), 版本控制(VCS: git, github, local history)</p></li><li><p>Debug, javadoc generator, database, web deployment</p></li><li><p>project&amp;module 等概念, 模板, 项目结构查询管理</p></li></ul><h1>Tips</h1><ul><li>代码段：main</li><li>sout标准输出</li><li>soutv输出变量，soutm输出方法名，soutp输出命令行参数</li><li>变量名.sout输出变量</li><li>iter增强型for循环</li><li>引用名.for 迭代指定引用类型</li><li>实例名.fori顺序遍历 xxx.forr倒序遍历</li><li>ifn --“if xxx is null”, inn --“if not null”</li><li>xxx.nn, xxx.ifn</li><li>JavaLea</li><li>条件断点 --右键断点处</li><li>ctrl+u 查看表达式的值</li><li>Tools javadoc generator:</li><li>Local: zh_CN; Other command line args: encoding UTF-8 -charset UTF-8</li><li>IDE 常用快捷键对照表（原始来源: <a href="https://www.jianshu.com/p/6267a7d76018">https://www.jianshu.com/p/6267a7d76018</a> )</li></ul><table><thead><tr><th>操作</th><th>eclipse</th><th>IDEA</th><th>Visual Studio Code</th><th>Sublime</th></tr></thead><tbody><tr><td><strong>编辑 Editing</strong></td><td></td><td></td><td></td><td></td></tr><tr><td>格式化代码 Format Code</td><td><code>Ctrl+Shift+F</code></td><td><code>Ctrl+Shift+L</code></td><td><code>Shift+Alt+F</code></td><td>无</td></tr><tr><td>删除行 Delete Line</td><td><code>Ctrl+D</code></td><td><code>Ctrl+Y</code></td><td><code>Ctrl+Shift+K</code></td><td><code>Ctrl+Shift+K</code></td></tr><tr><td>复制行 Copy Line</td><td></td><td><code>Ctrl+C</code></td><td><code>Ctrl+C</code></td><td><code>Ctrl+C</code></td></tr><tr><td>剪切行 Cut Line</td><td></td><td><code>Ctrl+X</code></td><td><code>Ctrl+X</code></td><td><code>Ctrl+X</code></td></tr><tr><td>重复行 Duplicate Line</td><td><code>Ctrl+Shift+Up/Down</code></td><td><code>Ctrl+D</code></td><td><code>Alt+Shift+Up/Down</code></td><td><code>Ctrl+Shift+D</code></td></tr><tr><td>移动行 Move Line</td><td><code>Alt+Up/Down</code></td><td><code>Alt+Shift+Up/Down</code></td><td><code>Alt+Up/Down</code></td><td><code>Ctrl+Shift+Up/Down</code></td></tr><tr><td>换行 New Line</td><td><code>Shift+Enter</code></td><td><code>Shift+Enter</code></td><td><code>Shift+Enter</code></td><td><code>Ctrl+Enter</code></td></tr><tr><td>插入上行 Insert Line Above</td><td><code>Ctrl+Shift+Enter</code></td><td><code>Ctrl+Alt+Enter</code></td><td><code>Ctrl+Shift+Enter</code></td><td><code>Ctrl+Shift+Enter</code></td></tr><tr><td>注释 Comment</td><td><code>Ctrl+/</code></td><td><code>Ctrl+/</code></td><td><code>Ctrl+/</code></td><td><code>Ctrl+/</code></td></tr><tr><td>块注释 Block Comment</td><td><code>Ctrl+Shift+/</code> <code>Ctrl+Shift+\</code></td><td><code>Ctrl+Shift+/</code></td><td></td><td><code>Ctrl+Shift+/</code></td></tr><tr><td>选择块 Block Selection</td><td><code>Alt+Shift+Up/Down</code></td><td><code>Ctrl+W</code> <code>Ctrl+Shift+W</code></td><td><code>Alt+Shift+Right/Left</code></td><td></td></tr><tr><td>优化导包 Optimize Imports</td><td><code>Ctrl+Shift+O</code></td><td><code>Ctrl+Alt+O</code></td><td></td><td></td></tr><tr><td>代码提示 Code Assist</td><td><code>Alt+/</code></td><td><code>Ctrl+Space</code> <code>Ctrl+Shift+Space</code></td><td></td><td></td></tr><tr><td>代码补全 Code Completion</td><td><code>Ctrl+Alt+/</code><br />比较low</td><td><code>Ctrl+Shift+Enter</code></td><td></td><td></td></tr><tr><td>快速修复 Quick Fix</td><td><code>Ctrl+1</code></td><td><code>Alt+Enter</code></td><td></td><td></td></tr><tr><td>Quick Access</td><td><code>Ctrl+3</code></td><td><code>Double Shift</code></td><td></td><td></td></tr><tr><td>参数信息 Parameter Info</td><td><code>Alt+Shift+/</code><br />还不如 <code>Alt+/</code></td><td><code>Ctrl+P</code></td><td></td><td></td></tr><tr><td>查看API文档 Quick Document</td><td></td><td><code>Ctrl+Q</code></td><td></td><td></td></tr><tr><td>新建文件 New File</td><td><code>Alt+Shift+N</code> <code>Ctrl+N</code></td><td></td><td></td><td></td></tr><tr><td>激活编辑器 Active Editor</td><td><code>F12</code></td><td><code>Esc</code></td><td></td><td></td></tr><tr><td>全部小写</td><td><code>Ctrl+Shift+Y</code></td><td></td><td></td><td></td></tr><tr><td>全部大写</td><td><code>Ctrl+Shift+X</code></td><td></td><td></td><td></td></tr><tr><td><strong>导航 Navigation</strong></td><td></td><td></td><td></td><td></td></tr><tr><td>上/下一个Tab</td><td><code>Ctrl+PgUp/PgDn</code></td><td><code>Alt+Left/Right</code></td><td><code>Ctrl+PgUp/PgDn</code></td><td></td></tr><tr><td>上/下一个</td><td><code>Alt+Left/Right</code></td><td><code>Ctrl+Alt+Left/Right</code></td><td></td><td></td></tr><tr><td>上一处修改的地方</td><td><code>Ctrl+Q</code></td><td><code>Ctrl+Shift+Backspace</code></td><td></td><td></td></tr><tr><td>跳转到行 Go To Line</td><td><code>Ctrl+L</code></td><td><code>Ctrl+G</code></td><td></td><td></td></tr><tr><td>大纲/结构 Outline/Structure</td><td><code>Ctrl+O</code></td><td><code>Ctrl+F12</code></td><td></td><td></td></tr><tr><td>查看类层级 Type Hierarchy</td><td><code>Ctrl+T</code></td><td></td><td></td><td></td></tr><tr><td>查看最近文件 Recent File</td><td><code>Ctrl+E</code> <code>Ctrl+F6</code></td><td><code>Ctrl+E</code></td><td></td><td></td></tr><tr><td>跳到文件 Go To File</td><td><code>Ctrl+Shift+N</code></td><td></td><td></td><td></td></tr><tr><td>切换视图 Switch View</td><td><code>Ctrl+F7</code></td><td></td><td></td><td></td></tr><tr><td><strong>重构 Refator</strong></td><td></td><td></td><td></td><td></td></tr><tr><td>重命名 Rename</td><td><code>Alt+Shift+R</code></td><td><code>Shift+F6</code></td><td></td><td></td></tr><tr><td>提取变量 Extract Variable</td><td><code>Alt+Shift+L</code></td><td></td><td></td><td></td></tr><tr><td>提取方法 Extract Method</td><td><code>Alt+Shift+M</code></td><td></td><td></td><td></td></tr><tr><td><strong>搜索 Find</strong></td><td></td><td></td><td></td><td></td></tr><tr><td>查找下一个</td><td><code>Ctrl+K</code></td><td></td><td></td><td></td></tr><tr><td>查找上一个</td><td><code>Ctrl+Shfit+K</code></td><td></td><td></td><td></td></tr><tr><td>全局搜索</td><td><code>Ctrl+H</code></td><td></td><td></td><td></td></tr></tbody></table>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+          <category> 工具 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>技术/备忘/小技巧手册</title>
+      <link href="/posts/fac7f463/"/>
+      <url>/posts/fac7f463/</url>
+      
+        <content type="html"><![CDATA[<h1>每天一个避坑小技巧</h1><ul><li>解决网站元素（例如图片）加载不出来的方法<ol><li>浏览器下审查该元素的URL地址，然后在搜索他的域名对应的地址（<a href="https://tools.ipip.net/domain.php%EF%BC%89">https://tools.ipip.net/domain.php）</a></li><li>将域名解析 “<a href="http://xxx.xxx.xxx.xxx">xxx.xxx.xxx.xxx</a> 域名” 加入到hosts文件中（一般在 %SystemRoot%\system32\drivers\etc\ 目录下）</li><li>cmd 下 ipconfig \flushdns 刷新试试</li><li>刷新浏览器查看效果</li></ol></li><li>SSR 解决端口占用问题：<ul><li>法一：在 SSR 选项设置里改变端口</li><li>法二：taskkill /pid xxx -f</li></ul></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+          <category> 备忘 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>技术/备忘/IDE&amp;Editor Shortcuts Query</title>
+      <link href="/posts/fde8aecf/"/>
+      <url>/posts/fde8aecf/</url>
+      
+        <content type="html"><![CDATA[<h1>各大 IDE &amp; Editor 快捷键对照表</h1><table><thead><tr><th>操作</th><th>IntelliJ IDEA</th><th>Visual Studio Code</th><th>Visual Studio</th></tr></thead><tbody><tr><td><strong>编辑 Editing</strong></td><td></td><td></td><td></td></tr><tr><td>格式化代码 Format Code</td><td><code>Ctrl+Shift+L</code></td><td><code>Shift+Alt+F</code></td><td></td></tr><tr><td>删除行 Delete Line</td><td><code>Ctrl+Y</code></td><td><code>Ctrl+Shift+K</code></td><td></td></tr><tr><td>选中行 Select Line</td><td></td><td><code>Ctrl+L</code></td><td></td></tr><tr><td>复制行 Copy Line</td><td><code>Ctrl+C</code></td><td><code>Ctrl+C</code></td><td></td></tr><tr><td>剪切行 Cut Line</td><td><code>Ctrl+X</code></td><td><code>Ctrl+X</code></td><td></td></tr><tr><td>重复行 Duplicate Line</td><td><code>Ctrl+D</code></td><td><code>Alt+Shift+Up/Down</code></td><td></td></tr><tr><td>移动行 Move Line</td><td><code>Alt+Shift+Up/Down</code></td><td><code>Alt+Up/Down</code></td><td></td></tr><tr><td>换行 New Line</td><td><code>Shift+Enter</code></td><td><code>Shift+Enter</code></td><td></td></tr><tr><td>插入上行 Insert Line Above</td><td><code>Ctrl+Alt+Enter</code></td><td><code>Ctrl+Shift+Enter</code></td><td></td></tr><tr><td>注释 Comment</td><td><code>Ctrl+/</code></td><td><code>Ctrl+/</code></td><td></td></tr><tr><td>块注释 Block Comment</td><td><code>Ctrl+Shift+/</code></td><td><code>Ctrl+Shift+/</code></td><td></td></tr><tr><td>选择块 Block Selection</td><td><code>Ctrl+W</code> <code>Ctrl+Shift+W</code></td><td><code>Alt+Shift+Right/Left</code></td><td></td></tr><tr><td>选择相同内容</td><td><code>Alt+J</code></td><td><code>Ctrl+D</code></td><td></td></tr><tr><td>优化导包 Optimize Imports</td><td><code>Ctrl+Alt+O</code></td><td></td><td></td></tr><tr><td>代码提示 Code Assist</td><td><code>Ctrl+Space</code> <code>Ctrl+Shift+Space</code></td><td></td><td></td></tr><tr><td>代码补全 Code Completion</td><td><code>Ctrl+Shift+Enter</code></td><td></td><td></td></tr><tr><td>快速修复 Quick Fix</td><td><code>Alt+Enter</code></td><td></td><td></td></tr><tr><td>Quick Access</td><td><code>Double Shift</code></td><td></td><td></td></tr><tr><td>参数信息 Parameter Info</td><td><code>Ctrl+P</code></td><td></td><td></td></tr><tr><td>查看API文档 Quick Document</td><td><code>Ctrl+Q</code></td><td></td><td></td></tr><tr><td>新建文件 New File</td><td></td><td><code>Ctrl+N</code></td><td></td></tr><tr><td>激活编辑器 Active Editor</td><td><code>Esc</code></td><td></td><td></td></tr><tr><td>全部小写</td><td></td><td></td><td></td></tr><tr><td>全部大写</td><td></td><td></td><td></td></tr><tr><td><strong>导航 Navigation</strong></td><td></td><td></td><td></td></tr><tr><td>上/下一个Tab</td><td><code>Alt+Left/Right</code></td><td><code>Ctrl+PgUp/PgDn</code></td><td></td></tr><tr><td>上/下一个</td><td><code>Ctrl+Alt+Left/Right</code></td><td></td><td></td></tr><tr><td>上一处修改的地方</td><td><code>Ctrl+Shift+Backspace</code></td><td></td><td></td></tr><tr><td>跳转到行 Go To Line</td><td><code>Ctrl+G</code></td><td><code>Ctrl+G</code></td><td></td></tr><tr><td>大纲/结构 Outline/Structure</td><td><code>Ctrl+F12</code></td><td></td><td></td></tr><tr><td>查看类层级 Type Hierarchy</td><td></td><td></td><td></td></tr><tr><td>查看最近文件 Recent File</td><td><code>Ctrl+E</code></td><td></td><td></td></tr><tr><td>跳到文件 Go To File</td><td></td><td></td><td></td></tr><tr><td>切换视图 Switch View</td><td></td><td></td><td></td></tr><tr><td><strong>重构 Refator</strong></td><td></td><td></td><td></td></tr><tr><td>重命名 Rename</td><td><code>Shift+F6</code></td><td></td><td></td></tr><tr><td>提取变量 Extract Variable</td><td></td><td></td><td></td></tr><tr><td>提取方法 Extract Method</td><td></td><td></td><td></td></tr><tr><td><strong>搜索 Find</strong></td><td></td><td></td><td></td></tr><tr><td>查找 Find</td><td><code>Ctrl+F</code> <code>Ctrl+L</code></td><td><code>Ctrl+F</code></td><td></td></tr><tr><td>查找下一个</td><td></td><td></td><td></td></tr><tr><td>查找上一个</td><td></td><td></td><td></td></tr><tr><td>全局搜索</td><td></td><td></td><td></td></tr></tbody></table>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+          <category> 备忘 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>技术/备忘/CMD 指令备忘</title>
+      <link href="/posts/369ceeb5/"/>
+      <url>/posts/369ceeb5/</url>
+      
+        <content type="html"><![CDATA[<h1>CMD 指令备忘</h1><ul><li>Process 类<ul><li>tasklist 列出所有进程</li><li>taskkill /pid xxx -f 杀死指定id process</li></ul></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+          <category> 备忘 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello</title>
+      <link href="/posts/f7d18982/"/>
+      <url>/posts/f7d18982/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>杂项/DiscreteMathematicNote</title>
+      <link href="/posts/b8e16674/"/>
+      <url>/posts/b8e16674/</url>
+      
+        <content type="html"><![CDATA[<h1>Discrete MatheMatic Note 离散数学笔记</h1><p>Author: BAIDI<br>Date: from 2020-2-19</p><h2 id="1-Logic-and-Proofs-逻辑和证明">1 Logic and Proofs 逻辑和证明</h2><h3 id="1-1-Propositional-Logic">1.1 Propositional Logic</h3><ul><li>connectives 逻辑联结词<br>negation<br>conjunction(合取) disjunction(析取) --inclusive/exclusive …<br>conditional statement/biconditional statement</li></ul><h3 id="1-2-Applications-of-Propositional-Logic">1.2 Applications of Propositional Logic</h3><ol><li>System Specification 系统规范说明</li><li>Boolean Logic 布尔逻辑</li><li>Logic Puzzles 逻辑谜题</li><li>Logic Circuits 逻辑电路</li></ol><h3 id="1-3-Propositional-Equivalences">1.3 Propositional Equivalences</h3><ol><li>tautology, contradiction, contingency</li><li>logically equivalent ≡ ⇔</li><li>Law</li></ol><ul><li>De Morgan’s Law<br>¬(p ∧ q) ≡ ¬p ∨ ¬q<br>¬(p ∨ q) ≡ ¬p ∧ ¬q</li><li>other Law(check relative table)<br>¬p ∨ q and p → q</li><li>Distribute Law<br>p ∨ (q ∧ r) ≡ (p ∨ q) ∧ (p ∨ r)</li></ul><ol start="4"><li>Law’s extension</li><li>Law’s application</li><li>Proposition’s Satisfiability and Problem’s Solution</li><li>Soduka Puzzle’s solution</li></ol><h3 id="1-4-Predicates-and-Quantifiers-谓词和量词">1.4 Predicates and Quantifiers 谓词和量词</h3><h4 id="Predicates-谓词">Predicates 谓词</h4><blockquote><p>basic notion:Propositional function P (命题函数P)<br>n-place / n-ary predicates (n位/元谓词) 包含多个变量的谓词<br>P(x1, x2…xn) --谓词+变量=命题<br>Application–verify the correctness of a programme:<br>Precondition(input) &amp; Postcondition(output expected) (前置条件 &amp; 后置条件）</p></blockquote><h4 id="Quantifiers-量词">Quantifiers 量词</h4><p>Notions:</p><ol><li>Quantification 量化</li><li>Universal quantifier 全称量词</li><li>domain: domain of discourse 论域(universe of discouse 全体域)</li><li>counterexample 反例</li><li>Existential quantifier 存在量词</li><li>Precedence 优先级</li><li>Resticted Domains 约束域 (约束域和条件，合取的等价关系)</li><li>bound (被赋值或被量词联结）-绑定 scope -作用域 free -自由(未绑定的变量)</li></ol><h4 id="Logic-Equivalences-Involving-Quantifiers">Logic Equivalences Involving Quantifiers</h4><p>Notions:</p><ol><li>comma 逗号</li><li>Prolog --programming in logic</li><li>Prolog fact / Prolog rule</li><li>semicolon 分号</li></ol><h3 id="Nested-Quantifiers-嵌套变量">Nested Quantifiers 嵌套变量</h3><h3 id="Rules-of-inference-推理规则">Rules of inference 推理规则</h3><ul><li>argument 论证</li><li>valid 有效性</li><li>premise 前提</li><li>fallacy 谬误</li><li>argument form 推理形式</li><li>modus ponens 假言推理 （law of detachment 分离规则）</li><li>hypothesis 假设</li><li>syllogism 三段论</li><li>contrapositive 逆否命题</li><li>instantiation 实例</li><li>arbitrary 任意的</li></ul><h3 id="Itroduction-to-Proofs">Itroduction to Proofs</h3><ul><li>theorem 定理 axiom 公理 lemmma 引理</li><li>corollary 推论 conjecture 猜想</li><li>vacuous proof 空证明</li><li>trivial proof 平凡证明</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂项 </category>
+          
+      </categories>
       
       
     </entry>

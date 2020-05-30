@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://baidi-coder.github.io/"/>
-  <updated>2020-05-29T06:35:45.892Z</updated>
+  <updated>2020-05-30T00:48:39.768Z</updated>
   <id>https://baidi-coder.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://baidi-coder.github.io/2020/05/29/hello-world/"/>
-    <id>https://baidi-coder.github.io/2020/05/29/hello-world/</id>
-    <published>2020-05-29T06:35:45.891Z</published>
-    <updated>2020-05-29T06:35:45.892Z</updated>
+    <title>技术/AndroidLearning</title>
+    <link href="https://baidi-coder.github.io/posts/fae5c3cd/"/>
+    <id>https://baidi-coder.github.io/posts/fae5c3cd/</id>
+    <published>2020-05-30T00:47:01.881Z</published>
+    <updated>2020-05-30T00:48:39.768Z</updated>
     
     <summary type="html">
     
@@ -29,12 +29,380 @@
       
         
         
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+          &lt;h1&gt;Android Studio 入坑笔记&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Android Studio 自动创建 resource id 失败
+&lt;ul&gt;
+&lt;li&gt;重启 AS。&lt;/li&gt;
+&lt;li&gt;Sync with file system 同步一下？&lt;/li&gt;
+&lt;li&gt;查看
         
       
     
     </summary>
     
+    
+      <category term="技术" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>杂项/Ideas</title>
+    <link href="https://baidi-coder.github.io/posts/853a41fd/"/>
+    <id>https://baidi-coder.github.io/posts/853a41fd/</id>
+    <published>2020-05-30T00:46:43.782Z</published>
+    <updated>2020-05-30T00:48:39.764Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1&gt;Williams’s Fantastic Ideas&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Github 有一个叫做 &lt;strong&gt;app ideas&lt;/strong&gt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="杂项" scheme="https://baidi-coder.github.io/categories/%E6%9D%82%E9%A1%B9/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>技术/语言/Java&amp;Kotlin语法对照</title>
+    <link href="https://baidi-coder.github.io/posts/7a368ad4/"/>
+    <id>https://baidi-coder.github.io/posts/7a368ad4/</id>
+    <published>2020-05-30T00:46:29.240Z</published>
+    <updated>2020-05-30T03:35:04.920Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1&gt;Java &amp;amp; Kotlin 的语法片段对照&lt;/h1&gt;
+&lt;h2 id=&quot;函数式-API&quot;&gt;函数式 API&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Java&lt;/p&gt;
+&lt;pre&gt;&lt;code
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="语言" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>技术/笔记/第一行代码 Android（第三版）读书笔记</title>
+    <link href="https://baidi-coder.github.io/posts/37a431d8/"/>
+    <id>https://baidi-coder.github.io/posts/37a431d8/</id>
+    <published>2020-05-30T00:46:16.396Z</published>
+    <updated>2020-05-30T01:50:03.062Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1&gt;第一行代码 Android（第三版）读书笔记&lt;/h1&gt;
+&lt;h2 id=&quot;第一章-开启征程（概要）&quot;&gt;第一章 开启征程（概要）&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;项目结构与目录：page 17 - page 19&lt;/li&gt;
+&lt;li&gt;Log 方法与 Logcat
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="笔记" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="Android" scheme="https://baidi-coder.github.io/tags/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>技术/语言/LatexTikz</title>
+    <link href="https://baidi-coder.github.io/posts/9b17222d/"/>
+    <id>https://baidi-coder.github.io/posts/9b17222d/</id>
+    <published>2020-05-30T00:45:41.254Z</published>
+    <updated>2020-05-30T00:48:39.756Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1&gt;Tikz 绘图学习笔记&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注意事项: \begin{tikzpicture} 环境下每一行命令结尾都要加分号;&lt;/p&gt;
+&lt;p&gt;\node, \coordinate, \draw 语法参考：&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="语言" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>技术/语言/Kotlin</title>
+    <link href="https://baidi-coder.github.io/posts/ec3dabc7/"/>
+    <id>https://baidi-coder.github.io/posts/ec3dabc7/</id>
+    <published>2020-05-30T00:45:39.212Z</published>
+    <updated>2020-05-30T00:48:39.752Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1&gt;Kotlin 学习笔记&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Kotlin 可以编译成Java字节码，也可以编译成 JavaScript，方便在没有 JVM
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="语言" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>技术/语言/JavaLearning</title>
+    <link href="https://baidi-coder.github.io/posts/6374ed46/"/>
+    <id>https://baidi-coder.github.io/posts/6374ed46/</id>
+    <published>2020-05-30T00:45:36.071Z</published>
+    <updated>2020-05-30T00:48:39.748Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1&gt;2020-4-28&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;content: 对象与类，基本数据类型&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;int a, b; 则“a=b”表达式为int类型，不会自动转化为boolean类型&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Java
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="语言" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>技术/工具/IDEA 学习笔记</title>
+    <link href="https://baidi-coder.github.io/posts/5a1e79ff/"/>
+    <id>https://baidi-coder.github.io/posts/5a1e79ff/</id>
+    <published>2020-05-30T00:45:31.551Z</published>
+    <updated>2020-05-30T00:48:39.745Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1&gt;IDEA基础功能概览：&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;shortcut(edit, 代码片段, 功能), 版本控制(VCS: git, github, local history)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Debug, javadoc
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="工具" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>技术/备忘/小技巧手册</title>
+    <link href="https://baidi-coder.github.io/posts/fac7f463/"/>
+    <id>https://baidi-coder.github.io/posts/fac7f463/</id>
+    <published>2020-05-30T00:45:17.470Z</published>
+    <updated>2020-05-30T00:48:39.742Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1&gt;每天一个避坑小技巧&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;解决网站元素（例如图片）加载不出来的方法
+&lt;ol&gt;
+&lt;li&gt;浏览器下审查该元素的URL地址，然后在搜索他的域名对应的地址（&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="备忘" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E5%A4%87%E5%BF%98/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>技术/备忘/IDE&amp;Editor Shortcuts Query</title>
+    <link href="https://baidi-coder.github.io/posts/fde8aecf/"/>
+    <id>https://baidi-coder.github.io/posts/fde8aecf/</id>
+    <published>2020-05-30T00:45:17.467Z</published>
+    <updated>2020-05-30T00:48:39.738Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1&gt;各大 IDE &amp;amp; Editor 快捷键对照表&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;操作&lt;/th&gt;
+&lt;th&gt;IntelliJ IDEA&lt;/th&gt;
+&lt;th&gt;Visual Studio Code&lt;/th&gt;
+&lt;th&gt;Visual
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="备忘" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E5%A4%87%E5%BF%98/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>技术/备忘/CMD 指令备忘</title>
+    <link href="https://baidi-coder.github.io/posts/369ceeb5/"/>
+    <id>https://baidi-coder.github.io/posts/369ceeb5/</id>
+    <published>2020-05-30T00:45:17.465Z</published>
+    <updated>2020-05-30T00:48:39.734Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1&gt;CMD 指令备忘&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Process 类
+&lt;ul&gt;
+&lt;li&gt;tasklist 列出所有进程&lt;/li&gt;
+&lt;li&gt;taskkill /pid xxx -f 杀死指定id
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="备忘" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E5%A4%87%E5%BF%98/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello</title>
+    <link href="https://baidi-coder.github.io/posts/f7d18982/"/>
+    <id>https://baidi-coder.github.io/posts/f7d18982/</id>
+    <published>2020-05-29T23:47:12.000Z</published>
+    <updated>2020-05-30T02:02:25.781Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>杂项/DiscreteMathematicNote</title>
+    <link href="https://baidi-coder.github.io/posts/b8e16674/"/>
+    <id>https://baidi-coder.github.io/posts/b8e16674/</id>
+    <published>2020-05-13T02:58:03.823Z</published>
+    <updated>2020-05-30T00:48:39.730Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1&gt;Discrete MatheMatic Note 离散数学笔记&lt;/h1&gt;
+&lt;p&gt;Author: BAIDI&lt;br&gt;
+Date: from 2020-2-19&lt;/p&gt;
+&lt;h2 id=&quot;1-Logic-and-Proofs-逻辑和证明&quot;&gt;1 Logic and Proofs
+        
+      
+    
+    </summary>
+    
+    
+      <category term="杂项" scheme="https://baidi-coder.github.io/categories/%E6%9D%82%E9%A1%B9/"/>
     
     
   </entry>
