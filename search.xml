@@ -4,87 +4,6 @@
   
     
     <entry>
-      <title>技术/语言/C指针扫盲</title>
-      <link href="/posts/f1e4bda1/"/>
-      <url>/posts/f1e4bda1/</url>
-      
-        <content type="html"><![CDATA[<h2 id="首先看看函数指针，函数名，以及它们分别与-和-结合后的值">首先看看函数指针，函数名，以及它们分别与*和&amp;结合后的值</h2><ul><li>程序清单</li></ul><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">func</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span></span>&#123;<span class="hljs-built_in">puts</span>(<span class="hljs-string">"成功调用"</span>);&#125;;<br><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br> <span class="hljs-keyword">void</span>(*p_func)(<span class="hljs-keyword">void</span>)=func;<br> <span class="hljs-built_in">puts</span>(<span class="hljs-string">"func是函数名，p_func是指向该函数的指针，那么有:"</span>);<br> <span class="hljs-built_in">printf</span>(<span class="hljs-string">"func=%p\n*func=%p\n&amp;func=%p\</span><br><span class="hljs-string"> \np_func=%p\n*p_func=%p\</span><br><span class="hljs-string"> \n&amp;p_func=%p"</span>,func,*func,&amp;func,p_func,\<br> *p_func,&amp;p_func);<br> <br> <span class="hljs-comment">//puts("\n接着我们尝试用上述变量调用函数:");</span><br> <span class="hljs-comment">//func();</span><br> <span class="hljs-comment">//(*func)();</span><br> <span class="hljs-comment">//(&amp;func)();</span><br> <span class="hljs-comment">//(p_func)();</span><br> <span class="hljs-comment">//(*p_func)();</span><br> <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure><ul><li>执行结果<a id="more"></a></li></ul><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs c">func是函数名，p_func是指向该函数的指针，那么有:<br>func=<span class="hljs-number">004015</span>C0<br>*func=<span class="hljs-number">004015</span>C0<br>&amp;func=<span class="hljs-number">004015</span>C0<br>p_func=<span class="hljs-number">004015</span>C0<br>*p_func=<span class="hljs-number">004015</span>C0<br>&amp;p_func=<span class="hljs-number">0061F</span>ECC<br></code></pre></td></tr></table></figure><p>**可见==func==,==<em>func==,==&amp;func==,==p_func==,==<em>p_func==代表的值都是func()函数的地址</em></em> （ <em>&amp;p_func是指针的地址</em> ）</p><h2 id="再来看看将它们分别作为函数名的结果">再来看看将它们分别作为函数名的结果</h2><ul><li>程序清单</li></ul><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">func</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span></span>&#123;<span class="hljs-built_in">puts</span>(<span class="hljs-string">"成功调用"</span>);&#125;;<br><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br> <span class="hljs-keyword">void</span>(*p_func)(<span class="hljs-keyword">void</span>)=func;<br> <span class="hljs-built_in">puts</span>(<span class="hljs-string">"func是函数名，p_func是指向该函数的指针，那么有:"</span>);<br> <span class="hljs-built_in">printf</span>(<span class="hljs-string">"func=%p\n*func=%p\n&amp;func=%p\</span><br><span class="hljs-string"> \np_func=%p\n*p_func=%p\</span><br><span class="hljs-string"> \n&amp;p_func=%p"</span>,func,*func,&amp;func,p_func,\<br> *p_func,&amp;p_func);<br> <br> <span class="hljs-built_in">puts</span>(<span class="hljs-string">"\n接着我们尝试用上述变量调用函数:"</span>);<br> func();<br> (*func)();<br> (&amp;func)();<br> (p_func)();<br> (*p_func)();<br> <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure><p>==func==，==p_func==，==*p_func==，==*func==，==&amp;func==作函数名</p><ul><li>源程序</li></ul><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs c"> <span class="hljs-built_in">puts</span>(<span class="hljs-string">"\n接着我们尝试用上述变量调用函数:"</span>);<br> func();<br> (*func)();<br> (&amp;func)();<br> (p_func)();<br> (*p_func)();<br> <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure><ul><li>编译运行结果</li></ul><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs c">func是函数名，p_func是指向该函数的指针，那么有:<br>func=<span class="hljs-number">004015</span>C0<br>*func=<span class="hljs-number">004015</span>C0<br>&amp;func=<span class="hljs-number">004015</span>C0<br>p_func=<span class="hljs-number">004015</span>C0<br>*p_func=<span class="hljs-number">004015</span>C0<br>&amp;p_func=<span class="hljs-number">0061F</span>ECC<br>接着我们尝试用上述变量调用函数:<br>成功调用<br>成功调用<br>成功调用<br>成功调用<br>成功调用<br></code></pre></td></tr></table></figure><blockquote><p>可见==func==，==p_func==，==*p_func==，==*func==，==&amp;func==作函数名均可以实现函数调用</p></blockquote>]]></content>
-      
-      
-      <categories>
-          
-          <category> 技术 </category>
-          
-          <category> 语言 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> C/C++ </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>算法/回合制战斗</title>
-      <link href="/posts/aee17ffb/"/>
-      <url>/posts/aee17ffb/</url>
-      
-        <content type="html"><![CDATA[<h1>一小道C语言题带来的乐趣</h1><hr><p><strong><code> 要用游戏的玩法打败游戏的情景题!</code></strong><br>对于以下题目：<br>某游戏规则中，甲乙双方每个回合的战斗总是有一方胜利，一方失败。游戏规定：失败的一方要把自己的体力值的1/4加给胜利的一方。例如：如果双方体力值当前都是4，则经过一轮战斗后，双方的体力值会变为：5，3。现在已知：双方开始时的体力值甲：1000，乙：2000。假设战斗中，甲乙获胜的概率都是50%，求解：双方经过4个回合的战斗，体力值之差小于1000的理论概率。<br>用基础模拟算法来解决：<a id="more"></a></p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> all 16<span class="hljs-comment">//所有可能的结果数目</span></span><br><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">exchange</span><span class="hljs-params">(<span class="hljs-keyword">double</span> * x,<span class="hljs-keyword">double</span> * y)</span> <span class="hljs-comment">//x为吸收血量方 </span></span><br><span class="hljs-function"></span>&#123;<br><span class="hljs-keyword">double</span> t;<br>t=(*y)*<span class="hljs-number">0.25</span>;(*x)+=t;(*y)-=t;<br><span class="hljs-keyword">return</span> <span class="hljs-number">0</span>; <br>&#125; <br><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br><span class="hljs-keyword">int</span> js=<span class="hljs-number">0</span>;<br><span class="hljs-keyword">double</span> x=<span class="hljs-number">1000</span>,y=<span class="hljs-number">2000</span>;<br><span class="hljs-comment">//美好的游戏模拟开始了</span><br><span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>;i&lt;=<span class="hljs-number">1</span>;i++)<br>&#123;<br><span class="hljs-keyword">double</span> ax=x,ay=y;<span class="hljs-comment">//存档，防止数据丢失</span><br>i?exchange(&amp;x,&amp;y):exchange(&amp;y,&amp;x);  <span class="hljs-comment">//i判断甲（x）是否赢得一回合，并改变血条 </span><br><span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>;i&lt;=<span class="hljs-number">1</span>;i++)<br>&#123;<br><span class="hljs-keyword">double</span> bx=x,by=y;<br>i?exchange(&amp;x,&amp;y):exchange(&amp;y,&amp;x);<br><span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>;i&lt;=<span class="hljs-number">1</span>;i++)<br>&#123;<br><span class="hljs-keyword">double</span> cx=x,cy=y;<br>i?exchange(&amp;x,&amp;y):exchange(&amp;y,&amp;x);<br><span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>;i&lt;=<span class="hljs-number">1</span>;i++)<br>&#123;<br><span class="hljs-keyword">double</span> dx=x,dy=y;<br>i?exchange(&amp;x,&amp;y):exchange(&amp;y,&amp;x);<br><span class="hljs-keyword">if</span>(x-y&lt;<span class="hljs-number">1000</span>&amp;&amp;x-y&gt;<span class="hljs-number">-1000</span>) js++;<br>x=dx;y=dy; <span class="hljs-comment">//重新读档，开始下一轮模拟 </span><br>&#125;<br>x=cx;y=cy;<span class="hljs-comment">//读档，余同</span><br>&#125;<br>x=bx;y=by;<br>&#125;<br>x=ax;y=ay;<br>&#125;<br><span class="hljs-built_in">printf</span>(<span class="hljs-string">"四回合后体力值差&lt;1000的理论概率:\n%f"</span>,js*<span class="hljs-number">1.0</span>/all);<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure><p>==是不是特像打游戏刷关呢?( ^ v ^ )==</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 算法 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 题解 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>技术/语言/Golang 避坑手册</title>
-      <link href="/posts/c737d2b3/"/>
-      <url>/posts/c737d2b3/</url>
-      
-        <content type="html"><![CDATA[<ul><li><p>&quot;{&quot;的位置要注意分号无<br>多变量声明：<br>//类型相同多个变量, 非全局变量</p></li><li><p>var vname1, vname2, vname3 type</p></li><li><p>vname1, vname2, vname3 = v1, v2, v3</p></li><li><p>var vname1, vname2, vname3 = v1, v2, v3 // 和 python 很像,不需要显示声明类型，自动推断</p></li><li><p>vname1, vname2, vname3 := v1, v2, v3 // 出现在 := 左侧的变量不应该是已经被声明过的，否则会导致编译错误<a id="more"></a></p></li></ul><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs go"><span class="hljs-comment">// 这种因式分解关键字的写法一般用于声明全局变量</span><br><span class="hljs-keyword">var</span> (<br>    vname1 v_type1<br>    vname2 v_type2<br>)<br></code></pre></td></tr></table></figure><ul><li><p>默认值</p></li><li><p>并行特性：多个返回值，并行赋值</p></li><li><p>常量可以用len(), cap(), unsafe.Sizeof()函数计算表达式的值。常量表达式中，函数必须是内置函数，否则编译不过：</p></li><li><p>a = a++ // 这是不允许的，会出现变异错误 syntax error: unexpected ++ at end of statement</p></li><li><p>! Go 的自增，自减只能作为表达式使用，而不能用于赋值语句。</p></li><li><p>for each range loop</p></li><li><p>!!! 函数闭包（同一个被赋予闭包函数的函数每次调用都会将匿名函数内的局部变量记忆下来）</p></li></ul><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs go"><span class="hljs-keyword">package</span> main<br><span class="hljs-keyword">import</span> <span class="hljs-string">"fmt"</span><br><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> &#123;<br>    add_func := add(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>)<br>    fmt.Println(add_func(<span class="hljs-number">1</span>,<span class="hljs-number">1</span>))<br>    fmt.Println(add_func(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>))<br>    fmt.Println(add_func(<span class="hljs-number">2</span>,<span class="hljs-number">2</span>))<br>&#125; <br><span class="hljs-comment">// 闭包使用方法</span><br><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">add</span><span class="hljs-params">(x1, x2 <span class="hljs-keyword">int</span>)</span> <span class="hljs-title">func</span><span class="hljs-params">(x3 <span class="hljs-keyword">int</span>,x4 <span class="hljs-keyword">int</span>)</span><span class="hljs-params">(<span class="hljs-keyword">int</span>,<span class="hljs-keyword">int</span>,<span class="hljs-keyword">int</span>)</span></span>  &#123;<br>    i := <span class="hljs-number">0</span><br>    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(x3 <span class="hljs-keyword">int</span>,x4 <span class="hljs-keyword">int</span>)</span> <span class="hljs-params">(<span class="hljs-keyword">int</span>,<span class="hljs-keyword">int</span>,<span class="hljs-keyword">int</span>)</span></span>&#123; <br>       i++<br>       <span class="hljs-keyword">return</span> i,x1+x2,x3+x4<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure><ul><li><p>:= cannot be used globally!!!</p></li><li><p>全局变量和局部变量都有默认值</p></li><li><p>结构体与数组的匿名</p></li><li><p>append()必须要用它的返回值（原因很简单，其参数列表用的是值传递而不是指针传递）</p></li><li><p>map必须要初始化（用make（）或者声明的时候直接赋值），否则只是个nil，无法对其进行赋值！！！？？</p></li><li><p>!!!GO没有隐式类型转换！！！需要灵活使用显示类型转换！</p></li><li><p>将一个结构体赋值给一个接口变量可以想象成该接口成为了一个指向该结构体的“指针”</p></li><li><p>通道chan类型是“值相关”的，相同chan值描述同一个通道，chan用close（）关闭，）有点像file descriptor？</p></li><li><p>两个并发线程时间前后关系不确定，同一个程序可能有不同结果<br>close一个chan后还能接收，不可发送</p></li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> 技术 </category>
-          
-          <category> 语言 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 踩坑 </tag>
-            
-            <tag> Go </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>技术/备忘/Hexo icarus 博客维护</title>
       <link href="/posts/6e7bdc/"/>
       <url>/posts/6e7bdc/</url>
@@ -410,6 +329,35 @@
     
     
     <entry>
+      <title>技术/语言/Golang 避坑手册</title>
+      <link href="/posts/c737d2b3/"/>
+      <url>/posts/c737d2b3/</url>
+      
+        <content type="html"><![CDATA[<ul><li><p>&quot;{&quot;的位置要注意分号无<br>多变量声明：<br>//类型相同多个变量, 非全局变量</p></li><li><p>var vname1, vname2, vname3 type</p></li><li><p>vname1, vname2, vname3 = v1, v2, v3</p></li><li><p>var vname1, vname2, vname3 = v1, v2, v3 // 和 python 很像,不需要显示声明类型，自动推断</p></li><li><p>vname1, vname2, vname3 := v1, v2, v3 // 出现在 := 左侧的变量不应该是已经被声明过的，否则会导致编译错误<a id="more"></a></p></li></ul><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs go"><span class="hljs-comment">// 这种因式分解关键字的写法一般用于声明全局变量</span><br><span class="hljs-keyword">var</span> (<br>    vname1 v_type1<br>    vname2 v_type2<br>)<br></code></pre></td></tr></table></figure><ul><li><p>默认值</p></li><li><p>并行特性：多个返回值，并行赋值</p></li><li><p>常量可以用len(), cap(), unsafe.Sizeof()函数计算表达式的值。常量表达式中，函数必须是内置函数，否则编译不过：</p></li><li><p>a = a++ // 这是不允许的，会出现变异错误 syntax error: unexpected ++ at end of statement</p></li><li><p>! Go 的自增，自减只能作为表达式使用，而不能用于赋值语句。</p></li><li><p>for each range loop</p></li><li><p>!!! 函数闭包（同一个被赋予闭包函数的函数每次调用都会将匿名函数内的局部变量记忆下来）</p></li></ul><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs go"><span class="hljs-keyword">package</span> main<br><span class="hljs-keyword">import</span> <span class="hljs-string">"fmt"</span><br><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> &#123;<br>    add_func := add(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>)<br>    fmt.Println(add_func(<span class="hljs-number">1</span>,<span class="hljs-number">1</span>))<br>    fmt.Println(add_func(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>))<br>    fmt.Println(add_func(<span class="hljs-number">2</span>,<span class="hljs-number">2</span>))<br>&#125; <br><span class="hljs-comment">// 闭包使用方法</span><br><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">add</span><span class="hljs-params">(x1, x2 <span class="hljs-keyword">int</span>)</span> <span class="hljs-title">func</span><span class="hljs-params">(x3 <span class="hljs-keyword">int</span>,x4 <span class="hljs-keyword">int</span>)</span><span class="hljs-params">(<span class="hljs-keyword">int</span>,<span class="hljs-keyword">int</span>,<span class="hljs-keyword">int</span>)</span></span>  &#123;<br>    i := <span class="hljs-number">0</span><br>    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(x3 <span class="hljs-keyword">int</span>,x4 <span class="hljs-keyword">int</span>)</span> <span class="hljs-params">(<span class="hljs-keyword">int</span>,<span class="hljs-keyword">int</span>,<span class="hljs-keyword">int</span>)</span></span>&#123; <br>       i++<br>       <span class="hljs-keyword">return</span> i,x1+x2,x3+x4<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure><ul><li><p>:= cannot be used globally!!!</p></li><li><p>全局变量和局部变量都有默认值</p></li><li><p>结构体与数组的匿名</p></li><li><p>append()必须要用它的返回值（原因很简单，其参数列表用的是值传递而不是指针传递）</p></li><li><p>map必须要初始化（用make（）或者声明的时候直接赋值），否则只是个nil，无法对其进行赋值！！！？？</p></li><li><p>!!!GO没有隐式类型转换！！！需要灵活使用显示类型转换！</p></li><li><p>将一个结构体赋值给一个接口变量可以想象成该接口成为了一个指向该结构体的“指针”</p></li><li><p>通道chan类型是“值相关”的，相同chan值描述同一个通道，chan用close（）关闭，）有点像file descriptor？</p></li><li><p>两个并发线程时间前后关系不确定，同一个程序可能有不同结果<br>close一个chan后还能接收，不可发送</p></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+          <category> 语言 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 踩坑 </tag>
+            
+            <tag> Go </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>算法/算法启蒙</title>
       <link href="/posts/8ee1a4a1/"/>
       <url>/posts/8ee1a4a1/</url>
@@ -431,6 +379,58 @@
             <tag> 搜索算法 </tag>
             
             <tag> 递归 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>技术/语言/C指针扫盲</title>
+      <link href="/posts/f1e4bda1/"/>
+      <url>/posts/f1e4bda1/</url>
+      
+        <content type="html"><![CDATA[<h2 id="首先看看函数指针，函数名，以及它们分别与-和-结合后的值">首先看看函数指针，函数名，以及它们分别与*和&amp;结合后的值</h2><ul><li>程序清单</li></ul><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">func</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span></span>&#123;<span class="hljs-built_in">puts</span>(<span class="hljs-string">"成功调用"</span>);&#125;;<br><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br> <span class="hljs-keyword">void</span>(*p_func)(<span class="hljs-keyword">void</span>)=func;<br> <span class="hljs-built_in">puts</span>(<span class="hljs-string">"func是函数名，p_func是指向该函数的指针，那么有:"</span>);<br> <span class="hljs-built_in">printf</span>(<span class="hljs-string">"func=%p\n*func=%p\n&amp;func=%p\</span><br><span class="hljs-string"> \np_func=%p\n*p_func=%p\</span><br><span class="hljs-string"> \n&amp;p_func=%p"</span>,func,*func,&amp;func,p_func,\<br> *p_func,&amp;p_func);<br> <br> <span class="hljs-comment">//puts("\n接着我们尝试用上述变量调用函数:");</span><br> <span class="hljs-comment">//func();</span><br> <span class="hljs-comment">//(*func)();</span><br> <span class="hljs-comment">//(&amp;func)();</span><br> <span class="hljs-comment">//(p_func)();</span><br> <span class="hljs-comment">//(*p_func)();</span><br> <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure><ul><li>执行结果<a id="more"></a></li></ul><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs c">func是函数名，p_func是指向该函数的指针，那么有:<br>func=<span class="hljs-number">004015</span>C0<br>*func=<span class="hljs-number">004015</span>C0<br>&amp;func=<span class="hljs-number">004015</span>C0<br>p_func=<span class="hljs-number">004015</span>C0<br>*p_func=<span class="hljs-number">004015</span>C0<br>&amp;p_func=<span class="hljs-number">0061F</span>ECC<br></code></pre></td></tr></table></figure><p>**可见==func==,==<em>func==,==&amp;func==,==p_func==,==<em>p_func==代表的值都是func()函数的地址</em></em> （ <em>&amp;p_func是指针的地址</em> ）</p><h2 id="再来看看将它们分别作为函数名的结果">再来看看将它们分别作为函数名的结果</h2><ul><li>程序清单</li></ul><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">func</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span></span>&#123;<span class="hljs-built_in">puts</span>(<span class="hljs-string">"成功调用"</span>);&#125;;<br><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br> <span class="hljs-keyword">void</span>(*p_func)(<span class="hljs-keyword">void</span>)=func;<br> <span class="hljs-built_in">puts</span>(<span class="hljs-string">"func是函数名，p_func是指向该函数的指针，那么有:"</span>);<br> <span class="hljs-built_in">printf</span>(<span class="hljs-string">"func=%p\n*func=%p\n&amp;func=%p\</span><br><span class="hljs-string"> \np_func=%p\n*p_func=%p\</span><br><span class="hljs-string"> \n&amp;p_func=%p"</span>,func,*func,&amp;func,p_func,\<br> *p_func,&amp;p_func);<br> <br> <span class="hljs-built_in">puts</span>(<span class="hljs-string">"\n接着我们尝试用上述变量调用函数:"</span>);<br> func();<br> (*func)();<br> (&amp;func)();<br> (p_func)();<br> (*p_func)();<br> <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure><p>==func==，==p_func==，==*p_func==，==*func==，==&amp;func==作函数名</p><ul><li>源程序</li></ul><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs c"> <span class="hljs-built_in">puts</span>(<span class="hljs-string">"\n接着我们尝试用上述变量调用函数:"</span>);<br> func();<br> (*func)();<br> (&amp;func)();<br> (p_func)();<br> (*p_func)();<br> <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure><ul><li>编译运行结果</li></ul><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs c">func是函数名，p_func是指向该函数的指针，那么有:<br>func=<span class="hljs-number">004015</span>C0<br>*func=<span class="hljs-number">004015</span>C0<br>&amp;func=<span class="hljs-number">004015</span>C0<br>p_func=<span class="hljs-number">004015</span>C0<br>*p_func=<span class="hljs-number">004015</span>C0<br>&amp;p_func=<span class="hljs-number">0061F</span>ECC<br>接着我们尝试用上述变量调用函数:<br>成功调用<br>成功调用<br>成功调用<br>成功调用<br>成功调用<br></code></pre></td></tr></table></figure><blockquote><p>可见==func==，==p_func==，==*p_func==，==*func==，==&amp;func==作函数名均可以实现函数调用</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+          <category> 语言 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> C/C++ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>算法/回合制战斗</title>
+      <link href="/posts/aee17ffb/"/>
+      <url>/posts/aee17ffb/</url>
+      
+        <content type="html"><![CDATA[<h1>一小道C语言题带来的乐趣</h1><hr><p><strong><code> 要用游戏的玩法打败游戏的情景题!</code></strong><br>对于以下题目：<br>某游戏规则中，甲乙双方每个回合的战斗总是有一方胜利，一方失败。游戏规定：失败的一方要把自己的体力值的1/4加给胜利的一方。例如：如果双方体力值当前都是4，则经过一轮战斗后，双方的体力值会变为：5，3。现在已知：双方开始时的体力值甲：1000，乙：2000。假设战斗中，甲乙获胜的概率都是50%，求解：双方经过4个回合的战斗，体力值之差小于1000的理论概率。<br>用基础模拟算法来解决：<a id="more"></a></p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> all 16<span class="hljs-comment">//所有可能的结果数目</span></span><br><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">exchange</span><span class="hljs-params">(<span class="hljs-keyword">double</span> * x,<span class="hljs-keyword">double</span> * y)</span> <span class="hljs-comment">//x为吸收血量方 </span></span><br><span class="hljs-function"></span>&#123;<br><span class="hljs-keyword">double</span> t;<br>t=(*y)*<span class="hljs-number">0.25</span>;(*x)+=t;(*y)-=t;<br><span class="hljs-keyword">return</span> <span class="hljs-number">0</span>; <br>&#125; <br><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br><span class="hljs-keyword">int</span> js=<span class="hljs-number">0</span>;<br><span class="hljs-keyword">double</span> x=<span class="hljs-number">1000</span>,y=<span class="hljs-number">2000</span>;<br><span class="hljs-comment">//美好的游戏模拟开始了</span><br><span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>;i&lt;=<span class="hljs-number">1</span>;i++)<br>&#123;<br><span class="hljs-keyword">double</span> ax=x,ay=y;<span class="hljs-comment">//存档，防止数据丢失</span><br>i?exchange(&amp;x,&amp;y):exchange(&amp;y,&amp;x);  <span class="hljs-comment">//i判断甲（x）是否赢得一回合，并改变血条 </span><br><span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>;i&lt;=<span class="hljs-number">1</span>;i++)<br>&#123;<br><span class="hljs-keyword">double</span> bx=x,by=y;<br>i?exchange(&amp;x,&amp;y):exchange(&amp;y,&amp;x);<br><span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>;i&lt;=<span class="hljs-number">1</span>;i++)<br>&#123;<br><span class="hljs-keyword">double</span> cx=x,cy=y;<br>i?exchange(&amp;x,&amp;y):exchange(&amp;y,&amp;x);<br><span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>;i&lt;=<span class="hljs-number">1</span>;i++)<br>&#123;<br><span class="hljs-keyword">double</span> dx=x,dy=y;<br>i?exchange(&amp;x,&amp;y):exchange(&amp;y,&amp;x);<br><span class="hljs-keyword">if</span>(x-y&lt;<span class="hljs-number">1000</span>&amp;&amp;x-y&gt;<span class="hljs-number">-1000</span>) js++;<br>x=dx;y=dy; <span class="hljs-comment">//重新读档，开始下一轮模拟 </span><br>&#125;<br>x=cx;y=cy;<span class="hljs-comment">//读档，余同</span><br>&#125;<br>x=bx;y=by;<br>&#125;<br>x=ax;y=ay;<br>&#125;<br><span class="hljs-built_in">printf</span>(<span class="hljs-string">"四回合后体力值差&lt;1000的理论概率:\n%f"</span>,js*<span class="hljs-number">1.0</span>/all);<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure><p>==是不是特像打游戏刷关呢?( ^ v ^ )==</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 题解 </tag>
             
         </tags>
       
