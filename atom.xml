@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://baidi-coder.github.io/"/>
-  <updated>2020-05-30T11:31:53.180Z</updated>
+  <updated>2020-05-31T02:21:08.565Z</updated>
   <id>https://baidi-coder.github.io/</id>
   
   <author>
@@ -21,18 +21,13 @@
     <link href="https://baidi-coder.github.io/posts/6e7bdc/"/>
     <id>https://baidi-coder.github.io/posts/6e7bdc/</id>
     <published>2020-05-30T07:46:57.107Z</published>
-    <updated>2020-05-30T11:31:53.180Z</updated>
+    <updated>2020-05-31T02:21:08.565Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;基本指令&quot;&gt;基本指令&lt;/h2&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;figcaption&gt;&lt;span&gt;基本指令&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span
-        
-      
+      &lt;h2 id=&quot;基本指令&quot;&gt;基本指令&lt;/h2&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;figcaption&gt;&lt;span&gt;基本指令&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;code class=&quot;hljs plain&quot;&gt;&amp;#x2F;*npm指令*&amp;#x2F;&lt;br&gt;npm install&amp;#x2F;uninstall xxx&lt;br&gt;&amp;#x2F;&amp;#x2F;执行package.json中定义的脚本&lt;br&gt;npm run server&lt;br&gt;&lt;br&gt;&amp;#x2F;*hexo指令*&amp;#x2F;&lt;br&gt;hexo cl &amp;amp;&amp;amp; hexo g &amp;amp;&amp;amp; hexo s	&amp;#x2F;&amp;#x2F;清理，生成，本地服务器&lt;br&gt;hexo d &amp;#x2F;&amp;#x2F;部署&lt;br&gt;hexagon -l &amp;#x2F;&amp;#x2F;查看插件&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;更多-Hexo-指令&quot;&gt;更多 Hexo 指令&lt;/h2&gt;
     
     </summary>
     
@@ -47,11 +42,11 @@
   </entry>
   
   <entry>
-    <title>技术/AndroidLearning</title>
+    <title>技术/开发/AndroidLearning</title>
     <link href="https://baidi-coder.github.io/posts/fae5c3cd/"/>
     <id>https://baidi-coder.github.io/posts/fae5c3cd/</id>
     <published>2020-05-30T00:47:01.881Z</published>
-    <updated>2020-05-30T00:48:39.768Z</updated>
+    <updated>2020-05-30T13:23:45.757Z</updated>
     
     <summary type="html">
     
@@ -73,6 +68,8 @@
     
     
       <category term="技术" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="开发" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E5%BC%80%E5%8F%91/"/>
     
     
   </entry>
@@ -109,22 +106,11 @@
     <link href="https://baidi-coder.github.io/posts/7a368ad4/"/>
     <id>https://baidi-coder.github.io/posts/7a368ad4/</id>
     <published>2020-05-30T00:46:29.240Z</published>
-    <updated>2020-05-30T03:39:07.484Z</updated>
+    <updated>2020-05-30T13:32:55.361Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1&gt;Java &amp;amp; Kotlin 的语法片段对照&lt;/h1&gt;
-&lt;h2 id=&quot;函数式-API&quot;&gt;函数式 API&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Java&lt;/p&gt;
-&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
-        
-      
+      比较两种语言代码的不同，方便更好的记忆与理解 Kotlin 和 Java 的关系，体会语法糖的真香。
     
     </summary>
     
@@ -134,6 +120,10 @@
       <category term="语言" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/"/>
     
     
+      <category term="Java" scheme="https://baidi-coder.github.io/tags/Java/"/>
+    
+      <category term="Kotlin" scheme="https://baidi-coder.github.io/tags/Kotlin/"/>
+    
   </entry>
   
   <entry>
@@ -141,7 +131,7 @@
     <link href="https://baidi-coder.github.io/posts/37a431d8/"/>
     <id>https://baidi-coder.github.io/posts/37a431d8/</id>
     <published>2020-05-30T00:46:16.396Z</published>
-    <updated>2020-05-30T07:58:18.240Z</updated>
+    <updated>2020-05-30T13:34:07.788Z</updated>
     
     <summary type="html">
     
@@ -154,6 +144,8 @@
     
       <category term="笔记" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E7%AC%94%E8%AE%B0/"/>
     
+    
+      <category term="Android" scheme="https://baidi-coder.github.io/tags/Android/"/>
     
   </entry>
   
@@ -192,19 +184,26 @@
     <link href="https://baidi-coder.github.io/posts/ec3dabc7/"/>
     <id>https://baidi-coder.github.io/posts/ec3dabc7/</id>
     <published>2020-05-30T00:45:39.212Z</published>
-    <updated>2020-05-30T12:03:27.433Z</updated>
+    <updated>2020-05-30T13:32:25.634Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1&gt;Kotlin 学习笔记&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Kotlin 可以编译成Java字节码，也可以编译成 JavaScript，方便在没有 JVM
-        
-      
+      &lt;ul&gt;
+&lt;li&gt;Kotlin 可以编译成Java字节码，也可以编译成 JavaScript，方便在没有 JVM 的设备上运行。&lt;/li&gt;
+&lt;li&gt;kotlin源文件不需要相匹配的目录和包，源文件可以放在任何文件目录。&lt;/li&gt;
+&lt;li&gt;$a 和 ${a.func()}我是真没话说。&lt;/li&gt;
+&lt;li&gt;完善的NULL检查机制 “!!, ?, ?:”（当一个引用可能为 null 值时, 对应的类型声明必须明确地标记为可为 null。方法是： “Type后 + ？”）&lt;/li&gt;
+&lt;li&gt;玩转for循环：可以方便的指定遍历的步长，范围。（ …, step, downTo, in, until)&lt;/li&gt;
+&lt;li&gt;Kotlin 的基本数值类型包括 Byte、Short、Int、Long、Float、Double 等。&lt;strong&gt;不同于 Java 的是，字符==不属于==数值类型&lt;/strong&gt;，是一个独立的数据类型。&lt;/li&gt;
+&lt;li&gt;支持二进制字面量，数值类型混入下划线增加语义性。&lt;/li&gt;
+&lt;li&gt;有些时候较小类型不会隐式转换成较大类型，需要手动调用 .toXXX() 来进行显示的类型转换。&lt;/li&gt;
+&lt;li&gt;和 &lt;em&gt;golang&lt;/em&gt; 一样少了分号（这就是语法糖吗i了i了&lt;/li&gt;
+&lt;li&gt;if-else 语句与when语句等可以视为 ==表达式==（可赋值&lt;/li&gt;
+&lt;li&gt;when 与 -&amp;gt; 符号构成强大的分支控制。&lt;/li&gt;
+&lt;li&gt;完全抛弃&lt;em&gt;基本数据类型&lt;/em&gt;改用&lt;em&gt;对象数据类型&lt;/em&gt;“。&lt;/li&gt;
+&lt;li&gt;“fun xxx() = xxx” 这个语法糖结合 if else, when 等特性可以打出漂亮的组合拳。&lt;/li&gt;
+&lt;li&gt;class 继承的时候对继承的父类后面&lt;em&gt;一般&lt;/em&gt;要加括号（因为 java 继承中必调用父类构造函数）且此构造函数必调用著构造函数。&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
@@ -214,6 +213,8 @@
       <category term="语言" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/"/>
     
     
+      <category term="Kotlin" scheme="https://baidi-coder.github.io/tags/Kotlin/"/>
+    
   </entry>
   
   <entry>
@@ -221,7 +222,7 @@
     <link href="https://baidi-coder.github.io/posts/6374ed46/"/>
     <id>https://baidi-coder.github.io/posts/6374ed46/</id>
     <published>2020-05-30T00:45:36.071Z</published>
-    <updated>2020-05-30T00:48:39.748Z</updated>
+    <updated>2020-05-30T13:20:28.168Z</updated>
     
     <summary type="html">
     
@@ -250,6 +251,8 @@
       <category term="语言" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/"/>
     
     
+      <category term="Java" scheme="https://baidi-coder.github.io/tags/Java/"/>
+    
   </entry>
   
   <entry>
@@ -257,23 +260,39 @@
     <link href="https://baidi-coder.github.io/posts/5a1e79ff/"/>
     <id>https://baidi-coder.github.io/posts/5a1e79ff/</id>
     <published>2020-05-30T00:45:31.551Z</published>
-    <updated>2020-05-30T00:48:39.745Z</updated>
+    <updated>2020-05-30T13:53:32.559Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1&gt;IDEA基础功能概览：&lt;/h1&gt;
+      &lt;h1&gt;IDEA基础功能概览：&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;shortcut(edit, 代码片段, 功能), 版本控制(VCS: git, github, local history)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Debug, javadoc
-        
-      
+&lt;p&gt;Debug, javadoc generator, database, web deployment&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;project&amp;amp;module 等概念, 模板, 项目结构查询管理&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Tips&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;代码段：main&lt;/li&gt;
+&lt;li&gt;sout标准输出&lt;/li&gt;
+&lt;li&gt;soutv输出变量，soutm输出方法名，soutp输出命令行参数&lt;/li&gt;
+&lt;li&gt;变量名.sout输出变量&lt;/li&gt;
+&lt;li&gt;iter增强型for循环&lt;/li&gt;
+&lt;li&gt;引用名.for 迭代指定引用类型&lt;/li&gt;
+&lt;li&gt;实例名.fori顺序遍历 xxx.forr倒序遍历&lt;/li&gt;
+&lt;li&gt;ifn --“if xxx is null”, inn --“if not null”&lt;/li&gt;
+&lt;li&gt;xxx.nn, xxx.ifn&lt;/li&gt;
+&lt;li&gt;JavaLea&lt;/li&gt;
+&lt;li&gt;条件断点 --右键断点处&lt;/li&gt;
+&lt;li&gt;ctrl+u 查看表达式的值&lt;/li&gt;
+&lt;li&gt;Tools javadoc generator:&lt;/li&gt;
+&lt;li&gt;Local: zh_CN; Other command line args: encoding UTF-8 -charset UTF-8&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
@@ -290,7 +309,7 @@
     <link href="https://baidi-coder.github.io/posts/fac7f463/"/>
     <id>https://baidi-coder.github.io/posts/fac7f463/</id>
     <published>2020-05-30T00:45:17.470Z</published>
-    <updated>2020-05-30T00:48:39.742Z</updated>
+    <updated>2020-05-30T13:13:55.706Z</updated>
     
     <summary type="html">
     
@@ -314,6 +333,8 @@
       <category term="备忘" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E5%A4%87%E5%BF%98/"/>
     
     
+      <category term="踩坑" scheme="https://baidi-coder.github.io/tags/%E8%B8%A9%E5%9D%91/"/>
+    
   </entry>
   
   <entry>
@@ -321,7 +342,7 @@
     <link href="https://baidi-coder.github.io/posts/fde8aecf/"/>
     <id>https://baidi-coder.github.io/posts/fde8aecf/</id>
     <published>2020-05-30T00:45:17.467Z</published>
-    <updated>2020-05-30T00:48:39.738Z</updated>
+    <updated>2020-05-30T13:18:07.430Z</updated>
     
     <summary type="html">
     
@@ -355,7 +376,7 @@
     <link href="https://baidi-coder.github.io/posts/369ceeb5/"/>
     <id>https://baidi-coder.github.io/posts/369ceeb5/</id>
     <published>2020-05-30T00:45:17.465Z</published>
-    <updated>2020-05-30T00:48:39.734Z</updated>
+    <updated>2020-05-30T13:14:39.574Z</updated>
     
     <summary type="html">
     
@@ -380,6 +401,8 @@
       <category term="备忘" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E5%A4%87%E5%BF%98/"/>
     
     
+      <category term="Command" scheme="https://baidi-coder.github.io/tags/Command/"/>
+    
   </entry>
   
   <entry>
@@ -402,7 +425,7 @@
     <link href="https://baidi-coder.github.io/posts/b8e16674/"/>
     <id>https://baidi-coder.github.io/posts/b8e16674/</id>
     <published>2020-05-13T02:58:03.823Z</published>
-    <updated>2020-05-30T00:48:39.730Z</updated>
+    <updated>2020-05-30T13:18:28.521Z</updated>
     
     <summary type="html">
     
@@ -422,6 +445,62 @@ Date: from 2020-2-19&lt;/p&gt;
     
       <category term="杂项" scheme="https://baidi-coder.github.io/categories/%E6%9D%82%E9%A1%B9/"/>
     
+    
+      <category term="Math" scheme="https://baidi-coder.github.io/tags/Math/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>算法/算法启蒙</title>
+    <link href="https://baidi-coder.github.io/posts/8ee1a4a1/"/>
+    <id>https://baidi-coder.github.io/posts/8ee1a4a1/</id>
+    <published>2020-02-14T13:37:36.000Z</published>
+    <updated>2020-05-30T13:59:44.789Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;写在前面：“学好程序与算法，走遍天下都不怕。”&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1&gt;枚举&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;背景
+&lt;ul&gt;
+&lt;li&gt;找不到合适的数学公式和技巧&lt;/li&gt;
+&lt;li&gt;（改良后）枚举复杂度不是特别大&lt;/li&gt;
+&lt;li&gt;通常用于找到一种情况使之满足题意的题目&lt;/li&gt;
+&lt;li&gt;配合假设法找到目标情形：假币问题&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;技巧
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;跳跃枚举法&lt;/strong&gt;：跳过对没有必要的情况的枚举&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;局部枚举法&lt;/strong&gt;：枚举局部，剩下的由该局部确定。例如熄灯问题&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;递归&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;作用
+&lt;ul&gt;
+&lt;li&gt;替代&lt;strong&gt;多重循环&lt;/strong&gt;，如：n皇后问题。
+&lt;ul&gt;
+&lt;li&gt;这种类型往往要运用到一个&lt;code&gt;全局/静态变量&lt;/code&gt;来存储前面算过的结果，譬如n皇后就用到了一个全局数组来保存每一行的皇后拜访情况。全局/静态变量的好处就在于&lt;code&gt;所有递归函数共享成果&lt;/code&gt;，就像&lt;code&gt;递推迭代&lt;/code&gt;一样，每一步会影响下一步。&lt;/li&gt;
+&lt;li&gt;递归函数形式：T function( T f(n) )，函数意义：在前n-1步已经完成的情况下决定如何走第n步，往往第一个被调用的function参数为0或1（然后依次调用 $1$ ~ $n_0$）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;解决实质是&lt;strong&gt;递归形式&lt;/strong&gt;的问题
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="https://baidi-coder.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="动态规划" scheme="https://baidi-coder.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+      <category term="搜索算法" scheme="https://baidi-coder.github.io/tags/%E6%90%9C%E7%B4%A2%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="递归" scheme="https://baidi-coder.github.io/tags/%E9%80%92%E5%BD%92/"/>
     
   </entry>
   
