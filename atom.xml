@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://baidi-coder.github.io/"/>
-  <updated>2020-05-31T02:21:08.565Z</updated>
+  <updated>2020-05-31T03:29:08.018Z</updated>
   <id>https://baidi-coder.github.io/</id>
   
   <author>
@@ -15,6 +15,102 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>技术/语言/C指针扫盲</title>
+    <link href="https://baidi-coder.github.io/posts/f1e4bda1/"/>
+    <id>https://baidi-coder.github.io/posts/f1e4bda1/</id>
+    <published>2020-05-31T03:25:56.875Z</published>
+    <updated>2020-05-31T03:29:08.018Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;首先看看函数指针，函数名，以及它们分别与-和-结合后的值&quot;&gt;首先看看函数指针，函数名，以及它们分别与*和&amp;amp;结合后的值&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;程序清单&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;code class=&quot;hljs c&quot;&gt;&lt;span class=&quot;hljs-meta&quot;&gt;#&lt;span class=&quot;hljs-meta-keyword&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;hljs-meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;func&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;(&lt;span class=&quot;hljs-keyword&quot;&gt;void&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;span class=&quot;hljs-built_in&quot;&gt;puts&lt;/span&gt;(&lt;span class=&quot;hljs-string&quot;&gt;&quot;成功调用&quot;&lt;/span&gt;);&amp;#125;;&lt;br&gt;&lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;hljs-function&quot;&gt;&lt;/span&gt;&amp;#123;&lt;br&gt; &lt;span class=&quot;hljs-keyword&quot;&gt;void&lt;/span&gt;(*p_func)(&lt;span class=&quot;hljs-keyword&quot;&gt;void&lt;/span&gt;)=func;&lt;br&gt; &lt;span class=&quot;hljs-built_in&quot;&gt;puts&lt;/span&gt;(&lt;span class=&quot;hljs-string&quot;&gt;&quot;func是函数名，p_func是指向该函数的指针，那么有:&quot;&lt;/span&gt;);&lt;br&gt; &lt;span class=&quot;hljs-built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;hljs-string&quot;&gt;&quot;func=%p\n*func=%p\n&amp;amp;func=%p\&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;hljs-string&quot;&gt; \np_func=%p\n*p_func=%p\&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;hljs-string&quot;&gt; \n&amp;amp;p_func=%p&quot;&lt;/span&gt;,func,*func,&amp;amp;func,p_func,\&lt;br&gt; *p_func,&amp;amp;p_func);&lt;br&gt; &lt;br&gt; &lt;span class=&quot;hljs-comment&quot;&gt;//puts(&quot;\n接着我们尝试用上述变量调用函数:&quot;);&lt;/span&gt;&lt;br&gt; &lt;span class=&quot;hljs-comment&quot;&gt;//func();&lt;/span&gt;&lt;br&gt; &lt;span class=&quot;hljs-comment&quot;&gt;//(*func)();&lt;/span&gt;&lt;br&gt; &lt;span class=&quot;hljs-comment&quot;&gt;//(&amp;amp;func)();&lt;/span&gt;&lt;br&gt; &lt;span class=&quot;hljs-comment&quot;&gt;//(p_func)();&lt;/span&gt;&lt;br&gt; &lt;span class=&quot;hljs-comment&quot;&gt;//(*p_func)();&lt;/span&gt;&lt;br&gt; &lt;span class=&quot;hljs-keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;执行结果
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="语言" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="C/C++" scheme="https://baidi-coder.github.io/tags/C-C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>算法/回合制战斗</title>
+    <link href="https://baidi-coder.github.io/posts/aee17ffb/"/>
+    <id>https://baidi-coder.github.io/posts/aee17ffb/</id>
+    <published>2020-05-31T03:23:51.587Z</published>
+    <updated>2020-05-31T03:30:20.223Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1&gt;一小道C语言题带来的乐趣&lt;/h1&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt; 要用游戏的玩法打败游戏的情景题!&lt;/code&gt;&lt;/strong&gt;&lt;br&gt;
+对于以下题目：&lt;br&gt;
+某游戏规则中，甲乙双方每个回合的战斗总是有一方胜利，一方失败。游戏规定：失败的一方要把自己的体力值的1/4加给胜利的一方。例如：如果双方体力值当前都是4，则经过一轮战斗后，双方的体力值会变为：5，3。现在已知：双方开始时的体力值甲：1000，乙：2000。假设战斗中，甲乙获胜的概率都是50%，求解：双方经过4个回合的战斗，体力值之差小于1000的理论概率。&lt;br&gt;
+用基础模拟算法来解决：
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="https://baidi-coder.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="题解" scheme="https://baidi-coder.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>技术/语言/Golang 避坑手册</title>
+    <link href="https://baidi-coder.github.io/posts/c737d2b3/"/>
+    <id>https://baidi-coder.github.io/posts/c737d2b3/</id>
+    <published>2020-05-31T03:20:18.928Z</published>
+    <updated>2020-05-31T03:29:21.065Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;quot;{&amp;quot;的位置要注意	分号无&lt;br&gt;
+多变量声明：&lt;br&gt;
+//类型相同多个变量, 非全局变量&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;var vname1, vname2, vname3 type&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;vname1, vname2, vname3 = v1, v2, v3&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;var vname1, vname2, vname3 = v1, v2, v3 // 和 python 很像,不需要显示声明类型，自动推断&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;vname1, vname2, vname3 := v1, v2, v3 // 出现在 := 左侧的变量不应该是已经被声明过的，否则会导致编译错误
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="语言" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="踩坑" scheme="https://baidi-coder.github.io/tags/%E8%B8%A9%E5%9D%91/"/>
+    
+      <category term="Go" scheme="https://baidi-coder.github.io/tags/Go/"/>
+    
+  </entry>
   
   <entry>
     <title>技术/备忘/Hexo icarus 博客维护</title>
@@ -154,7 +250,7 @@
     <link href="https://baidi-coder.github.io/posts/9b17222d/"/>
     <id>https://baidi-coder.github.io/posts/9b17222d/</id>
     <published>2020-05-30T00:45:41.254Z</published>
-    <updated>2020-05-30T00:48:39.756Z</updated>
+    <updated>2020-05-31T03:28:27.657Z</updated>
     
     <summary type="html">
     
@@ -176,6 +272,8 @@
     
       <category term="语言" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/"/>
     
+    
+      <category term="Latex" scheme="https://baidi-coder.github.io/tags/Latex/"/>
     
   </entry>
   
@@ -402,21 +500,6 @@
     
     
       <category term="Command" scheme="https://baidi-coder.github.io/tags/Command/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello</title>
-    <link href="https://baidi-coder.github.io/posts/f7d18982/"/>
-    <id>https://baidi-coder.github.io/posts/f7d18982/</id>
-    <published>2020-05-29T23:47:12.000Z</published>
-    <updated>2020-05-30T02:02:25.781Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
     
   </entry>
   
