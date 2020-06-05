@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://baidi-coder.github.io/"/>
-  <updated>2020-05-31T12:57:03.682Z</updated>
+  <updated>2020-06-04T15:16:57.769Z</updated>
   <id>https://baidi-coder.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>算法/面向序列标注的方法与应用研究</title>
+    <link href="https://baidi-coder.github.io/posts/568ec988/"/>
+    <id>https://baidi-coder.github.io/posts/568ec988/</id>
+    <published>2020-06-04T14:45:47.249Z</published>
+    <updated>2020-06-04T15:16:57.769Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1&gt;绪论&lt;/h1&gt;
+&lt;p&gt;从文本翻译到文字、语音识别，再到&lt;/p&gt;
+&lt;h1&gt;正文&lt;/h1&gt;
+&lt;h2 id=&quot;定义&quot;&gt;定义&lt;/h2&gt;
+&lt;p&gt;序列标注是指将输入的一串观测序列 $x_1x_2x_3…x_n$ 转化为一串标记序列 $y_1y_2y_3…y_n$ 的过程，要解决序列标记问题，实际上就是要找到一个观测序列到标记序列的映射 $f(x_i)\rightarrow y_i\space (i=1,2,…,n)$。&lt;/p&gt;
+&lt;h3 id=&quot;分类&quot;&gt;分类&lt;/h3&gt;
+&lt;p&gt;分为生成式与判别式两种方法&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="https://baidi-coder.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>技术/备忘/Hexo icarus 博客维护</title>

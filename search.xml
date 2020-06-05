@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>算法/面向序列标注的方法与应用研究</title>
+      <link href="/posts/568ec988/"/>
+      <url>/posts/568ec988/</url>
+      
+        <content type="html"><![CDATA[<h1>绪论</h1><p>从文本翻译到文字、语音识别，再到</p><h1>正文</h1><h2 id="定义">定义</h2><p>序列标注是指将输入的一串观测序列 $x_1x_2x_3…x_n$ 转化为一串标记序列 $y_1y_2y_3…y_n$ 的过程，要解决序列标记问题，实际上就是要找到一个观测序列到标记序列的映射 $f(x_i)\rightarrow y_i\space (i=1,2,…,n)$。</p><h3 id="分类">分类</h3><p>分为生成式与判别式两种方法</p><a id="more"></a><h3 id="基于HMM模型的序列标注">基于HMM模型的序列标注</h3><h4 id="马尔可夫链">马尔可夫链</h4><p><strong>马尔可夫链</strong>（Markov chain），又称离散时间马尔可夫链，为状态空间中经过从一个状态到另一个状态的转换的随机过程。该过程要求具备“无记忆”的性质：下一状态的概率分布只能由当前状态决定，在时间序列中它前面的事件均与之无关。<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></p><p>从数学形式上来看，对于随机变量序列$X_1X_2X_3…X_n$，满足$P(X_n=x_n|X_1=x_1,X_2=x_2,X_3=x_3…,X_{n-1}=x_{n-1})=P(X_n=x_n|X_{n-1}=x_{n-1})$，则称该序列为一个一阶马尔可夫链。</p><p>从宏观意义上来看，Markov链说明了在状态转移过程中，“未来”与“过去”无关而只与“现在”有关。</p><p>Markov链常常被认为是<strong>时齐</strong>的，即转移概率与n无关。</p><p>类似的可以定义<strong>m阶Markov链</strong>，满足</p><div>$$P(X_n=x_n|X_1=x_1,X_2=x_2,X_3=x_3...,X_{n-1}=x_{n-1})\\=P(X_n=x_n|X_{n-m}=x_{n-m},X_{n-m+1}=x_{n-m+1}...,X_{n-1}=x_{n-1})$$<div><h4 id="隐马尔可夫模型">隐马尔可夫模型</h4><p><strong>隐马尔可夫模型</strong>（Hidden Markov Model 缩写：HMM）基于Markov链，不同与一般的Markov链，HMM 又加入了<strong>隐变量</strong>这一概念，即该模型包含了观测序列$X_1X_2X_3…X_n$和它一一对应的标记序列$Y_1Y_2Y_3…Y_n$。该模型用到了两个假设：</p><ol><li>时齐的Markov性假设，如<em>2.2.1</em>所述</li><li>标记（输出）状态与对应观测状态有关，且仅与其有关</li></ol><p>HMM 模型常常被用来解决预测、平滑和解码问题。本文主要讨论的序列标记问题就是一种解码问题，即求解给定输入序列，给出最有可能的标记序列的问题。</p><h4 id="问题求解">问题求解</h4><h1>总结<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;">维基百科中文</span><a href="#fnref:1" rev="footnote"> ↩</a></li></ol></div></div></h1>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>技术/备忘/Hexo icarus 博客维护</title>
       <link href="/posts/6e7bdc/"/>
       <url>/posts/6e7bdc/</url>
