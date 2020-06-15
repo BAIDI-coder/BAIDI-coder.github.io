@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://baidi-coder.github.io/"/>
-  <updated>2020-06-15T09:35:58.286Z</updated>
+  <updated>2020-06-15T09:41:54.599Z</updated>
   <id>https://baidi-coder.github.io/</id>
   
   <author>
@@ -21,13 +21,12 @@
     <link href="https://baidi-coder.github.io/posts/568ec988/"/>
     <id>https://baidi-coder.github.io/posts/568ec988/</id>
     <published>2020-06-14T16:00:00.000Z</published>
-    <updated>2020-06-15T09:35:58.286Z</updated>
+    <updated>2020-06-15T09:41:54.599Z</updated>
     
     <summary type="html">
     
       &lt;h2 id=&quot;绪论&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#绪论&quot;&gt;&lt;/a&gt; 绪论&lt;/h2&gt;
-&lt;p&gt;​	从文本翻译到文字、语音识别，再到命名实体识别，词性标注，序列标注问题已然渗透到社会生活中的方方面面。不少自然语言处理的问题都可以想方设法转化为序列标注问题：对邮件等”大块“的信息做命名实体识别，识别出信息中的表单项用于自动填写表单，可以有效地提高工作效率，节约时间；对音频文件进行标注分析，可以用来进行语音识别；抽取出来的电子病历文本中的疾病、治疗、检查等类型的实体，可以用以对电子病历进行分类归档…想要处理好一般性的自然语言处理问题到序列标记问题的转化，关键在于处理好如何定义标记的问题。&lt;/p&gt;
-&lt;p&gt;​	作为自然语言处理中常见的问题之一，序列标注问题已经由来已久，并在经历了一系列的发展变革后逐渐壮大健全。最早的有传统的隐马尔可夫模型、最大熵模型和条件随机场模型，最大熵模型抛弃了隐马尔科夫模型的独立输出假设，而条件随机场模型又在最大熵模型的基础上进一步将标签的转移扩大为全局特征，使得上下文之间的联系更加紧密。无论是在理论还是实践结果上来看，条件随机场的整体效果都要优于前两种方法。步入深度学习发展的时代后，新的诸如&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;R&lt;/mi&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;RNN&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.68333em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.00773em;&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.10903em;&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.10903em;&quot;&gt;N&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;和&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;L&lt;/mi&gt;&lt;mi&gt;S&lt;/mi&gt;&lt;mi&gt;T&lt;/mi&gt;&lt;mi&gt;M&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;LSTM&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.68333em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;L&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.05764em;&quot;&gt;S&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.13889em;&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.10903em;&quot;&gt;M&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;模型也相继用于序列标注问题，有效地改善了传统方法在处理更长的上下文依赖、过拟合、依赖启发式知识等方面的不足之处。本文主要研究和探讨了传统的序列标注模型——隐马尔可夫模型和条件随机场模型——的理论基础和应用实践。&lt;/p&gt;
+&lt;p&gt;​	从文本翻译到文字、语音识别，再到命名实体识别，词性标注，序列标注问题已然渗透到社会生活中的方方面面。不少自然语言处理的问题都可以想方设法转化为序列标注问题：对邮件等”大块“的信息做命名实体识别，识别出信息中的表单项用于自动填写表单，可以有效地提高工作效率，节约时间；对音频文件进行标注分析，可以用来进行语音识别；抽取出来的电子病历文本中的疾病、治疗、检查等类型的实体，可以用以对电子病历进行分类归档…想要处理好一般性的自然语言处理问题到序列标记问题的转化，关键在于处理好如何定义标记的问题。
     
     </summary>
     
@@ -139,9 +138,9 @@
       <category term="语言" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/"/>
     
     
-      <category term="Java" scheme="https://baidi-coder.github.io/tags/Java/"/>
-    
       <category term="Kotlin" scheme="https://baidi-coder.github.io/tags/Kotlin/"/>
+    
+      <category term="Java" scheme="https://baidi-coder.github.io/tags/Java/"/>
     
   </entry>
   
