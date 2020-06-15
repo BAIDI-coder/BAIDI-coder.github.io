@@ -15,4 +15,5 @@ a.article-more.button.is-small.size-small {
 a.article-more.button.is-small.size-small:hover {
     background-color: steelblue!important;
     color: white!important;
+    font-weight: bold!important;
 }

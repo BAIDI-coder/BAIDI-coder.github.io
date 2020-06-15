@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://baidi-coder.github.io/"/>
-  <updated>2020-06-04T15:16:57.769Z</updated>
+  <updated>2020-06-15T09:35:58.286Z</updated>
   <id>https://baidi-coder.github.io/</id>
   
   <author>
@@ -17,27 +17,27 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>算法/面向序列标注的方法与应用研究</title>
+    <title>算法/序列标注之HMM与CRF模型</title>
     <link href="https://baidi-coder.github.io/posts/568ec988/"/>
     <id>https://baidi-coder.github.io/posts/568ec988/</id>
-    <published>2020-06-04T14:45:47.249Z</published>
-    <updated>2020-06-04T15:16:57.769Z</updated>
+    <published>2020-06-14T16:00:00.000Z</published>
+    <updated>2020-06-15T09:35:58.286Z</updated>
     
     <summary type="html">
     
-      &lt;h1&gt;绪论&lt;/h1&gt;
-&lt;p&gt;从文本翻译到文字、语音识别，再到&lt;/p&gt;
-&lt;h1&gt;正文&lt;/h1&gt;
-&lt;h2 id=&quot;定义&quot;&gt;定义&lt;/h2&gt;
-&lt;p&gt;序列标注是指将输入的一串观测序列 $x_1x_2x_3…x_n$ 转化为一串标记序列 $y_1y_2y_3…y_n$ 的过程，要解决序列标记问题，实际上就是要找到一个观测序列到标记序列的映射 $f(x_i)\rightarrow y_i\space (i=1,2,…,n)$。&lt;/p&gt;
-&lt;h3 id=&quot;分类&quot;&gt;分类&lt;/h3&gt;
-&lt;p&gt;分为生成式与判别式两种方法&lt;/p&gt;
+      &lt;h2 id=&quot;绪论&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#绪论&quot;&gt;&lt;/a&gt; 绪论&lt;/h2&gt;
+&lt;p&gt;​	从文本翻译到文字、语音识别，再到命名实体识别，词性标注，序列标注问题已然渗透到社会生活中的方方面面。不少自然语言处理的问题都可以想方设法转化为序列标注问题：对邮件等”大块“的信息做命名实体识别，识别出信息中的表单项用于自动填写表单，可以有效地提高工作效率，节约时间；对音频文件进行标注分析，可以用来进行语音识别；抽取出来的电子病历文本中的疾病、治疗、检查等类型的实体，可以用以对电子病历进行分类归档…想要处理好一般性的自然语言处理问题到序列标记问题的转化，关键在于处理好如何定义标记的问题。&lt;/p&gt;
+&lt;p&gt;​	作为自然语言处理中常见的问题之一，序列标注问题已经由来已久，并在经历了一系列的发展变革后逐渐壮大健全。最早的有传统的隐马尔可夫模型、最大熵模型和条件随机场模型，最大熵模型抛弃了隐马尔科夫模型的独立输出假设，而条件随机场模型又在最大熵模型的基础上进一步将标签的转移扩大为全局特征，使得上下文之间的联系更加紧密。无论是在理论还是实践结果上来看，条件随机场的整体效果都要优于前两种方法。步入深度学习发展的时代后，新的诸如&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;R&lt;/mi&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;RNN&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.68333em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.00773em;&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.10903em;&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.10903em;&quot;&gt;N&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;和&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;L&lt;/mi&gt;&lt;mi&gt;S&lt;/mi&gt;&lt;mi&gt;T&lt;/mi&gt;&lt;mi&gt;M&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;LSTM&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.68333em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;L&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.05764em;&quot;&gt;S&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.13889em;&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.10903em;&quot;&gt;M&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;模型也相继用于序列标注问题，有效地改善了传统方法在处理更长的上下文依赖、过拟合、依赖启发式知识等方面的不足之处。本文主要研究和探讨了传统的序列标注模型——隐马尔可夫模型和条件随机场模型——的理论基础和应用实践。&lt;/p&gt;
     
     </summary>
     
     
       <category term="算法" scheme="https://baidi-coder.github.io/categories/%E7%AE%97%E6%B3%95/"/>
     
+    
+      <category term="AI" scheme="https://baidi-coder.github.io/tags/AI/"/>
+    
+      <category term="NLP" scheme="https://baidi-coder.github.io/tags/NLP/"/>
     
   </entry>
   
@@ -50,9 +50,9 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;基本指令&quot;&gt;基本指令&lt;/h2&gt;
+      &lt;h2 id=&quot;基本指令&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#基本指令&quot;&gt;&lt;/a&gt; 基本指令&lt;/h2&gt;
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;figcaption&gt;&lt;span&gt;基本指令&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;code class=&quot;hljs plain&quot;&gt;&amp;#x2F;*npm指令*&amp;#x2F;&lt;br&gt;npm install&amp;#x2F;uninstall xxx&lt;br&gt;&amp;#x2F;&amp;#x2F;执行package.json中定义的脚本&lt;br&gt;npm run server&lt;br&gt;&lt;br&gt;&amp;#x2F;*hexo指令*&amp;#x2F;&lt;br&gt;hexo cl &amp;amp;&amp;amp; hexo g &amp;amp;&amp;amp; hexo s	&amp;#x2F;&amp;#x2F;清理，生成，本地服务器&lt;br&gt;hexo d &amp;#x2F;&amp;#x2F;部署&lt;br&gt;hexagon -l &amp;#x2F;&amp;#x2F;查看插件&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&quot;更多-Hexo-指令&quot;&gt;更多 Hexo 指令&lt;/h2&gt;
+&lt;h2 id=&quot;更多-hexo-指令&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#更多-hexo-指令&quot;&gt;&lt;/a&gt; 更多 Hexo 指令&lt;/h2&gt;
     
     </summary>
     
@@ -79,13 +79,9 @@
       
         
         
-          &lt;h1&gt;Android Studio 入坑笔记&lt;/h1&gt;
+          &lt;h1 id=&quot;android-studio-入坑笔记&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#android-studio-入坑笔记&quot;&gt;&lt;/a&gt; Android Studio 入坑笔记&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;Android Studio 自动创建 resource id 失败
-&lt;ul&gt;
-&lt;li&gt;重启 AS。&lt;/li&gt;
-&lt;li&gt;Sync with file system 同步一下？&lt;/li&gt;
-&lt;li&gt;查看
+&lt;li&gt;Android Studio
         
       
     
@@ -112,9 +108,7 @@
       
         
         
-          &lt;h1&gt;Williams’s Fantastic Ideas&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Github 有一个叫做 &lt;strong&gt;app ideas&lt;/strong&gt;
+          &lt;h1 id=&quot;williamss-fantastic-ideas&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#williamss-fantastic-ideas&quot;&gt;&lt;/a&gt; Williams’s Fantastic
         
       
     
@@ -156,7 +150,7 @@
     <link href="https://baidi-coder.github.io/posts/37a431d8/"/>
     <id>https://baidi-coder.github.io/posts/37a431d8/</id>
     <published>2020-05-30T00:46:16.396Z</published>
-    <updated>2020-05-30T13:34:07.788Z</updated>
+    <updated>2020-06-15T08:45:17.324Z</updated>
     
     <summary type="html">
     
@@ -187,10 +181,9 @@
       
         
         
-          &lt;h1&gt;Tikz 绘图学习笔记&lt;/h1&gt;
+          &lt;h1 id=&quot;tikz-绘图学习笔记&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#tikz-绘图学习笔记&quot;&gt;&lt;/a&gt; Tikz 绘图学习笔记&lt;/h1&gt;
 &lt;blockquote&gt;
-&lt;p&gt;注意事项: \begin{tikzpicture} 环境下每一行命令结尾都要加分号;&lt;/p&gt;
-&lt;p&gt;\node, \coordinate, \draw 语法参考：&lt;a
+&lt;p&gt;注意事项: \begin{tikzpicture}
         
       
     
@@ -221,11 +214,11 @@
 &lt;li&gt;$a 和 ${a.func()}我是真没话说。&lt;/li&gt;
 &lt;li&gt;完善的NULL检查机制 “!!, ?, ?:”（当一个引用可能为 null 值时, 对应的类型声明必须明确地标记为可为 null。方法是： “Type后 + ？”）&lt;/li&gt;
 &lt;li&gt;玩转for循环：可以方便的指定遍历的步长，范围。（ …, step, downTo, in, until)&lt;/li&gt;
-&lt;li&gt;Kotlin 的基本数值类型包括 Byte、Short、Int、Long、Float、Double 等。&lt;strong&gt;不同于 Java 的是，字符==不属于==数值类型&lt;/strong&gt;，是一个独立的数据类型。&lt;/li&gt;
+&lt;li&gt;Kotlin 的基本数值类型包括 Byte、Short、Int、Long、Float、Double 等。&lt;strong&gt;不同于 Java 的是，字符&lt;mark&gt;不属于&lt;/mark&gt;数值类型&lt;/strong&gt;，是一个独立的数据类型。&lt;/li&gt;
 &lt;li&gt;支持二进制字面量，数值类型混入下划线增加语义性。&lt;/li&gt;
 &lt;li&gt;有些时候较小类型不会隐式转换成较大类型，需要手动调用 .toXXX() 来进行显示的类型转换。&lt;/li&gt;
 &lt;li&gt;和 &lt;em&gt;golang&lt;/em&gt; 一样少了分号（这就是语法糖吗i了i了&lt;/li&gt;
-&lt;li&gt;if-else 语句与when语句等可以视为 ==表达式==（可赋值&lt;/li&gt;
+&lt;li&gt;if-else 语句与when语句等可以视为 &lt;mark&gt;表达式&lt;/mark&gt;（可赋值&lt;/li&gt;
 &lt;li&gt;when 与 -&amp;gt; 符号构成强大的分支控制。&lt;/li&gt;
 &lt;li&gt;完全抛弃&lt;em&gt;基本数据类型&lt;/em&gt;改用&lt;em&gt;对象数据类型&lt;/em&gt;“。&lt;/li&gt;
 &lt;li&gt;“fun xxx() = xxx” 这个语法糖结合 if else, when 等特性可以打出漂亮的组合拳。&lt;/li&gt;
@@ -257,16 +250,10 @@
       
         
         
-          &lt;h1&gt;2020-4-28&lt;/h1&gt;
+          &lt;h1 id=&quot;2020-4-28&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#2020-4-28&quot;&gt;&lt;/a&gt; 2020-4-28&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;content: 对象与类，基本数据类型&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;int a, b; 则“a=b”表达式为int类型，不会自动转化为boolean类型&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Java
+&lt;p&gt;content:
         
       
     
@@ -291,7 +278,7 @@
     
     <summary type="html">
     
-      &lt;h1&gt;IDEA基础功能概览：&lt;/h1&gt;
+      &lt;h1 id=&quot;idea基础功能概览&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#idea基础功能概览&quot;&gt;&lt;/a&gt; IDEA基础功能概览：&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;shortcut(edit, 代码片段, 功能), 版本控制(VCS: git, github, local history)&lt;/p&gt;
@@ -303,7 +290,7 @@
 &lt;p&gt;project&amp;amp;module 等概念, 模板, 项目结构查询管理&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1&gt;Tips&lt;/h1&gt;
+&lt;h1 id=&quot;tips&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#tips&quot;&gt;&lt;/a&gt; Tips&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;代码段：main&lt;/li&gt;
 &lt;li&gt;sout标准输出&lt;/li&gt;
@@ -344,11 +331,7 @@
       
         
         
-          &lt;h1&gt;每天一个避坑小技巧&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;解决网站元素（例如图片）加载不出来的方法
-&lt;ol&gt;
-&lt;li&gt;浏览器下审查该元素的URL地址，然后在搜索他的域名对应的地址（&lt;a
+          &lt;h1 id=&quot;每天一个避坑小技巧&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#每天一个避坑小技巧&quot;&gt;&lt;/a&gt;
         
       
     
@@ -377,14 +360,7 @@
       
         
         
-          &lt;h1&gt;各大 IDE &amp;amp; Editor 快捷键对照表&lt;/h1&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;操作&lt;/th&gt;
-&lt;th&gt;IntelliJ IDEA&lt;/th&gt;
-&lt;th&gt;Visual Studio Code&lt;/th&gt;
-&lt;th&gt;Visual
+          &lt;h1 id=&quot;各大-ide-editor-快捷键对照表&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#各大-ide-editor-快捷键对照表&quot;&gt;&lt;/a&gt; 各大 IDE &amp;amp; Editor
         
       
     
@@ -403,7 +379,7 @@
     <link href="https://baidi-coder.github.io/posts/369ceeb5/"/>
     <id>https://baidi-coder.github.io/posts/369ceeb5/</id>
     <published>2020-05-30T00:45:17.465Z</published>
-    <updated>2020-05-30T13:14:39.574Z</updated>
+    <updated>2020-06-15T08:56:50.506Z</updated>
     
     <summary type="html">
     
@@ -411,12 +387,11 @@
       
         
         
-          &lt;h1&gt;CMD 指令备忘&lt;/h1&gt;
+          &lt;h1 id=&quot;cmd-指令备忘&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#cmd-指令备忘&quot;&gt;&lt;/a&gt; CMD 指令备忘&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Process 类
 &lt;ul&gt;
-&lt;li&gt;tasklist 列出所有进程&lt;/li&gt;
-&lt;li&gt;taskkill /pid xxx -f 杀死指定id
+&lt;li&gt;tasklist
         
       
     
@@ -445,10 +420,7 @@
       
         
         
-          &lt;h1&gt;Discrete MatheMatic Note 离散数学笔记&lt;/h1&gt;
-&lt;p&gt;Author: BAIDI&lt;br&gt;
-Date: from 2020-2-19&lt;/p&gt;
-&lt;h2 id=&quot;1-Logic-and-Proofs-逻辑和证明&quot;&gt;1 Logic and Proofs
+          &lt;h1 id=&quot;discrete-mathematic-note-离散数学笔记&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#discrete-mathematic-note-离散数学笔记&quot;&gt;&lt;/a&gt; Discrete MatheMatic Note
         
       
     
@@ -473,8 +445,8 @@ Date: from 2020-2-19&lt;/p&gt;
     
       &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&amp;quot;{&amp;quot;的位置要注意	分号无&lt;br&gt;
-多变量声明：&lt;br&gt;
+&lt;p&gt;&amp;quot;{&amp;quot;的位置要注意	分号无&lt;br /&gt;
+多变量声明：&lt;br /&gt;
 //类型相同多个变量, 非全局变量&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -508,13 +480,13 @@ Date: from 2020-2-19&lt;/p&gt;
     <link href="https://baidi-coder.github.io/posts/8ee1a4a1/"/>
     <id>https://baidi-coder.github.io/posts/8ee1a4a1/</id>
     <published>2020-02-14T13:37:36.000Z</published>
-    <updated>2020-05-30T13:59:44.789Z</updated>
+    <updated>2020-06-15T08:37:21.304Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;&lt;strong&gt;写在前面：“学好程序与算法，走遍天下都不怕。”&lt;/strong&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1&gt;枚举&lt;/h1&gt;
+&lt;hr /&gt;
+&lt;h1 id=&quot;枚举&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#枚举&quot;&gt;&lt;/a&gt; 枚举&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;背景
 &lt;ul&gt;
@@ -531,14 +503,14 @@ Date: from 2020-2-19&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1&gt;递归&lt;/h1&gt;
+&lt;h1 id=&quot;递归&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#递归&quot;&gt;&lt;/a&gt; 递归&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;作用
 &lt;ul&gt;
 &lt;li&gt;替代&lt;strong&gt;多重循环&lt;/strong&gt;，如：n皇后问题。
 &lt;ul&gt;
 &lt;li&gt;这种类型往往要运用到一个&lt;code&gt;全局/静态变量&lt;/code&gt;来存储前面算过的结果，譬如n皇后就用到了一个全局数组来保存每一行的皇后拜访情况。全局/静态变量的好处就在于&lt;code&gt;所有递归函数共享成果&lt;/code&gt;，就像&lt;code&gt;递推迭代&lt;/code&gt;一样，每一步会影响下一步。&lt;/li&gt;
-&lt;li&gt;递归函数形式：T function( T f(n) )，函数意义：在前n-1步已经完成的情况下决定如何走第n步，往往第一个被调用的function参数为0或1（然后依次调用 $1$ ~ $n_0$）&lt;/li&gt;
+&lt;li&gt;递归函数形式：T function( T f(n) )，函数意义：在前n-1步已经完成的情况下决定如何走第n步，往往第一个被调用的function参数为0或1（然后依次调用 &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;1&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.64444em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; ~ &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;n_0&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.58056em;vertical-align:-0.15em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.30110799999999993em;&quot;&gt;&lt;span style=&quot;top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.15em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;）&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;解决实质是&lt;strong&gt;递归形式&lt;/strong&gt;的问题
@@ -566,7 +538,7 @@ Date: from 2020-2-19&lt;/p&gt;
     
     <summary type="html">
     
-      &lt;h2 id=&quot;首先看看函数指针，函数名，以及它们分别与-和-结合后的值&quot;&gt;首先看看函数指针，函数名，以及它们分别与*和&amp;amp;结合后的值&lt;/h2&gt;
+      &lt;h2 id=&quot;首先看看函数指针函数名以及它们分别与和结合后的值&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#首先看看函数指针函数名以及它们分别与和结合后的值&quot;&gt;&lt;/a&gt; 首先看看函数指针，函数名，以及它们分别与*和&amp;amp;结合后的值&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;程序清单&lt;/li&gt;
 &lt;/ul&gt;
@@ -595,11 +567,11 @@ Date: from 2020-2-19&lt;/p&gt;
     
     <summary type="html">
     
-      &lt;h1&gt;一小道C语言题带来的乐趣&lt;/h1&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;&lt;code&gt; 要用游戏的玩法打败游戏的情景题!&lt;/code&gt;&lt;/strong&gt;&lt;br&gt;
-对于以下题目：&lt;br&gt;
-某游戏规则中，甲乙双方每个回合的战斗总是有一方胜利，一方失败。游戏规定：失败的一方要把自己的体力值的1/4加给胜利的一方。例如：如果双方体力值当前都是4，则经过一轮战斗后，双方的体力值会变为：5，3。现在已知：双方开始时的体力值甲：1000，乙：2000。假设战斗中，甲乙获胜的概率都是50%，求解：双方经过4个回合的战斗，体力值之差小于1000的理论概率。&lt;br&gt;
+      &lt;h1 id=&quot;一小道c语言题带来的乐趣&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#一小道c语言题带来的乐趣&quot;&gt;&lt;/a&gt; 一小道C语言题带来的乐趣&lt;/h1&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;要用游戏的玩法打败游戏的情景题!&lt;/code&gt;&lt;/strong&gt;&lt;br /&gt;
+对于以下题目：&lt;br /&gt;
+某游戏规则中，甲乙双方每个回合的战斗总是有一方胜利，一方失败。游戏规定：失败的一方要把自己的体力值的1/4加给胜利的一方。例如：如果双方体力值当前都是4，则经过一轮战斗后，双方的体力值会变为：5，3。现在已知：双方开始时的体力值甲：1000，乙：2000。假设战斗中，甲乙获胜的概率都是50%，求解：双方经过4个回合的战斗，体力值之差小于1000的理论概率。&lt;br /&gt;
 用基础模拟算法来解决：
     
     </summary>

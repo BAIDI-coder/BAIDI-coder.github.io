@@ -11400,11 +11400,10 @@ figure.highlight .section {
   height: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #5a5a5a;
-  background-image: -webkit-linear-gradient(45deg, rgba(255,255,255,0.2) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.2) 75%, transparent 75%, transparent);
+  background-color: #c8c8c8;
+  background-image: -webkit-linear-gradient(45deg, rgba(255,255,255,0.3) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0.3) 75%, transparent 75%, transparent);
 }
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
   background: #ededed;
 }
 ::-webkit-scrollbar-corner {
@@ -13093,6 +13092,7 @@ a.article-more.button.is-small.size-small {
 a.article-more.button.is-small.size-small:hover {
     background-color: steelblue!important;
     color: white!important;
+    font-weight: bold!important;
 }
 body {
   counter-reset: card;
