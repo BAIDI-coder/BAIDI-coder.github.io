@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://baidi-coder.github.io/"/>
-  <updated>2020-06-15T09:41:54.599Z</updated>
+  <updated>2020-06-19T10:14:56.023Z</updated>
   <id>https://baidi-coder.github.io/</id>
   
   <author>
@@ -21,11 +21,14 @@
     <link href="https://baidi-coder.github.io/posts/568ec988/"/>
     <id>https://baidi-coder.github.io/posts/568ec988/</id>
     <published>2020-06-14T16:00:00.000Z</published>
-    <updated>2020-06-15T09:41:54.599Z</updated>
+    <updated>2020-06-19T10:14:56.023Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;绪论&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#绪论&quot;&gt;&lt;/a&gt; 绪论&lt;/h2&gt;
+      &lt;span class=&quot;label label-primary&quot;&gt;机器学习&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;HMM&lt;/span&gt;
+&lt;span class=&quot;label label-success&quot;&gt;CRF&lt;/span&gt;
+&lt;h2 id=&quot;绪论&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#绪论&quot;&gt;&lt;/a&gt; 绪论&lt;/h2&gt;
 &lt;p&gt;​	从文本翻译到文字、语音识别，再到命名实体识别，词性标注，序列标注问题已然渗透到社会生活中的方方面面。不少自然语言处理的问题都可以想方设法转化为序列标注问题：对邮件等”大块“的信息做命名实体识别，识别出信息中的表单项用于自动填写表单，可以有效地提高工作效率，节约时间；对音频文件进行标注分析，可以用来进行语音识别；抽取出来的电子病历文本中的疾病、治疗、检查等类型的实体，可以用以对电子病历进行分类归档…想要处理好一般性的自然语言处理问题到序列标记问题的转化，关键在于处理好如何定义标记的问题。
     
     </summary>
@@ -138,9 +141,9 @@
       <category term="语言" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/"/>
     
     
-      <category term="Kotlin" scheme="https://baidi-coder.github.io/tags/Kotlin/"/>
-    
       <category term="Java" scheme="https://baidi-coder.github.io/tags/Java/"/>
+    
+      <category term="Kotlin" scheme="https://baidi-coder.github.io/tags/Kotlin/"/>
     
   </entry>
   
