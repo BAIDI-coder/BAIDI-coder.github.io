@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>技术/笔记/《第一行代码：Android》读书笔记 (一)</title>
+      <link href="/posts/37a431d8/"/>
+      <url>/posts/37a431d8/</url>
+      
+        <content type="html"><![CDATA[<span class="label label-success">Android</span><span class="label label-warning">Kotlin</span><span class="label label-info">读书笔记</span><br><br><article class="message">  <div class="message-header">    <p>简介</p>  </div>  <div class="message-body">      <p>"《第一行代码：Android 3rd》第一章到第五章的读书笔记，讲了AS的基本使用方法和Android项目结构，四大组件之一的Activity，以及各种UI控件的编写，还收录了本书中涉及的Kotlin的语法特性"</p>  </div></article><a id="more"></a><h2 id="第一章-开启征程概要"><a class="markdownIt-Anchor" href="#第一章-开启征程概要"></a> 第一章 开启征程（概要）</h2><ul><li>项目结构与目录：page 17 - page 19</li><li>Log 方法与 Logcat 的完美结合</li></ul><h2 id="第二章-kotlin-语法糖"><a class="markdownIt-Anchor" href="#第二章-kotlin-语法糖"></a> 第二章 Kotlin 语法糖</h2><div class="alert alert-info"><i class="fa fa-info  float-left"></i>  <p>同《Kotlin 学习笔记》一同食用更佳！</p></div><h3 id="第一行中出现的-kotlin-特性预览表"><a class="markdownIt-Anchor" href="#第一行中出现的-kotlin-特性预览表"></a> 《第一行》中出现的 Kotlin 特性预览表</h3><table><thead><tr><th style="text-align:center">主次构造函数</th><th style="text-align:center">参数默认值</th><th style="text-align:center">键值对传参</th><th style="text-align:center">字符串内嵌表达式</th></tr></thead><tbody><tr><td style="text-align:center"><code>init {}, constructor () {}</code></td><td style="text-align:center"><code>fun xxx(str: String = &quot;&quot;) {...}</code></td><td style="text-align:center"><code>xxx(str = &quot;...&quot;)</code></td><td style="text-align:center"><code>&quot;${value}&quot;</code></td></tr></tbody></table><table><thead><tr><th style="text-align:center">标准函数</th><th style="text-align:center">Lambda 表达式</th><th style="text-align:center">空指针检查</th><th style="text-align:center">函数式 API</th></tr></thead><tbody><tr><td style="text-align:center"><code>let, run, apply, with</code></td><td style="text-align:center"><code>{para -&gt; ...}, {it.toString()}</code></td><td style="text-align:center"><code>? ?. !!. ?:</code></td><td style="text-align:center"><code>map.maxby {/*Lambda*/}</code></td></tr></tbody></table><table><thead><tr><th style="text-align:center">容器初始化</th><th style="text-align:center">数据类</th><th style="text-align:center">单例类</th><th style="text-align:center">循环遍历</th></tr></thead><tbody><tr><td style="text-align:center"><code>listOf(), mapOf(), setOf()</code></td><td style="text-align:center"><code>data</code></td><td style="text-align:center"><code>object</code></td><td style="text-align:center"><code>for-in, until, downTo, step, l...r,</code>容器遍历</td></tr></tbody></table><table><thead><tr><th style="text-align:center">分支控制</th><th style="text-align:center">条件控制</th><th style="text-align:center">“不变为先”</th><th style="text-align:center">访问控制</th></tr></thead><tbody><tr><td style="text-align:center"><code>when () {... -&gt; ...}, if-else</code> 语句/表达式</td><td style="text-align:center"><code>is (instanceof), else</code></td><td style="text-align:center"><code>val, var, open class</code></td><td style="text-align:center"><code>&quot;public by default&quot;</code></td></tr></tbody></table><table><thead><tr><th style="text-align:center">类型强转</th><th style="text-align:center">repeat 函数</th><th style="text-align:center">运算符重载</th><th style="text-align:center">延迟初始化</th></tr></thead><tbody><tr><td style="text-align:center"><code>as, as?</code></td><td style="text-align:center"><code>repeat(/*num*/) {/*Lambda*/}</code></td><td style="text-align:center"><code>operator</code> 关键字</td><td style="text-align:center"><code>lateinit</code></td></tr></tbody></table><table><thead><tr><th style="text-align:center">初始化判断</th><th style="text-align:center">密封类（与when语句一同使用）</th><th style="text-align:center">扩展函数</th><th style="text-align:center">无用参数</th></tr></thead><tbody><tr><td style="text-align:center"><code>::($变量名).isInitialized</code></td><td style="text-align:center"><code>sealed class</code></td><td style="text-align:center"><code>fun ClassName.funcName(...) : ... {}</code></td><td style="text-align:center">下划线<code>_</code></td></tr></tbody></table><h2 id="第三章-activity所见即所得"><a class="markdownIt-Anchor" href="#第三章-activity所见即所得"></a> 第三章 Activity！所见即所得</h2><h3 id="创建-activity"><a class="markdownIt-Anchor" href="#创建-activity"></a> 创建 Activity</h3><ul><li>创建和加载布局文件 layout</li><li>在 AndroidManifest.xml 中注册Activity</li><li>编写 Activity.kt 代码 （事件绑定，方法重写等）</li></ul><h3 id="activity-通信与切换"><a class="markdownIt-Anchor" href="#activity-通信与切换"></a> Activity 通信与切换</h3><ul><li><p>Intent 类</p><ul><li>显式切换：<code>Intent(上下文, 指定Activity 的 Class 类)</code></li><li>隐式切换：指定 <code>action</code> <code>category</code>，目标将会按照注册信息中的过滤条件响应 intent。<ul><li>过滤条件：<code>&lt;category&gt; &lt;action&gt; &lt;data&gt;</code></li></ul></li><li>传参：<code>.putExtra(), .getStringExtra()</code></li><li>启动方式：<code>startActivity() //普通启动</code> <code>startActivityForResult() //请求结果</code> - Activity 类 Result 结果</li><li>设置结果：<code>setResult()</code></li><li>取回结果：<code>override onActivityResult()</code></li><li>Bundle 类</li><li>团队合作时用<strong>伴生类</strong>“静态方法”来启动</li></ul></li><li><p>Activity 生命周期</p><ul><li><p>返回栈的概念</p></li><li><p>思维导图</p></li></ul></li></ul><p><img src="https://raw.githubusercontent.com/BAIDI-coder/PicGo/master/img/image-20200529100001541.png" alt="Activity 生命周期" /></p><ul><li>保存信息<ul><li>Bundle 类型</li><li><code>onSaveInstanceState()</code>，<code>var savedInstanceState</code></li></ul></li><li>Activity 启动模式<ul><li>standard 无检查，直接压栈</li><li>singleTop 检查栈顶</li><li>singleTask 解栈恢复</li><li>singleInstance 创建新栈</li></ul></li></ul><h2 id="第四章-ui-门面功夫"><a class="markdownIt-Anchor" href="#第四章-ui-门面功夫"></a> 第四章 UI！！ 门面功夫 😃</h2><h3 id="控件-widget"><a class="markdownIt-Anchor" href="#控件-widget"></a> 控件 Widget</h3><ul><li>基本控件：TextView，EditView，Button，……</li><li>自定义控件：编写class（注入布局，绑定事件）<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">→</span></span></span></span>  xml注册引入自定义控件 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">→</span></span></span></span> 引入控件</li><li>高级一点的控件：ListVIew, RecyclerView …</li></ul><h3 id="基本原理撇清楚"><a class="markdownIt-Anchor" href="#基本原理撇清楚"></a> 基本原理撇清楚</h3><p><img src="https://gitee.com/BAIDI-CODER/PicGo/raw/master/img/20200723232141.png" alt="view の 继承关系图" /></p><ul><li><code>Inflater</code> 的作用：将xml格式的布局文件解析转化成View的实例</li><li><code>findViewById()</code> 返回布局中指定id的View实例, 在Activity类中直接使用<code>findViewById()</code>相当于在当前Activitiy所加载的布局中寻找对应的view，而使用<code>view.findViewById()</code>则指定了寻找的区域是view内</li></ul><div class="alert alert-danger"><i class="fa fa-bug  float-left"></i>  <p>留意Kotlin自动类型推导机制的使用场合，方法</p></div><h2 id="第五章-手机平板要兼顾探究fragment"><a class="markdownIt-Anchor" href="#第五章-手机平板要兼顾探究fragment"></a> *第五章 手机平板要兼顾，探究Fragment</h2><div class="dropdown is-hoverable">  <div class="dropdown-trigger">    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">      <span>学习内容</span>      <span class="icon is-small">        <i class="fas fa-angle-down" aria-hidden="true"></i>      </span>    </button>  </div>  <div class="dropdown-menu" id="dropdown-menu4" role="menu">    <div class="dropdown-content">      <div class="dropdown-item">        <p>Frag 生命周期，Frag 动态加载布局</p>      </div>    </div>  </div></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Android </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>算法/序列标注之HMM与CRF模型</title>
       <link href="/posts/568ec988/"/>
       <url>/posts/568ec988/</url>
@@ -127,33 +154,6 @@
     
     
     <entry>
-      <title>技术/笔记/第一行代码 Android（第三版）读书笔记</title>
-      <link href="/posts/37a431d8/"/>
-      <url>/posts/37a431d8/</url>
-      
-        <content type="html"><![CDATA[<h1 id="第一行代码-android第三版读书笔记"><a class="markdownIt-Anchor" href="#第一行代码-android第三版读书笔记"></a> 第一行代码 Android（第三版）读书笔记</h1><h2 id="第一章-开启征程概要"><a class="markdownIt-Anchor" href="#第一章-开启征程概要"></a> 第一章 开启征程（概要）</h2><ul><li>项目结构与目录：page 17 - page 19</li><li>Log 方法与 Logcat 的完美结合</li></ul><h2 id="第二章-kotlin-语法糖"><a class="markdownIt-Anchor" href="#第二章-kotlin-语法糖"></a> 第二章 Kotlin 语法糖</h2><blockquote><p>同《Kotlin 学习笔记》一同食用效果最佳</p></blockquote><ul><li>《第一行》中出现的 Kotlin 特性预览表</li></ul><table><thead><tr><th style="text-align:center">主次构造函数</th><th style="text-align:center">参数默认值</th><th style="text-align:center">键值对传参</th><th style="text-align:center">字符串内嵌表达式</th></tr></thead><tbody><tr><td style="text-align:center">init {}, constructor () {}</td><td style="text-align:center">fun xxx(str: String = “”) {…}</td><td style="text-align:center">xxx(str = “…”)</td><td style="text-align:center">“${value}”</td></tr></tbody></table><table><thead><tr><th style="text-align:center">let 函数式 API</th><th style="text-align:center">Lambda 表达式</th><th style="text-align:center">空指针检查</th><th style="text-align:center">函数式 API</th></tr></thead><tbody><tr><td style="text-align:center">obj.let {obj2 -&gt; …}</td><td style="text-align:center">{para -&gt; …}, {it.toString()}</td><td style="text-align:center">?   ?.   !!.   ?:</td><td style="text-align:center">map.maxby {} //Lambda表达式</td></tr></tbody></table><table><thead><tr><th style="text-align:center">容器初始化</th><th style="text-align:center">数据类</th><th style="text-align:center">单例类</th><th style="text-align:center">循环遍历</th></tr></thead><tbody><tr><td style="text-align:center">listOf(), mapOf(), setOf()</td><td style="text-align:center">data</td><td style="text-align:center">object</td><td style="text-align:center">for-in, until, downTo, step, l…r, 容器遍历</td></tr></tbody></table><table><thead><tr><th style="text-align:center">分支控制</th><th style="text-align:center">条件控制</th><th style="text-align:center">“不变为先”</th><th style="text-align:center">访问控制</th></tr></thead><tbody><tr><td style="text-align:center">when () {… -&gt; …}, if-else 语句/表达式</td><td style="text-align:center">is (instanceof), else</td><td style="text-align:center">val, var, open class</td><td style="text-align:center">“public by default”</td></tr></tbody></table><h2 id="第三章-activity所见即所得"><a class="markdownIt-Anchor" href="#第三章-activity所见即所得"></a> 第三章 Activity！所见即所得</h2><ul><li><p>创建 Activity</p><ul><li>创建和加载布局文件 layout</li><li>在 AndroidManifest.xml 中注册Activity</li><li>编写 Activity.kt 代码 （事件绑定，方法重写等）</li></ul></li><li><p>Activity 通信与切换</p><ul><li>Intent 类<ul><li>显式切换：<code>Intent(上下文, 指定Activity 的 Class 类)</code></li><li>隐式切换：指定 <code>action</code> <code>category</code>，目标将会按照注册信息中的过滤条件响应 intent。<ul><li>过滤条件：<code>&lt;category&gt; &lt;action&gt; &lt;data&gt;</code></li></ul></li><li>传参：<code>.putExtra(), .getStringExtra()</code></li><li>启动方式：<code>startActivity() //普通启动</code> <code>startActivityForResult() //请求结果</code></li></ul></li><li>Activity 类 Result 结果<ul><li>设置结果：<code>setResult()</code></li><li>取回结果：<code>override onActivityResult()</code></li></ul></li><li>Bundle 类</li><li>团队合作时用<strong>伴生类</strong>“静态方法”来启动</li></ul></li><li><p>Activity 生命周期</p><ul><li><p>返回栈</p></li><li><p>思维导图</p></li></ul></li></ul><p><img src="https://raw.githubusercontent.com/BAIDI-coder/PicGo/master/img/image-20200529100001541.png" alt="" /></p><ul><li>保存信息<ul><li>Bundle 类型</li><li><code>onSaveInstanceState()</code>，<code>var savedInstanceState</code></li></ul></li><li>Activity 启动模式<ul><li>standard 无检查，直接压栈</li><li>singleTop 检查栈顶</li><li>singleTask 解栈恢复</li><li>singleInstance 创建新栈</li></ul></li></ul><h2 id="第四章-ui-门面功夫"><a class="markdownIt-Anchor" href="#第四章-ui-门面功夫"></a> 第四章 UI！！ 门面功夫 😃</h2>]]></content>
-      
-      
-      <categories>
-          
-          <category> 技术 </category>
-          
-          <category> 笔记 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Android </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>技术/语言/LatexTikz</title>
       <link href="/posts/9b17222d/"/>
       <url>/posts/9b17222d/</url>
@@ -181,7 +181,7 @@
     
     
     <entry>
-      <title>技术/语言/Kotlin</title>
+      <title>技术/语言/Kotlin 学习笔记</title>
       <link href="/posts/ec3dabc7/"/>
       <url>/posts/ec3dabc7/</url>
       

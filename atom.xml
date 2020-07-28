@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://baidi-coder.github.io/"/>
-  <updated>2020-06-19T10:14:56.023Z</updated>
+  <updated>2020-07-28T10:44:19.356Z</updated>
   <id>https://baidi-coder.github.io/</id>
   
   <author>
@@ -15,6 +15,41 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>技术/笔记/《第一行代码：Android》读书笔记 (一)</title>
+    <link href="https://baidi-coder.github.io/posts/37a431d8/"/>
+    <id>https://baidi-coder.github.io/posts/37a431d8/</id>
+    <published>2020-07-27T16:00:00.000Z</published>
+    <updated>2020-07-28T10:44:19.356Z</updated>
+    
+    <summary type="html">
+    
+      &lt;span class=&quot;label label-success&quot;&gt;Android&lt;/span&gt;
+&lt;span class=&quot;label label-warning&quot;&gt;Kotlin&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;读书笔记&lt;/span&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;article class=&quot;message&quot;&gt;
+  &lt;div class=&quot;message-header&quot;&gt;
+    &lt;p&gt;简介&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;message-body&quot;&gt;
+      &lt;p&gt;&quot;《第一行代码：Android 3rd》第一章到第五章的读书笔记，讲了AS的基本使用方法和Android项目结构，四大组件之一的Activity，以及各种UI控件的编写，还收录了本书中涉及的Kotlin的语法特性&quot;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="笔记" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="Android" scheme="https://baidi-coder.github.io/tags/Android/"/>
+    
+  </entry>
   
   <entry>
     <title>算法/序列标注之HMM与CRF模型</title>
@@ -48,7 +83,7 @@
     <link href="https://baidi-coder.github.io/posts/6e7bdc/"/>
     <id>https://baidi-coder.github.io/posts/6e7bdc/</id>
     <published>2020-05-30T07:46:57.107Z</published>
-    <updated>2020-07-24T02:16:08.460Z</updated>
+    <updated>2020-07-28T10:36:50.747Z</updated>
     
     <summary type="html">
     
@@ -148,29 +183,6 @@
   </entry>
   
   <entry>
-    <title>技术/笔记/第一行代码 Android（第三版）读书笔记</title>
-    <link href="https://baidi-coder.github.io/posts/37a431d8/"/>
-    <id>https://baidi-coder.github.io/posts/37a431d8/</id>
-    <published>2020-05-30T00:46:16.396Z</published>
-    <updated>2020-06-15T08:45:17.324Z</updated>
-    
-    <summary type="html">
-    
-      《第一行代码 Android 3rd》个人笔记，归纳了该书中的主要知识点。
-    
-    </summary>
-    
-    
-      <category term="技术" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-      <category term="笔记" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="Android" scheme="https://baidi-coder.github.io/tags/Android/"/>
-    
-  </entry>
-  
-  <entry>
     <title>技术/语言/LatexTikz</title>
     <link href="https://baidi-coder.github.io/posts/9b17222d/"/>
     <id>https://baidi-coder.github.io/posts/9b17222d/</id>
@@ -202,7 +214,7 @@
   </entry>
   
   <entry>
-    <title>技术/语言/Kotlin</title>
+    <title>技术/语言/Kotlin 学习笔记</title>
     <link href="https://baidi-coder.github.io/posts/ec3dabc7/"/>
     <id>https://baidi-coder.github.io/posts/ec3dabc7/</id>
     <published>2020-05-30T00:45:39.212Z</published>
