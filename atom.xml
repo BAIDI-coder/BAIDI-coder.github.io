@@ -56,7 +56,7 @@
     <link href="https://baidi-coder.github.io/posts/568ec988/"/>
     <id>https://baidi-coder.github.io/posts/568ec988/</id>
     <published>2020-06-14T16:00:00.000Z</published>
-    <updated>2020-06-19T10:14:56.023Z</updated>
+    <updated>2020-07-28T11:13:31.653Z</updated>
     
     <summary type="html">
     
@@ -75,6 +75,46 @@
       <category term="AI" scheme="https://baidi-coder.github.io/tags/AI/"/>
     
       <category term="NLP" scheme="https://baidi-coder.github.io/tags/NLP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>算法/算法启蒙</title>
+    <link href="https://baidi-coder.github.io/posts/8ee1a4a1/"/>
+    <id>https://baidi-coder.github.io/posts/8ee1a4a1/</id>
+    <published>2020-05-31T16:00:00.000Z</published>
+    <updated>2020-07-28T11:18:33.170Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;写在前面：“学好程序与算法，走遍天下都不怕。”&lt;/strong&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h1 id=&quot;枚举&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#枚举&quot;&gt;&lt;/a&gt; 枚举&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;背景
+&lt;ul&gt;
+&lt;li&gt;找不到合适的数学公式和技巧&lt;/li&gt;
+&lt;li&gt;（改良后）枚举复杂度不是特别大&lt;/li&gt;
+&lt;li&gt;通常用于找到一种情况使之满足题意的题目&lt;/li&gt;
+&lt;li&gt;配合假设法找到目标情形：假币问题&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;技巧
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;跳跃枚举法&lt;/strong&gt;：跳过对没有必要的情况的枚举&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;局部枚举法&lt;/strong&gt;：枚举局部，剩下的由该局部确定。例如熄灯问题
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="https://baidi-coder.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="动态规划" scheme="https://baidi-coder.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+      <category term="搜索算法" scheme="https://baidi-coder.github.io/tags/%E6%90%9C%E7%B4%A2%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="递归" scheme="https://baidi-coder.github.io/tags/%E9%80%92%E5%BD%92/"/>
     
   </entry>
   
@@ -486,60 +526,6 @@
       <category term="踩坑" scheme="https://baidi-coder.github.io/tags/%E8%B8%A9%E5%9D%91/"/>
     
       <category term="Go" scheme="https://baidi-coder.github.io/tags/Go/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>算法/算法启蒙</title>
-    <link href="https://baidi-coder.github.io/posts/8ee1a4a1/"/>
-    <id>https://baidi-coder.github.io/posts/8ee1a4a1/</id>
-    <published>2020-02-14T13:37:36.000Z</published>
-    <updated>2020-06-15T08:37:21.304Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;写在前面：“学好程序与算法，走遍天下都不怕。”&lt;/strong&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h1 id=&quot;枚举&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#枚举&quot;&gt;&lt;/a&gt; 枚举&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;背景
-&lt;ul&gt;
-&lt;li&gt;找不到合适的数学公式和技巧&lt;/li&gt;
-&lt;li&gt;（改良后）枚举复杂度不是特别大&lt;/li&gt;
-&lt;li&gt;通常用于找到一种情况使之满足题意的题目&lt;/li&gt;
-&lt;li&gt;配合假设法找到目标情形：假币问题&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;技巧
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;跳跃枚举法&lt;/strong&gt;：跳过对没有必要的情况的枚举&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;局部枚举法&lt;/strong&gt;：枚举局部，剩下的由该局部确定。例如熄灯问题&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&quot;递归&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#递归&quot;&gt;&lt;/a&gt; 递归&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;作用
-&lt;ul&gt;
-&lt;li&gt;替代&lt;strong&gt;多重循环&lt;/strong&gt;，如：n皇后问题。
-&lt;ul&gt;
-&lt;li&gt;这种类型往往要运用到一个&lt;code&gt;全局/静态变量&lt;/code&gt;来存储前面算过的结果，譬如n皇后就用到了一个全局数组来保存每一行的皇后拜访情况。全局/静态变量的好处就在于&lt;code&gt;所有递归函数共享成果&lt;/code&gt;，就像&lt;code&gt;递推迭代&lt;/code&gt;一样，每一步会影响下一步。&lt;/li&gt;
-&lt;li&gt;递归函数形式：T function( T f(n) )，函数意义：在前n-1步已经完成的情况下决定如何走第n步，往往第一个被调用的function参数为0或1（然后依次调用 &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;1&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.64444em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; ~ &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;n_0&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.58056em;vertical-align:-0.15em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.30110799999999993em;&quot;&gt;&lt;span style=&quot;top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.15em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;解决实质是&lt;strong&gt;递归形式&lt;/strong&gt;的问题
-    
-    </summary>
-    
-    
-      <category term="算法" scheme="https://baidi-coder.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="动态规划" scheme="https://baidi-coder.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
-    
-      <category term="搜索算法" scheme="https://baidi-coder.github.io/tags/%E6%90%9C%E7%B4%A2%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="递归" scheme="https://baidi-coder.github.io/tags/%E9%80%92%E5%BD%92/"/>
     
   </entry>
   
