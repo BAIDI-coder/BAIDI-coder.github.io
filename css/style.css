@@ -13121,11 +13121,6 @@ h4:before {
     content: "›";
 }
 
-/* ???? */
-.icon.is-small {
-    height: 0em!important;
-    width: 0em!important;
-}
 
 /* ???? */
 a.level-item.button.is-transparent.is-marginless {
@@ -13134,3 +13129,4 @@ a.level-item.button.is-transparent.is-marginless {
 a.level-item.button.is-transparent.is-marginless:hover {
     transform: translateY(-7px);
 }
+
