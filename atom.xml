@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://baidi-coder.github.io/"/>
-  <updated>2020-08-02T05:29:42.588Z</updated>
+  <updated>2020-09-11T16:03:23.207Z</updated>
   <id>https://baidi-coder.github.io/</id>
   
   <author>
@@ -17,11 +17,69 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>技术/笔记/《第一行代码：Android》读书笔记 (二)</title>
+    <link href="https://baidi-coder.github.io/posts/c484d1a3/"/>
+    <id>https://baidi-coder.github.io/posts/c484d1a3/</id>
+    <published>2020-09-10T16:00:00.000Z</published>
+    <updated>2020-09-11T16:03:23.207Z</updated>
+    
+    <summary type="html">
+    
+      &lt;span class=&quot;label label-success&quot;&gt;Android&lt;/span&gt;
+&lt;span class=&quot;label label-warning&quot;&gt;Kotlin&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;读书笔记&lt;/span&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;article class=&quot;message&quot;&gt;
+  &lt;div class=&quot;message-header&quot;&gt;
+    &lt;p&gt;简介&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;message-body&quot;&gt;
+      &lt;p&gt;&quot;《第一行代码：Android 3rd》第六章到第八章的读书笔记，主要内容包括Android数据存储（持久化技术），四大组件中的Broadcast广播系统以及ContentProvider内容提供商&quot;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="笔记" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="Android" scheme="https://baidi-coder.github.io/tags/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>杂项/读书笔记约法三章</title>
+    <link href="https://baidi-coder.github.io/posts/e8be4afa/"/>
+    <id>https://baidi-coder.github.io/posts/e8be4afa/</id>
+    <published>2020-08-09T08:00:11.186Z</published>
+    <updated>2020-09-11T03:11:33.241Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;读书笔记约法三章&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#读书笔记约法三章&quot;&gt;&lt;/a&gt; 读书笔记约法三章&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“无他，唯手熟尔”&lt;/p&gt;
+&lt;p&gt;读书不做笔记，不常常温习约等于没学，重视笔记，舍得投入时间。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="杂项" scheme="https://baidi-coder.github.io/categories/%E6%9D%82%E9%A1%B9/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>技术/笔记/《第一行代码：Android》读书笔记 (一)</title>
     <link href="https://baidi-coder.github.io/posts/37a431d8/"/>
     <id>https://baidi-coder.github.io/posts/37a431d8/</id>
     <published>2020-07-27T16:00:00.000Z</published>
-    <updated>2020-08-02T05:29:42.588Z</updated>
+    <updated>2020-09-11T02:15:52.203Z</updated>
     
     <summary type="html">
     
