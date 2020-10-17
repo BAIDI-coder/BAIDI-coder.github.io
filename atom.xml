@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://baidi-coder.github.io/"/>
-  <updated>2020-09-13T00:25:50.736Z</updated>
+  <updated>2020-10-17T15:58:09.351Z</updated>
   <id>https://baidi-coder.github.io/</id>
   
   <author>
@@ -17,11 +17,48 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>技术/笔记/《第一行代码：Android》读书笔记（三）</title>
+    <link href="https://baidi-coder.github.io/posts/87cffae2/"/>
+    <id>https://baidi-coder.github.io/posts/87cffae2/</id>
+    <published>2020-10-16T16:00:00.000Z</published>
+    <updated>2020-10-17T15:58:09.351Z</updated>
+    
+    <summary type="html">
+    
+      &lt;span class=&quot;label label-success&quot;&gt;Android&lt;/span&gt;
+&lt;span class=&quot;label label-warning&quot;&gt;Kotlin&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;读书笔记&lt;/span&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;article class=&quot;message&quot;&gt;
+  &lt;div class=&quot;message-header&quot;&gt;
+    &lt;p&gt;简介&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;message-body&quot;&gt;
+      &lt;p&gt;&quot;《第一行代码：Android 3rd》第九章和第十章的读书笔记，主要内容包括四大组件中的Service以及一些手机多媒体的使用。&quot;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="笔记" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="Kotlin" scheme="https://baidi-coder.github.io/tags/Kotlin/"/>
+    
+      <category term="Android" scheme="https://baidi-coder.github.io/tags/Android/"/>
+    
+  </entry>
+  
+  <entry>
     <title>技术/笔记/《第一行代码：Android》读书笔记 (二)</title>
     <link href="https://baidi-coder.github.io/posts/c484d1a3/"/>
     <id>https://baidi-coder.github.io/posts/c484d1a3/</id>
     <published>2020-09-10T16:00:00.000Z</published>
-    <updated>2020-09-13T00:25:50.736Z</updated>
+    <updated>2020-09-16T01:35:09.462Z</updated>
     
     <summary type="html">
     
@@ -46,6 +83,8 @@
     
       <category term="笔记" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E7%AC%94%E8%AE%B0/"/>
     
+    
+      <category term="Kotlin" scheme="https://baidi-coder.github.io/tags/Kotlin/"/>
     
       <category term="Android" scheme="https://baidi-coder.github.io/tags/Android/"/>
     
@@ -79,7 +118,7 @@
     <link href="https://baidi-coder.github.io/posts/37a431d8/"/>
     <id>https://baidi-coder.github.io/posts/37a431d8/</id>
     <published>2020-07-27T16:00:00.000Z</published>
-    <updated>2020-09-11T02:15:52.203Z</updated>
+    <updated>2020-09-16T01:34:59.994Z</updated>
     
     <summary type="html">
     
@@ -104,6 +143,8 @@
     
       <category term="笔记" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E7%AC%94%E8%AE%B0/"/>
     
+    
+      <category term="Kotlin" scheme="https://baidi-coder.github.io/tags/Kotlin/"/>
     
       <category term="Android" scheme="https://baidi-coder.github.io/tags/Android/"/>
     
@@ -592,57 +633,28 @@
   </entry>
   
   <entry>
-    <title>技术/语言/C指针扫盲</title>
-    <link href="https://baidi-coder.github.io/posts/f1e4bda1/"/>
-    <id>https://baidi-coder.github.io/posts/f1e4bda1/</id>
-    <published>2019-09-01T11:00:00.000Z</published>
-    <updated>2020-05-31T03:54:01.437Z</updated>
+    <title>Hexo&#39;s tag</title>
+    <link href="https://baidi-coder.github.io/posts/827933de/"/>
+    <id>https://baidi-coder.github.io/posts/827933de/</id>
+    <published>2019-12-31T16:00:00.000Z</published>
+    <updated>2020-10-17T13:21:50.483Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;首先看看函数指针函数名以及它们分别与和结合后的值&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#首先看看函数指针函数名以及它们分别与和结合后的值&quot;&gt;&lt;/a&gt; 首先看看函数指针，函数名，以及它们分别与*和&amp;amp;结合后的值&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;程序清单&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;code class=&quot;hljs c&quot;&gt;&lt;span class=&quot;hljs-meta&quot;&gt;#&lt;span class=&quot;hljs-meta-keyword&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;hljs-meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;func&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;(&lt;span class=&quot;hljs-keyword&quot;&gt;void&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;span class=&quot;hljs-built_in&quot;&gt;puts&lt;/span&gt;(&lt;span class=&quot;hljs-string&quot;&gt;&quot;成功调用&quot;&lt;/span&gt;);&amp;#125;;&lt;br&gt;&lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;hljs-function&quot;&gt;&lt;/span&gt;&amp;#123;&lt;br&gt; &lt;span class=&quot;hljs-keyword&quot;&gt;void&lt;/span&gt;(*p_func)(&lt;span class=&quot;hljs-keyword&quot;&gt;void&lt;/span&gt;)=func;&lt;br&gt; &lt;span class=&quot;hljs-built_in&quot;&gt;puts&lt;/span&gt;(&lt;span class=&quot;hljs-string&quot;&gt;&quot;func是函数名，p_func是指向该函数的指针，那么有:&quot;&lt;/span&gt;);&lt;br&gt; &lt;span class=&quot;hljs-built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;hljs-string&quot;&gt;&quot;func=%p\n*func=%p\n&amp;amp;func=%p\&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;hljs-string&quot;&gt; \np_func=%p\n*p_func=%p\&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;hljs-string&quot;&gt; \n&amp;amp;p_func=%p&quot;&lt;/span&gt;,func,*func,&amp;amp;func,p_func,\&lt;br&gt; *p_func,&amp;amp;p_func);&lt;br&gt; &lt;br&gt; &lt;span class=&quot;hljs-comment&quot;&gt;//puts(&quot;\n接着我们尝试用上述变量调用函数:&quot;);&lt;/span&gt;&lt;br&gt; &lt;span class=&quot;hljs-comment&quot;&gt;//func();&lt;/span&gt;&lt;br&gt; &lt;span class=&quot;hljs-comment&quot;&gt;//(*func)();&lt;/span&gt;&lt;br&gt; &lt;span class=&quot;hljs-comment&quot;&gt;//(&amp;amp;func)();&lt;/span&gt;&lt;br&gt; &lt;span class=&quot;hljs-comment&quot;&gt;//(p_func)();&lt;/span&gt;&lt;br&gt; &lt;span class=&quot;hljs-comment&quot;&gt;//(*p_func)();&lt;/span&gt;&lt;br&gt; &lt;span class=&quot;hljs-keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;;&lt;br&gt;&amp;#125;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;执行结果
-    
-    </summary>
-    
-    
-      <category term="技术" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-      <category term="语言" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="C/C++" scheme="https://baidi-coder.github.io/tags/C-C/"/>
-    
-  </entry>
+      
+      
+        
+        
+          &lt;h1 id=&quot;hexo-的插件扩展调试页面&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#hexo-的插件扩展调试页面&quot;&gt;&lt;/a&gt; Hexo 的插件扩展调试页面&lt;/h1&gt;
+&lt;div class=&quot;mermaid&quot;&gt;
+ classDiagram
   
-  <entry>
-    <title>算法/回合制战斗</title>
-    <link href="https://baidi-coder.github.io/posts/aee17ffb/"/>
-    <id>https://baidi-coder.github.io/posts/aee17ffb/</id>
-    <published>2019-08-31T16:00:00.000Z</published>
-    <updated>2020-05-31T03:56:10.767Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;一小道c语言题带来的乐趣&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#一小道c语言题带来的乐趣&quot;&gt;&lt;/a&gt; 一小道C语言题带来的乐趣&lt;/h1&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;strong&gt;&lt;code&gt;要用游戏的玩法打败游戏的情景题!&lt;/code&gt;&lt;/strong&gt;&lt;br /&gt;
-对于以下题目：&lt;br /&gt;
-某游戏规则中，甲乙双方每个回合的战斗总是有一方胜利，一方失败。游戏规定：失败的一方要把自己的体力值的1/4加给胜利的一方。例如：如果双方体力值当前都是4，则经过一轮战斗后，双方的体力值会变为：5，3。现在已知：双方开始时的体力值甲：1000，乙：2000。假设战斗中，甲乙获胜的概率都是50%，求解：双方经过4个回合的战斗，体力值之差小于1000的理论概率。&lt;br /&gt;
-用基础模拟算法来解决：
+        
+      
     
     </summary>
     
     
-      <category term="算法" scheme="https://baidi-coder.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="题解" scheme="https://baidi-coder.github.io/tags/%E9%A2%98%E8%A7%A3/"/>
     
   </entry>
   
