@@ -169,9 +169,6 @@ g > foreignObject > div {
     font-family: "trebuchet ms",verdana,arial!important;
     text-align: center;
     /* display: block!important; */
-    position: relative;
-    top: 20%;
-    overflow: visible!important;
 }
 
 div.mermaid > svg {
