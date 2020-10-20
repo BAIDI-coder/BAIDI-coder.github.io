@@ -13238,14 +13238,13 @@ a.alert-link:hover {
 /* mermaid */
 text > tspan.title {
     font-size: inherit;
-    font-family: "trebuchet ms",verdana,arial"trebuchet ms",verdana,arial!important;
-    text-align: center;
+    font-family: "trebuchet ms",verdana,arial!important;
 }
 
 g > foreignObject > div {
+    font-size: 16px;
+    font-weight: normal;
     font-family: "trebuchet ms",verdana,arial!important;
-    text-align: center;
-    /* display: block!important; */
 }
 
 div.mermaid > svg {
