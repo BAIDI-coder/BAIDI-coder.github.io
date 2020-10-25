@@ -2,12 +2,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>William@blog</title>
   
-  <subtitle>BAIDI-coder</subtitle>
+  <subtitle>Willog</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://baidi-coder.github.io/"/>
+  <link href="https://willog.top/"/>
   <updated>2020-10-20T11:32:13.657Z</updated>
-  <id>https://baidi-coder.github.io/</id>
+  <id>https://willog.top/</id>
   
   <author>
     <name>Weiliang Bai</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>技术/笔记/《第一行代码：Android》读书笔记（三）</title>
-    <link href="https://baidi-coder.github.io/posts/87cffae2/"/>
-    <id>https://baidi-coder.github.io/posts/87cffae2/</id>
+    <link href="https://willog.top/posts/87cffae2/"/>
+    <id>https://willog.top/posts/87cffae2/</id>
     <published>2020-10-16T16:00:00.000Z</published>
     <updated>2020-10-20T11:32:13.657Z</updated>
     
@@ -42,21 +42,21 @@
     </summary>
     
     
-      <category term="技术" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://willog.top/categories/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="笔记" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E7%AC%94%E8%AE%B0/"/>
+      <category term="笔记" scheme="https://willog.top/categories/%E6%8A%80%E6%9C%AF/%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="Kotlin" scheme="https://baidi-coder.github.io/tags/Kotlin/"/>
+      <category term="Android" scheme="https://willog.top/tags/Android/"/>
     
-      <category term="Android" scheme="https://baidi-coder.github.io/tags/Android/"/>
+      <category term="Kotlin" scheme="https://willog.top/tags/Kotlin/"/>
     
   </entry>
   
   <entry>
     <title>技术/笔记/《第一行代码：Android》读书笔记 (二)</title>
-    <link href="https://baidi-coder.github.io/posts/c484d1a3/"/>
-    <id>https://baidi-coder.github.io/posts/c484d1a3/</id>
+    <link href="https://willog.top/posts/c484d1a3/"/>
+    <id>https://willog.top/posts/c484d1a3/</id>
     <published>2020-09-10T16:00:00.000Z</published>
     <updated>2020-09-16T01:35:09.462Z</updated>
     
@@ -79,21 +79,21 @@
     </summary>
     
     
-      <category term="技术" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://willog.top/categories/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="笔记" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E7%AC%94%E8%AE%B0/"/>
+      <category term="笔记" scheme="https://willog.top/categories/%E6%8A%80%E6%9C%AF/%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="Kotlin" scheme="https://baidi-coder.github.io/tags/Kotlin/"/>
+      <category term="Android" scheme="https://willog.top/tags/Android/"/>
     
-      <category term="Android" scheme="https://baidi-coder.github.io/tags/Android/"/>
+      <category term="Kotlin" scheme="https://willog.top/tags/Kotlin/"/>
     
   </entry>
   
   <entry>
     <title>杂项/读书笔记约法三章</title>
-    <link href="https://baidi-coder.github.io/posts/e8be4afa/"/>
-    <id>https://baidi-coder.github.io/posts/e8be4afa/</id>
+    <link href="https://willog.top/posts/e8be4afa/"/>
+    <id>https://willog.top/posts/e8be4afa/</id>
     <published>2020-08-09T08:00:11.186Z</published>
     <updated>2020-09-11T03:11:33.241Z</updated>
     
@@ -108,15 +108,15 @@
     </summary>
     
     
-      <category term="杂项" scheme="https://baidi-coder.github.io/categories/%E6%9D%82%E9%A1%B9/"/>
+      <category term="杂项" scheme="https://willog.top/categories/%E6%9D%82%E9%A1%B9/"/>
     
     
   </entry>
   
   <entry>
     <title>技术/笔记/《第一行代码：Android》读书笔记 (一)</title>
-    <link href="https://baidi-coder.github.io/posts/37a431d8/"/>
-    <id>https://baidi-coder.github.io/posts/37a431d8/</id>
+    <link href="https://willog.top/posts/37a431d8/"/>
+    <id>https://willog.top/posts/37a431d8/</id>
     <published>2020-07-27T16:00:00.000Z</published>
     <updated>2020-09-16T01:34:59.994Z</updated>
     
@@ -139,21 +139,21 @@
     </summary>
     
     
-      <category term="技术" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://willog.top/categories/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="笔记" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E7%AC%94%E8%AE%B0/"/>
+      <category term="笔记" scheme="https://willog.top/categories/%E6%8A%80%E6%9C%AF/%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="Kotlin" scheme="https://baidi-coder.github.io/tags/Kotlin/"/>
+      <category term="Android" scheme="https://willog.top/tags/Android/"/>
     
-      <category term="Android" scheme="https://baidi-coder.github.io/tags/Android/"/>
+      <category term="Kotlin" scheme="https://willog.top/tags/Kotlin/"/>
     
   </entry>
   
   <entry>
     <title>算法/序列标注之HMM与CRF模型</title>
-    <link href="https://baidi-coder.github.io/posts/568ec988/"/>
-    <id>https://baidi-coder.github.io/posts/568ec988/</id>
+    <link href="https://willog.top/posts/568ec988/"/>
+    <id>https://willog.top/posts/568ec988/</id>
     <published>2020-06-14T16:00:00.000Z</published>
     <updated>2020-10-22T15:29:02.035Z</updated>
     
@@ -168,19 +168,19 @@
     </summary>
     
     
-      <category term="算法" scheme="https://baidi-coder.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://willog.top/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="AI" scheme="https://baidi-coder.github.io/tags/AI/"/>
+      <category term="AI" scheme="https://willog.top/tags/AI/"/>
     
-      <category term="NLP" scheme="https://baidi-coder.github.io/tags/NLP/"/>
+      <category term="NLP" scheme="https://willog.top/tags/NLP/"/>
     
   </entry>
   
   <entry>
     <title>算法/算法启蒙</title>
-    <link href="https://baidi-coder.github.io/posts/8ee1a4a1/"/>
-    <id>https://baidi-coder.github.io/posts/8ee1a4a1/</id>
+    <link href="https://willog.top/posts/8ee1a4a1/"/>
+    <id>https://willog.top/posts/8ee1a4a1/</id>
     <published>2020-05-31T16:00:00.000Z</published>
     <updated>2020-07-29T00:29:00.890Z</updated>
     
@@ -210,21 +210,21 @@
     </summary>
     
     
-      <category term="算法" scheme="https://baidi-coder.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://willog.top/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="动态规划" scheme="https://baidi-coder.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+      <category term="动态规划" scheme="https://willog.top/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
-      <category term="搜索算法" scheme="https://baidi-coder.github.io/tags/%E6%90%9C%E7%B4%A2%E7%AE%97%E6%B3%95/"/>
+      <category term="搜索算法" scheme="https://willog.top/tags/%E6%90%9C%E7%B4%A2%E7%AE%97%E6%B3%95/"/>
     
-      <category term="递归" scheme="https://baidi-coder.github.io/tags/%E9%80%92%E5%BD%92/"/>
+      <category term="递归" scheme="https://willog.top/tags/%E9%80%92%E5%BD%92/"/>
     
   </entry>
   
   <entry>
     <title>技术/备忘/Hexo icarus 博客维护</title>
-    <link href="https://baidi-coder.github.io/posts/6e7bdc/"/>
-    <id>https://baidi-coder.github.io/posts/6e7bdc/</id>
+    <link href="https://willog.top/posts/6e7bdc/"/>
+    <id>https://willog.top/posts/6e7bdc/</id>
     <published>2020-05-30T07:46:57.107Z</published>
     <updated>2020-08-02T05:29:06.870Z</updated>
     
@@ -237,19 +237,19 @@
     </summary>
     
     
-      <category term="技术" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://willog.top/categories/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="备忘" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E5%A4%87%E5%BF%98/"/>
+      <category term="备忘" scheme="https://willog.top/categories/%E6%8A%80%E6%9C%AF/%E5%A4%87%E5%BF%98/"/>
     
     
-      <category term="Hexo" scheme="https://baidi-coder.github.io/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://willog.top/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>技术/开发/AndroidLearning</title>
-    <link href="https://baidi-coder.github.io/posts/fae5c3cd/"/>
-    <id>https://baidi-coder.github.io/posts/fae5c3cd/</id>
+    <link href="https://willog.top/posts/fae5c3cd/"/>
+    <id>https://willog.top/posts/fae5c3cd/</id>
     <published>2020-05-30T00:47:01.881Z</published>
     <updated>2020-05-30T13:23:45.757Z</updated>
     
@@ -268,17 +268,17 @@
     </summary>
     
     
-      <category term="技术" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://willog.top/categories/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="开发" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E5%BC%80%E5%8F%91/"/>
+      <category term="开发" scheme="https://willog.top/categories/%E6%8A%80%E6%9C%AF/%E5%BC%80%E5%8F%91/"/>
     
     
   </entry>
   
   <entry>
     <title>杂项/Ideas</title>
-    <link href="https://baidi-coder.github.io/posts/853a41fd/"/>
-    <id>https://baidi-coder.github.io/posts/853a41fd/</id>
+    <link href="https://willog.top/posts/853a41fd/"/>
+    <id>https://willog.top/posts/853a41fd/</id>
     <published>2020-05-30T00:46:43.782Z</published>
     <updated>2020-05-30T00:48:39.764Z</updated>
     
@@ -295,15 +295,15 @@
     </summary>
     
     
-      <category term="杂项" scheme="https://baidi-coder.github.io/categories/%E6%9D%82%E9%A1%B9/"/>
+      <category term="杂项" scheme="https://willog.top/categories/%E6%9D%82%E9%A1%B9/"/>
     
     
   </entry>
   
   <entry>
     <title>技术/语言/Java&amp;Kotlin语法对照</title>
-    <link href="https://baidi-coder.github.io/posts/7a368ad4/"/>
-    <id>https://baidi-coder.github.io/posts/7a368ad4/</id>
+    <link href="https://willog.top/posts/7a368ad4/"/>
+    <id>https://willog.top/posts/7a368ad4/</id>
     <published>2020-05-30T00:46:29.240Z</published>
     <updated>2020-05-30T13:32:55.361Z</updated>
     
@@ -314,21 +314,21 @@
     </summary>
     
     
-      <category term="技术" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://willog.top/categories/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="语言" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/"/>
+      <category term="语言" scheme="https://willog.top/categories/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/"/>
     
     
-      <category term="Kotlin" scheme="https://baidi-coder.github.io/tags/Kotlin/"/>
+      <category term="Kotlin" scheme="https://willog.top/tags/Kotlin/"/>
     
-      <category term="Java" scheme="https://baidi-coder.github.io/tags/Java/"/>
+      <category term="Java" scheme="https://willog.top/tags/Java/"/>
     
   </entry>
   
   <entry>
     <title>技术/语言/LatexTikz</title>
-    <link href="https://baidi-coder.github.io/posts/9b17222d/"/>
-    <id>https://baidi-coder.github.io/posts/9b17222d/</id>
+    <link href="https://willog.top/posts/9b17222d/"/>
+    <id>https://willog.top/posts/9b17222d/</id>
     <published>2020-05-30T00:45:41.254Z</published>
     <updated>2020-05-31T03:28:27.657Z</updated>
     
@@ -347,19 +347,19 @@
     </summary>
     
     
-      <category term="技术" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://willog.top/categories/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="语言" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/"/>
+      <category term="语言" scheme="https://willog.top/categories/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/"/>
     
     
-      <category term="Latex" scheme="https://baidi-coder.github.io/tags/Latex/"/>
+      <category term="Latex" scheme="https://willog.top/tags/Latex/"/>
     
   </entry>
   
   <entry>
     <title>技术/语言/Kotlin 学习笔记</title>
-    <link href="https://baidi-coder.github.io/posts/ec3dabc7/"/>
-    <id>https://baidi-coder.github.io/posts/ec3dabc7/</id>
+    <link href="https://willog.top/posts/ec3dabc7/"/>
+    <id>https://willog.top/posts/ec3dabc7/</id>
     <published>2020-05-30T00:45:39.212Z</published>
     <updated>2020-05-30T13:32:25.634Z</updated>
     
@@ -385,19 +385,19 @@
     </summary>
     
     
-      <category term="技术" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://willog.top/categories/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="语言" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/"/>
+      <category term="语言" scheme="https://willog.top/categories/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/"/>
     
     
-      <category term="Kotlin" scheme="https://baidi-coder.github.io/tags/Kotlin/"/>
+      <category term="Kotlin" scheme="https://willog.top/tags/Kotlin/"/>
     
   </entry>
   
   <entry>
     <title>技术/语言/JavaLearning</title>
-    <link href="https://baidi-coder.github.io/posts/6374ed46/"/>
-    <id>https://baidi-coder.github.io/posts/6374ed46/</id>
+    <link href="https://willog.top/posts/6374ed46/"/>
+    <id>https://willog.top/posts/6374ed46/</id>
     <published>2020-05-30T00:45:36.071Z</published>
     <updated>2020-05-30T13:20:28.168Z</updated>
     
@@ -417,19 +417,19 @@
     </summary>
     
     
-      <category term="技术" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://willog.top/categories/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="语言" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/"/>
+      <category term="语言" scheme="https://willog.top/categories/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/"/>
     
     
-      <category term="Java" scheme="https://baidi-coder.github.io/tags/Java/"/>
+      <category term="Java" scheme="https://willog.top/tags/Java/"/>
     
   </entry>
   
   <entry>
     <title>技术/工具/IDEA 学习笔记</title>
-    <link href="https://baidi-coder.github.io/posts/5a1e79ff/"/>
-    <id>https://baidi-coder.github.io/posts/5a1e79ff/</id>
+    <link href="https://willog.top/posts/5a1e79ff/"/>
+    <id>https://willog.top/posts/5a1e79ff/</id>
     <published>2020-05-30T00:45:31.551Z</published>
     <updated>2020-05-30T13:53:32.559Z</updated>
     
@@ -468,17 +468,17 @@
     </summary>
     
     
-      <category term="技术" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://willog.top/categories/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="工具" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E5%B7%A5%E5%85%B7/"/>
+      <category term="工具" scheme="https://willog.top/categories/%E6%8A%80%E6%9C%AF/%E5%B7%A5%E5%85%B7/"/>
     
     
   </entry>
   
   <entry>
     <title>技术/备忘/小技巧手册</title>
-    <link href="https://baidi-coder.github.io/posts/fac7f463/"/>
-    <id>https://baidi-coder.github.io/posts/fac7f463/</id>
+    <link href="https://willog.top/posts/fac7f463/"/>
+    <id>https://willog.top/posts/fac7f463/</id>
     <published>2020-05-30T00:45:17.470Z</published>
     <updated>2020-05-30T13:13:55.706Z</updated>
     
@@ -495,19 +495,19 @@
     </summary>
     
     
-      <category term="技术" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://willog.top/categories/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="备忘" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E5%A4%87%E5%BF%98/"/>
+      <category term="备忘" scheme="https://willog.top/categories/%E6%8A%80%E6%9C%AF/%E5%A4%87%E5%BF%98/"/>
     
     
-      <category term="踩坑" scheme="https://baidi-coder.github.io/tags/%E8%B8%A9%E5%9D%91/"/>
+      <category term="踩坑" scheme="https://willog.top/tags/%E8%B8%A9%E5%9D%91/"/>
     
   </entry>
   
   <entry>
     <title>技术/备忘/IDE&amp;Editor Shortcuts Query</title>
-    <link href="https://baidi-coder.github.io/posts/fde8aecf/"/>
-    <id>https://baidi-coder.github.io/posts/fde8aecf/</id>
+    <link href="https://willog.top/posts/fde8aecf/"/>
+    <id>https://willog.top/posts/fde8aecf/</id>
     <published>2020-05-30T00:45:17.467Z</published>
     <updated>2020-05-30T13:18:07.430Z</updated>
     
@@ -524,17 +524,17 @@
     </summary>
     
     
-      <category term="技术" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://willog.top/categories/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="备忘" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E5%A4%87%E5%BF%98/"/>
+      <category term="备忘" scheme="https://willog.top/categories/%E6%8A%80%E6%9C%AF/%E5%A4%87%E5%BF%98/"/>
     
     
   </entry>
   
   <entry>
     <title>技术/备忘/CMD 指令备忘</title>
-    <link href="https://baidi-coder.github.io/posts/369ceeb5/"/>
-    <id>https://baidi-coder.github.io/posts/369ceeb5/</id>
+    <link href="https://willog.top/posts/369ceeb5/"/>
+    <id>https://willog.top/posts/369ceeb5/</id>
     <published>2020-05-30T00:45:17.465Z</published>
     <updated>2020-06-15T08:56:50.506Z</updated>
     
@@ -555,19 +555,19 @@
     </summary>
     
     
-      <category term="技术" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://willog.top/categories/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="备忘" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E5%A4%87%E5%BF%98/"/>
+      <category term="备忘" scheme="https://willog.top/categories/%E6%8A%80%E6%9C%AF/%E5%A4%87%E5%BF%98/"/>
     
     
-      <category term="Command" scheme="https://baidi-coder.github.io/tags/Command/"/>
+      <category term="Command" scheme="https://willog.top/tags/Command/"/>
     
   </entry>
   
   <entry>
     <title>杂项/DiscreteMathematicNote</title>
-    <link href="https://baidi-coder.github.io/posts/b8e16674/"/>
-    <id>https://baidi-coder.github.io/posts/b8e16674/</id>
+    <link href="https://willog.top/posts/b8e16674/"/>
+    <id>https://willog.top/posts/b8e16674/</id>
     <published>2020-05-13T02:58:03.823Z</published>
     <updated>2020-08-02T05:28:32.875Z</updated>
     
@@ -584,17 +584,17 @@
     </summary>
     
     
-      <category term="杂项" scheme="https://baidi-coder.github.io/categories/%E6%9D%82%E9%A1%B9/"/>
+      <category term="杂项" scheme="https://willog.top/categories/%E6%9D%82%E9%A1%B9/"/>
     
     
-      <category term="Math" scheme="https://baidi-coder.github.io/tags/Math/"/>
+      <category term="Math" scheme="https://willog.top/tags/Math/"/>
     
   </entry>
   
   <entry>
     <title>技术/语言/Golang 避坑手册</title>
-    <link href="https://baidi-coder.github.io/posts/c737d2b3/"/>
-    <id>https://baidi-coder.github.io/posts/c737d2b3/</id>
+    <link href="https://willog.top/posts/c737d2b3/"/>
+    <id>https://willog.top/posts/c737d2b3/</id>
     <published>2020-02-29T16:00:00.000Z</published>
     <updated>2020-05-31T03:55:19.958Z</updated>
     
@@ -621,21 +621,21 @@
     </summary>
     
     
-      <category term="技术" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://willog.top/categories/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="语言" scheme="https://baidi-coder.github.io/categories/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/"/>
+      <category term="语言" scheme="https://willog.top/categories/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/"/>
     
     
-      <category term="踩坑" scheme="https://baidi-coder.github.io/tags/%E8%B8%A9%E5%9D%91/"/>
+      <category term="踩坑" scheme="https://willog.top/tags/%E8%B8%A9%E5%9D%91/"/>
     
-      <category term="Go" scheme="https://baidi-coder.github.io/tags/Go/"/>
+      <category term="Go" scheme="https://willog.top/tags/Go/"/>
     
   </entry>
   
   <entry>
     <title>Hexo&#39;s tag</title>
-    <link href="https://baidi-coder.github.io/posts/827933de/"/>
-    <id>https://baidi-coder.github.io/posts/827933de/</id>
+    <link href="https://willog.top/posts/827933de/"/>
+    <id>https://willog.top/posts/827933de/</id>
     <published>2019-12-31T16:00:00.000Z</published>
     <updated>2020-10-22T13:20:05.898Z</updated>
     
