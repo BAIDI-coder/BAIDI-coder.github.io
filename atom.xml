@@ -47,9 +47,9 @@
       <category term="笔记" scheme="https://willog.top/categories/%E6%8A%80%E6%9C%AF/%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="Kotlin" scheme="https://willog.top/tags/Kotlin/"/>
-    
       <category term="Android" scheme="https://willog.top/tags/Android/"/>
+    
+      <category term="Kotlin" scheme="https://willog.top/tags/Kotlin/"/>
     
   </entry>
   
@@ -84,9 +84,9 @@
       <category term="笔记" scheme="https://willog.top/categories/%E6%8A%80%E6%9C%AF/%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="Kotlin" scheme="https://willog.top/tags/Kotlin/"/>
-    
       <category term="Android" scheme="https://willog.top/tags/Android/"/>
+    
+      <category term="Kotlin" scheme="https://willog.top/tags/Kotlin/"/>
     
   </entry>
   
@@ -144,9 +144,9 @@
       <category term="笔记" scheme="https://willog.top/categories/%E6%8A%80%E6%9C%AF/%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="Kotlin" scheme="https://willog.top/tags/Kotlin/"/>
-    
       <category term="Android" scheme="https://willog.top/tags/Android/"/>
+    
+      <category term="Kotlin" scheme="https://willog.top/tags/Kotlin/"/>
     
   </entry>
   
@@ -222,7 +222,7 @@
   </entry>
   
   <entry>
-    <title>技术/备忘/Hexo icarus 博客维护</title>
+    <title>技术/指南/Hexo icarus 博客维护</title>
     <link href="https://willog.top/posts/6e7bdc/"/>
     <id>https://willog.top/posts/6e7bdc/</id>
     <published>2020-05-30T07:46:57.107Z</published>
@@ -319,9 +319,9 @@
       <category term="语言" scheme="https://willog.top/categories/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/"/>
     
     
-      <category term="Java" scheme="https://willog.top/tags/Java/"/>
-    
       <category term="Kotlin" scheme="https://willog.top/tags/Kotlin/"/>
+    
+      <category term="Java" scheme="https://willog.top/tags/Java/"/>
     
   </entry>
   
@@ -476,7 +476,7 @@
   </entry>
   
   <entry>
-    <title>技术/备忘/小技巧手册</title>
+    <title>技术/指南/小技巧手册</title>
     <link href="https://willog.top/posts/fac7f463/"/>
     <id>https://willog.top/posts/fac7f463/</id>
     <published>2020-05-30T00:45:17.470Z</published>
@@ -505,7 +505,7 @@
   </entry>
   
   <entry>
-    <title>技术/备忘/IDE&amp;Editor Shortcuts Query</title>
+    <title>技术/指南/IDE&amp;Editor Shortcuts Query</title>
     <link href="https://willog.top/posts/fde8aecf/"/>
     <id>https://willog.top/posts/fde8aecf/</id>
     <published>2020-05-30T00:45:17.467Z</published>
@@ -532,7 +532,7 @@
   </entry>
   
   <entry>
-    <title>技术/备忘/CMD 指令备忘</title>
+    <title>技术/指南/CMD 指令备忘</title>
     <link href="https://willog.top/posts/369ceeb5/"/>
     <id>https://willog.top/posts/369ceeb5/</id>
     <published>2020-05-30T00:45:17.465Z</published>
@@ -637,7 +637,7 @@
     <link href="https://willog.top/posts/827933de/"/>
     <id>https://willog.top/posts/827933de/</id>
     <published>2019-12-31T16:00:00.000Z</published>
-    <updated>2020-10-22T13:20:05.898Z</updated>
+    <updated>2020-10-27T04:42:38.045Z</updated>
     
     <summary type="html">
     

@@ -22,9 +22,9 @@
       
         <tags>
             
-            <tag> Kotlin </tag>
-            
             <tag> Android </tag>
+            
+            <tag> Kotlin </tag>
             
         </tags>
       
@@ -51,9 +51,9 @@
       
         <tags>
             
-            <tag> Kotlin </tag>
-            
             <tag> Android </tag>
+            
+            <tag> Kotlin </tag>
             
         </tags>
       
@@ -99,9 +99,9 @@
       
         <tags>
             
-            <tag> Kotlin </tag>
-            
             <tag> Android </tag>
+            
+            <tag> Kotlin </tag>
             
         </tags>
       
@@ -166,7 +166,7 @@
     
     
     <entry>
-      <title>技术/备忘/Hexo icarus 博客维护</title>
+      <title>技术/指南/Hexo icarus 博客维护</title>
       <link href="/posts/6e7bdc/"/>
       <url>/posts/6e7bdc/</url>
       
@@ -251,9 +251,9 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> Kotlin </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -364,7 +364,7 @@
     
     
     <entry>
-      <title>技术/备忘/小技巧手册</title>
+      <title>技术/指南/小技巧手册</title>
       <link href="/posts/fac7f463/"/>
       <url>/posts/fac7f463/</url>
       
@@ -391,7 +391,7 @@
     
     
     <entry>
-      <title>技术/备忘/IDE&amp;Editor Shortcuts Query</title>
+      <title>技术/指南/IDE&amp;Editor Shortcuts Query</title>
       <link href="/posts/fde8aecf/"/>
       <url>/posts/fde8aecf/</url>
       
@@ -412,7 +412,7 @@
     
     
     <entry>
-      <title>技术/备忘/CMD 指令备忘</title>
+      <title>技术/指南/CMD 指令备忘</title>
       <link href="/posts/369ceeb5/"/>
       <url>/posts/369ceeb5/</url>
       
