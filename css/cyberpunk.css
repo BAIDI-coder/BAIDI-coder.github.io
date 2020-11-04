@@ -13079,6 +13079,14 @@ a.badge:focus {
     transition: cubic-bezier(0.4, 0, 1, 1) 0.2s!important;
 }
 
+span.tag {
+    font-size: 12px;
+}
+
+h3.menu-label {
+    font-size: 12px;
+}
+
 span.tag:hover {
     background-color: steelblue!important;
     color: white!important;
