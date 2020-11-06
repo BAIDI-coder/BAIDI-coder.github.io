@@ -47,9 +47,9 @@
       <category term="笔记" scheme="https://willog.top/categories/%E6%8A%80%E6%9C%AF/%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="Android" scheme="https://willog.top/tags/Android/"/>
-    
       <category term="Kotlin" scheme="https://willog.top/tags/Kotlin/"/>
+    
+      <category term="Android" scheme="https://willog.top/tags/Android/"/>
     
   </entry>
   
@@ -84,9 +84,9 @@
       <category term="笔记" scheme="https://willog.top/categories/%E6%8A%80%E6%9C%AF/%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="Android" scheme="https://willog.top/tags/Android/"/>
-    
       <category term="Kotlin" scheme="https://willog.top/tags/Kotlin/"/>
+    
+      <category term="Android" scheme="https://willog.top/tags/Android/"/>
     
   </entry>
   
@@ -144,9 +144,9 @@
       <category term="笔记" scheme="https://willog.top/categories/%E6%8A%80%E6%9C%AF/%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="Android" scheme="https://willog.top/tags/Android/"/>
-    
       <category term="Kotlin" scheme="https://willog.top/tags/Kotlin/"/>
+    
+      <category term="Android" scheme="https://willog.top/tags/Android/"/>
     
   </entry>
   
@@ -155,7 +155,7 @@
     <link href="https://willog.top/posts/568ec988/"/>
     <id>https://willog.top/posts/568ec988/</id>
     <published>2020-06-14T16:00:00.000Z</published>
-    <updated>2020-10-22T15:29:02.035Z</updated>
+    <updated>2020-11-06T05:28:40.659Z</updated>
     
     <summary type="html">
     
@@ -189,7 +189,7 @@
       &lt;span class=&quot;label label-default&quot;&gt;算法&lt;/span&gt;
 &lt;br&gt;
 &lt;br&gt;
-&lt;div class=&quot;alert alert-success&quot;&gt;&lt;i class=&quot;fa fa-check-square  float-left&quot;&gt;&lt;/i&gt;&amp;nbsp; &lt;p&gt;写在前面：“学好程序与算法，走遍天下都不怕。”&lt;/p&gt;
+&lt;div class=&quot;alert alert-success&quot;&gt;&lt;i class=&quot;fa fa-check  float-left&quot;&gt;&lt;/i&gt;  &lt;p&gt;写在前面：“学好程序与算法，走遍天下都不怕。”&lt;/p&gt;
 &lt;/div&gt;
 &lt;hr /&gt;
 &lt;h1 id=&quot;枚举&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#枚举&quot;&gt;&lt;/a&gt; 枚举&lt;/h1&gt;
@@ -319,9 +319,9 @@
       <category term="语言" scheme="https://willog.top/categories/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/"/>
     
     
-      <category term="Kotlin" scheme="https://willog.top/tags/Kotlin/"/>
-    
       <category term="Java" scheme="https://willog.top/tags/Java/"/>
+    
+      <category term="Kotlin" scheme="https://willog.top/tags/Kotlin/"/>
     
   </entry>
   
@@ -637,7 +637,7 @@
     <link href="https://willog.top/posts/827933de/"/>
     <id>https://willog.top/posts/827933de/</id>
     <published>2019-12-31T16:00:00.000Z</published>
-    <updated>2020-10-27T04:42:38.045Z</updated>
+    <updated>2020-11-06T05:26:24.113Z</updated>
     
     <summary type="html">
     
