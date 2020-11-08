@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://willog.top/"/>
-  <updated>2020-10-20T11:32:13.657Z</updated>
+  <updated>2020-11-08T13:20:50.665Z</updated>
   <id>https://willog.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://willog.top/posts/87cffae2/"/>
     <id>https://willog.top/posts/87cffae2/</id>
     <published>2020-10-16T16:00:00.000Z</published>
-    <updated>2020-10-20T11:32:13.657Z</updated>
+    <updated>2020-11-08T13:20:50.665Z</updated>
     
     <summary type="html">
     
@@ -58,7 +58,7 @@
     <link href="https://willog.top/posts/c484d1a3/"/>
     <id>https://willog.top/posts/c484d1a3/</id>
     <published>2020-09-10T16:00:00.000Z</published>
-    <updated>2020-09-16T01:35:09.462Z</updated>
+    <updated>2020-11-08T13:15:52.954Z</updated>
     
     <summary type="html">
     
@@ -259,7 +259,9 @@
       
         
         
-          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h1 id=&quot;android-studio-入坑笔记&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#android-studio-入坑笔记&quot;&gt;&lt;/a&gt; Android Studio
+          &lt;h1 id=&quot;android-studio-入坑笔记&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#android-studio-入坑笔记&quot;&gt;&lt;/a&gt; Android Studio 入坑笔记&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Android Studio
         
       
     
@@ -286,7 +288,7 @@
       
         
         
-          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h1 id=&quot;williamss-fantastic-ideas&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#williamss-fantastic-ideas&quot;&gt;&lt;/a&gt; Williams’s
+          &lt;h1 id=&quot;williamss-fantastic-ideas&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#williamss-fantastic-ideas&quot;&gt;&lt;/a&gt; Williams’s Fantastic
         
       
     
@@ -336,9 +338,9 @@
       
         
         
-          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h1 id=&quot;tikz-绘图学习笔记&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#tikz-绘图学习笔记&quot;&gt;&lt;/a&gt; Tikz 绘图学习笔记&lt;/h1&gt;
+          &lt;h1 id=&quot;tikz-绘图学习笔记&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#tikz-绘图学习笔记&quot;&gt;&lt;/a&gt; Tikz 绘图学习笔记&lt;/h1&gt;
 &lt;blockquote&gt;
-&lt;p&gt;注意事项:
+&lt;p&gt;注意事项: \begin{tikzpicture}
         
       
     
@@ -405,7 +407,7 @@
       
         
         
-          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h1 id=&quot;2020-4-28&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#2020-4-28&quot;&gt;&lt;/a&gt; 2020-4-28&lt;/h1&gt;
+          &lt;h1 id=&quot;2020-4-28&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#2020-4-28&quot;&gt;&lt;/a&gt; 2020-4-28&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;content:
@@ -486,7 +488,7 @@
       
         
         
-          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h1 id=&quot;每天一个避坑小技巧&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#每天一个避坑小技巧&quot;&gt;&lt;/a&gt;
+          &lt;h1 id=&quot;每天一个避坑小技巧&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#每天一个避坑小技巧&quot;&gt;&lt;/a&gt;
         
       
     
@@ -515,7 +517,7 @@
       
         
         
-          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h1 id=&quot;各大-ide-editor-快捷键对照表&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#各大-ide-editor-快捷键对照表&quot;&gt;&lt;/a&gt; 各大 IDE &amp; Editor
+          &lt;h1 id=&quot;各大-ide-editor-快捷键对照表&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#各大-ide-editor-快捷键对照表&quot;&gt;&lt;/a&gt; 各大 IDE &amp;amp; Editor
         
       
     
@@ -542,9 +544,11 @@
       
         
         
-          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h1 id=&quot;cmd-指令备忘&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#cmd-指令备忘&quot;&gt;&lt;/a&gt; CMD 指令备忘&lt;/h1&gt;
+          &lt;h1 id=&quot;cmd-指令备忘&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#cmd-指令备忘&quot;&gt;&lt;/a&gt; CMD 指令备忘&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;Process
+&lt;li&gt;Process 类
+&lt;ul&gt;
+&lt;li&gt;tasklist
         
       
     
@@ -573,7 +577,7 @@
       
         
         
-          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h1 id=&quot;discrete-mathematic-note-离散数学笔记&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#discrete-mathematic-note-离散数学笔记&quot;&gt;&lt;/a&gt;
+          &lt;h1 id=&quot;discrete-mathematic-note-离散数学笔记&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#discrete-mathematic-note-离散数学笔记&quot;&gt;&lt;/a&gt; Discrete MatheMatic Note
         
       
     
@@ -641,8 +645,10 @@
       
         
         
-          &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h1 id=&quot;hexo-的插件扩展调试页面&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#hexo-的插件扩展调试页面&quot;&gt;&lt;/a&gt; Hexo 的插件扩展调试页面&lt;/h1&gt;
-&lt;div
+          &lt;h1 id=&quot;hexo-的插件扩展调试页面&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#hexo-的插件扩展调试页面&quot;&gt;&lt;/a&gt; Hexo 的插件扩展调试页面&lt;/h1&gt;
+&lt;div class=&quot;mermaid&quot;&gt;
+ classDiagram
+  
         
       
     
