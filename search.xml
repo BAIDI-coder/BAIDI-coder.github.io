@@ -493,12 +493,18 @@
     
     
     <entry>
-      <title>Hexo&#39;s tag</title>
+      <title>杂项/Hexo&#39;s tag</title>
       <link href="/posts/827933de/"/>
       <url>/posts/827933de/</url>
       
         <content type="html"><![CDATA[<h1 id="hexo-的插件扩展调试页面"><a class="markdownIt-Anchor" href="#hexo-的插件扩展调试页面"></a> Hexo 的插件扩展调试页面</h1><div class="mermaid"> classDiagram      class NotificationManager {      +notify()      +createNotificationChannel()      }      class NotificationChannel      class NotificationCompat {      +Builder()      }      NotificationCompat <|-- Notification      NotificationManager --> NotificationChannel: 创建、管理      NotificationManager --> Notification: 发送      Notification --* NotificationChannel: 对应</div>]]></content>
       
+      
+      <categories>
+          
+          <category> 杂项 </category>
+          
+      </categories>
       
       
     </entry>
