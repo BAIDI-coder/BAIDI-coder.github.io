@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://willog.top/"/>
-  <updated>2020-11-13T13:22:38.269Z</updated>
+  <updated>2020-11-13T16:06:44.969Z</updated>
   <id>https://willog.top/</id>
   
   <author>
@@ -17,35 +17,22 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>杂项/离散数学（下）</title>
+    <title>杂项/计数与数论初步</title>
     <link href="https://willog.top/posts/b09d8377/"/>
     <id>https://willog.top/posts/b09d8377/</id>
     <published>2020-11-13T13:16:45.150Z</published>
-    <updated>2020-11-13T13:22:38.269Z</updated>
+    <updated>2020-11-13T16:06:44.969Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;计数技术基础&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#计数技术基础&quot;&gt;&lt;/a&gt; 计数技术基础&lt;/h1&gt;
-&lt;h2 id=&quot;乘法原理与笛卡尔积的基数&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#乘法原理与笛卡尔积的基数&quot;&gt;&lt;/a&gt; 乘法原理与笛卡尔积的基数&lt;/h2&gt;
-&lt;p&gt;|A1 ⨉ A2 ⨉ ∙∙∙ ⨉ Am |= |A1| ∙ |A2| ∙ ∙∙∙ ∙ |Am|&lt;/p&gt;
-&lt;h2 id=&quot;容斥原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#容斥原理&quot;&gt;&lt;/a&gt; 容斥原理&lt;/h2&gt;
-&lt;h2 id=&quot;有根树图&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#有根树图&quot;&gt;&lt;/a&gt; 有根树图&lt;/h2&gt;
-&lt;h2 id=&quot;鸽巢原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#鸽巢原理&quot;&gt;&lt;/a&gt; 鸽巢原理&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;推论：一个从m个元素到n个元素（m&amp;gt;n)的函数不可能是单射。&lt;/li&gt;
-&lt;li&gt;广义鸽巢原理
-&lt;ul&gt;
-&lt;li&gt;如果N 个物体放置到k个盒子中，那么至少 有一个盒子装有不少于⌈N/k⌉个物体。&lt;/li&gt;
-&lt;li&gt;关键词：至少，分配（/填色/分类）&lt;/li&gt;
-&lt;li&gt;要用上鸽巢原理就要灵活转换问题&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;可用结论：
-&lt;ul&gt;
-&lt;li&gt;任何一个正整数都给可以分解为一个&lt;strong&gt;2的次幂×一个奇数&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+      
+      
+        
+        
+          &lt;h1 id=&quot;计数技术基础&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#计数技术基础&quot;&gt;&lt;/a&gt; 计数技术基础&lt;/h1&gt;
+&lt;h2 id=&quot;乘法原理与笛卡尔积的基数&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot;
+        
+      
     
     </summary>
     
