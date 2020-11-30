@@ -228,7 +228,7 @@
     <link href="https://willog.top/posts/8ee1a4a1/"/>
     <id>https://willog.top/posts/8ee1a4a1/</id>
     <published>2020-05-31T16:00:00.000Z</published>
-    <updated>2020-11-10T15:56:09.938Z</updated>
+    <updated>2020-11-30T03:32:13.011Z</updated>
     
     <summary type="html">
     
@@ -237,21 +237,6 @@
 &lt;br&gt;
 &lt;div class=&quot;alert alert-success&quot;&gt;&lt;i class=&quot;fa fa-check  float-left&quot;&gt;&lt;/i&gt;  &lt;p&gt;写在前面：“学好程序与算法，走遍天下都不怕。”&lt;/p&gt;
 &lt;/div&gt;
-&lt;hr /&gt;
-&lt;h1 id=&quot;枚举&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#枚举&quot;&gt;&lt;/a&gt; 枚举&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;背景
-&lt;ul&gt;
-&lt;li&gt;找不到合适的数学公式和技巧&lt;/li&gt;
-&lt;li&gt;（改良后）枚举复杂度不是特别大&lt;/li&gt;
-&lt;li&gt;通常用于找到一种情况使之满足题意的题目&lt;/li&gt;
-&lt;li&gt;配合假设法找到目标情形：假币问题&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;技巧
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;跳跃枚举法&lt;/strong&gt;：跳过对没有必要的情况的枚举&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;局部枚举法&lt;/strong&gt;：枚举局部，剩下的由该局部确定。例如熄灯问题
     
     </summary>
     
